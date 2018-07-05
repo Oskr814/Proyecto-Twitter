@@ -3,6 +3,7 @@ body{
     width: 100%;
     position: absolute;
     font-family: Helvetica;
+    overflow-y: scroll;
 }
 
 .container-fluid{
@@ -40,10 +41,11 @@ body{
 .lado_der{
     position: relative;
     left: 50%;
-    top: 25%;
-    transform: translateX(-50%);
-   justify-content: center;
-    max-width: 350px;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    justify-content: center;
+    align-content: center;
+    max-width: 360px;
 }
 
 .a-forget-pass{
@@ -59,21 +61,24 @@ h1{
 
 /*Inputs*/
 input{
+    width: 210px;
     border-radius:3px;
     background-color: #fff;
     border: 1px solid #e6ecf0;
     padding: 12px;
     margin: 12px;
     font-size: 14px;
-    line-height: 20px;
+    line-height: 32px;
 }
 
 .input-user-login{
-    position: absolute;
-    max-width: 600px;
-    padding-left: 20px;
-    padding-right: 20px;
+    position: relative;
+    right: 5%;
+    float: right;
+    padding-top: 20px;
+
 }
+
 /*Botones*/
 .btn{
     text-align: center;
@@ -90,9 +95,13 @@ input{
     color: #1da1f2;
 }
 
+.btn-primary{
+    background-color: #1DA1F2;
+}
+
 #btn-light-1{
     box-sizing: border-box;
-    padding: 10px; 
+    padding: 12px;
 }
 
 .btn-primary, #btn-light-2{

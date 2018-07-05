@@ -7,43 +7,70 @@
     <title>Twitter. Es lo que está pasando.</title>
     <link rel="icon" href="img/icono.ico">
     <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="css/custom.css">
 </head>
 <body>
-  
-    
-   <!-- <footer>
-        <table>
-            <tr>
-               <td> <a href="#">Sobre nosotros</a></td>
-               <td><a href="#">Centro de Ayuda</a></td> 
-               <td><a>Blog</a></td>
-               <td><a href="#">Estado</a></td>
-               <td><a href="#">Empleos</a></td>
-               <td><a href="#">Condiciones</a></td> 
-               <td><a href="#">Política de Privacidad</a></td>
-               <td> <a href="#">Cookies</a></td>
-               <td> <a href="#">Informacíon sobre anuncios</a></td>
-               <td> <a href="#">Marca</a></td> 
-               <td><a href="#">Aplicacioens</a></td>
-               <td> <a href="#">Anunciarse</a></td>
-               <td> <a href="#">Marketing</a></td> 
-               <td> <a href="#">Empresas</a></td>
-               <td><a href="#">Desarrolladores</a></td>
-               <td> <a href="#">Directorio</a></td>
-            </tr>
-
-            <tr> 
-                <div style="left: 50%;">
-                    <td><a href="#">Configuración</a></td>
-                    <td><label>2018 Twitter</label></td>
+    <div class="container-fluid">
+        <div class="row h-100 w-100">
+            <!--Lado Izquierdo-->
+            <div class="col-12 col-sm-12 col-md-6 col-lg-6 background_izq">
+                <div class="izquierdo">
+                    <div class="lado_izq"><label><img src="img/lupa.png"> Sigue lo que te interesa.</label></div>
+                    <div class="lado_izq"><label><img src="img/usuarios.png"> Entérate de lo que está hablando la gente.</label></div>
+                    <div class="lado_izq"><label><img src="img/comentarios.png "> Únete a la convesarción.</label></div>  
                 </div>
-                
-            </tr>
-        </table>     
-         
             
-   </footer>-->
-<script src="js/bootstrap.min.js"></script>
+            </div>
+
+            <!--Lado Derecho-->
+            <div class="col-12 col-sm-12 col-md-6 col-lg-6">
+                <div>
+                    <div class="input-user-login">
+                        <input type="text" placeholder="Teléfono, correo electrónico o nombre de usuario">
+                        <input type="password" placeholder="Contraseña">
+                        <button class="btn btn-light" id="btn-light-1">Iniciar sesión</button>
+                        <div class="a-forget-pass">
+                            <a href="#">¿Olvidaste tu contraseña?</a>    
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="lado_der">
+                    <img src="img/img1.png"><br><br>
+                    <h1>Descubre lo que está<br> pasando en el mundo en este momento</h1><br>
+                    <Label style="font-weight:bold; font-size:16px">Únete hoy a Twitter.</Label><br>
+                    <button class="btn btn-primary">Registrarse</button><br>
+                    <button class="btn btn-light" id="btn-light-2">Iniciar sesión</button>
+                </div>
+            </div>
+        </div>
+        <div id="row-2" class="row">
+            <footer class="col-12">
+                <div class="pie-pagina">
+                    <a href="#" class="pie-pagina">Sobre nosotros</a>
+                    <a href="#" class="pie-pagina">Centro de Ayuda</a> 
+                    <a href="#" class="pie-pagina">Blog</a>
+                    <a href="#" class="pie-pagina">Estado</a>
+                    <a href="#" class="pie-pagina">Empleos</a>
+                    <a href="#" class="pie-pagina">Condiciones</a> 
+                    <a href="#" class="pie-pagina">Política de Privacidad</a>
+                    <a href="#" class="pie-pagina">Cookies</a>
+                    <a href="#" class="pie-pagina">Informacíon sobre anuncios</a>
+                    <a href="#" class="pie-pagina">Marca</a> 
+                    <a href="#" class="pie-pagina">Aplicacioens</a>
+                    <a href="#" class="pie-pagina">Anunciarse</a>
+                    <a href="#" class="pie-pagina">Marketing</a> 
+                    <a href="#" class="pie-pagina">Empresas</a>
+                    <a href="#" class="pie-pagina">Desarrolladores</a>
+                    <a href="#" class="pie-pagina">Directorio</a>
+                    <a href="#" class="pie-pagina">Configuración</a>
+                    <a href="#" class="pie-pagina">2018 Twitter</a>
+                </div>
+            </footer>
+        </div>
+    </div>
+
+    
+    <script src="js/bootstrap.min.js"></script>
 </body>
 </html>
