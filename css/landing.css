@@ -11,13 +11,19 @@ body{
     height: 95%;
     width: 100%;
 }
-/*====================landing Properties===================================*/
+
+.center{
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
 .nav-t{
     padding: 1 1.5rem;
     width: 100%;  
     background-color: #1DA1F2 ;
 }
-
+/*====================primera fase del landing=============================*/
 .land1{
     background-color: #1DA1F2; 
     display: block;
@@ -63,8 +69,21 @@ h6 {
     margin-left: 21px;
 }
 
-.center{
-    margin-left: auto;
-    margin-right: auto;
+/*====================segunda fase del landing=============================*/
+.land2{
+    background-image: url(../img/mexico.jpg);
+    background-position-x: 100%;
+    background-position-y: 100%;
+    background-repeat: no-repeat;
+    background-origin: initial;
     display: block;
+    height: 660px;
+    max-width:100%;
+}
+h3{
+    font-size:50px;  
+    color: #fff;
+    font-weight: bold;
+   padding: 4.5em 1.5em;
+
 }
