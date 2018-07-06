@@ -1,0 +1,48 @@
+body{
+    font-family: 'Lucida Grande', Helvetica, sans-serif;
+}
+
+div p{
+  display: inline;
+  padding: 15px;
+}
+
+
+
+.row {
+    margin-right: -15px;
+    margin-left: -15px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.row-2{
+    font-size: 18px;
+    font-weight: bold;
+    color: #ffffff;
+    background-color: #0BBCE3;
+    border-radius: 5px;
+}
+
+
+
+.row-3{
+    border: 1px solid green;
+    border-radius: 5px;
+}
+
+.text-izq-row-3{
+    font-size: 17px;
+    opacity: 0.9;
+    margin-top: 7px;
+    margin-left: 10px;
+}
+
+.tex-der-row-3{
+    align-content: right;
+    margin-right: 20px;
+    margin-top: 7px;
+    font-size: 17px;
+    opacity: 0.9;
+    color: #0bbce3;
+}
