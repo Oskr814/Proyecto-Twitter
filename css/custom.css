@@ -136,19 +136,19 @@ a{
 
 /*====================landing Properties===================================*/
 .nav-t{
-    padding: 0 1.5rem;
+    padding: 1 1.5rem;
     width: 100%;  
     background-color: #1DA1F2 ;
-
 }
 
 .land1{
     background-color: #1DA1F2; 
-    display: flex;
+    display: block;
     align-items: center;
-    height: 550px;
+    height: 535px;
     max-width:100%;
-    margin-bottom: 1em;
+    padding-top:65px;
+    
 }
 
 #placeholder1{
@@ -156,8 +156,6 @@ a{
     font-weight: bold;
     text-align: justify;
     letter-spacing: normal;
-    margin-left: auto;
-    margin-right: auto;
 }
 h2{
     font-family: Helvetica Neue LT,Helvetica Neue,Helvetica,Arial,sans-serif;
@@ -170,9 +168,24 @@ h2{
 }
 h1 {
     font-family: Helvetica Neue LT,Helvetica Neue,Helvetica,Arial,sans-serif;
-    font-size: 71px; 
+    font-size: 4em; 
     color: #fff;
-    padding: 0.5rem;
+    padding: 0.2rem;
     white-space: normal;
     align-self: auto;
+    line-height: normal;
+    max-width: 100%;
+}
+h6 {
+    color: #A1D8FA;
+    max-width: 150px;
+    white-space: nowrap;
+    display: inline-block;
+    margin-left: 21px;
+}
+
+.center{
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
 }
