@@ -39,7 +39,7 @@ body{
 
 /*Parte der*/
 .lado_der{
-    position: relative;
+    position: absolute;
     left: 50%;
     top: 50%;
     transform: translateX(-50%) translateY(-50%);
@@ -61,18 +61,19 @@ h1{
 
 /*Inputs*/
 input{
+    box-sizing: border-box;
     width: 210px;
     border-radius:3px;
     background-color: #fff;
     border: 1px solid #e6ecf0;
     padding: 12px;
-    margin: 12px;
+    margin-top: 12px;
     font-size: 14px;
-    line-height: 32px;
+    line-height: 20px;
 }
 
 .input-user-login{
-    position: relative;
+    position: absolute;
     right: 5%;
     float: right;
     padding-top: 20px;
