@@ -17,6 +17,26 @@ body{
     margin-right: auto;
     display: block;
 }
+/*------>>botones<<--------------*/
+.btn{
+    text-align: center;
+    font-weight: bold;
+    border-radius: 100px;
+    box-shadow: none;
+    font-size: 15px;
+    margin-left: 1em;
+    line-height: 13px;
+}
+.btn-primary{
+    background-color: #1DA1F2;
+    color: #fff !important;
+}
+
+#btn-light-1{
+    box-sizing: border-box;
+    padding: 12px;
+}
+/*fin botones*/
 
 .nav-t{
     padding: 1 1.5rem;
@@ -87,3 +107,6 @@ h3{
    padding: 4.5em 1.5em;
 
 }
+/*====================tercera fase del landing=============================*/
+
+
