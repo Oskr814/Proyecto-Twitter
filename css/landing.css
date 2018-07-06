@@ -1,0 +1,112 @@
+body{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    font-family: Helvetica;
+    overflow-y: scroll;
+    overflow-y: visible;
+}
+
+.container-fluid{
+    height: 95%;
+    width: 100%;
+}
+
+.center{
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+/*------>>botones<<--------------*/
+.btn{
+    text-align: center;
+    font-weight: bold;
+    border-radius: 100px;
+    box-shadow: none;
+    font-size: 15px;
+    margin-left: 1em;
+    line-height: 13px;
+}
+.btn-primary{
+    background-color: #1DA1F2;
+    color: #fff !important;
+}
+
+#btn-light-1{
+    box-sizing: border-box;
+    padding: 12px;
+}
+/*fin botones*/
+
+.nav-t{
+    padding: 1 1.5rem;
+    width: 100%;  
+    background-color: #1DA1F2 ;
+}
+/*====================primera fase del landing=============================*/
+.land1{
+    background-color: #1DA1F2; 
+    display: block;
+    align-items: center;
+    height: 535px;
+    max-width:100%;
+    padding-top:65px;
+    
+}
+
+#placeholder1{
+    width: 65%;
+    font-weight: bold;
+    text-align: justify;
+    letter-spacing: normal;
+}
+h2{
+    font-family: Helvetica Neue LT,Helvetica Neue,Helvetica,Arial,sans-serif;
+    font-size: 22px; 
+    color: #A1D8FA;
+    padding: 0.3rem;
+    white-space: normal;
+    align-self: auto;
+    font-weight: bold;
+    margin-left: 0.5em;
+}
+h1 {
+    font-family: Helvetica Neue LT,Helvetica Neue,Helvetica,Arial,sans-serif;
+    font-size: 4em; 
+    color: #fff;
+    padding: 1rem;
+    white-space: normal;
+    align-self: auto;
+    line-height: normal;
+    max-width: 100%;
+    font-weight: bold;
+}
+h6 {
+    color: #A1D8FA;
+    max-width: 150px;
+    white-space: nowrap;
+    display: inline-block;
+    margin-left: 21px;
+}
+
+/*====================segunda fase del landing=============================*/
+.land2{
+    background-image: url(../img/mexico.jpg);
+    background-position-x: 100%;
+    background-position-y: 100%;
+    background-repeat: no-repeat;
+    background-origin: initial;
+    display: block;
+    height: 660px;
+    max-width:100%;
+}
+h3{
+    font-size:50px;  
+    color: #fff;
+    font-weight: bold;
+   padding: 4.5em 1.5em;
+
+}
+/*====================tercera fase del landing=============================*/
+
+
