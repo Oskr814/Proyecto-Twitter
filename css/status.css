@@ -2,28 +2,40 @@ body{
     font-family: 'Lucida Grande', Helvetica, sans-serif;
 }
 
-div p{
-  display: inline;
-  padding: 15px;
+a{
+    color: #363434;
+    text-decoration: none;
 }
 
-
+.main{
+    width: 80%;
+    margin-left: 100px;
+}
 
 .row {
-    margin-right: -15px;
-    margin-left: -15px;
     margin-top: 50px;
     margin-bottom: 50px;
 }
 
 .row-2{
-    font-size: 18px;
     font-weight: bold;
     color: #ffffff;
     background-color: #0BBCE3;
     border-radius: 5px;
 }
 
+.text-izq-row-2{
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 0.9em;
+}
+
+.tex-der-row-2{
+    font-size: 16x;
+    text-align: right;
+    font-weight: normal;
+    margin-top: 0.9em;
+}
 
 
 .row-3{
@@ -34,15 +46,23 @@ div p{
 .text-izq-row-3{
     font-size: 17px;
     opacity: 0.9;
-    margin-top: 7px;
+    margin-top: 0.9em;
     margin-left: 10px;
 }
 
 .tex-der-row-3{
-    align-content: right;
-    margin-right: 20px;
-    margin-top: 7px;
     font-size: 17px;
+    text-align: right;
+    margin-top: 0.9em;
     opacity: 0.9;
     color: #0bbce3;
+}
+
+.tex-izq-row-4{
+    font-size: 14px;
+}
+
+.tex-der-row-4{
+    font-size: 14px;
+    text-align: right;
 }
