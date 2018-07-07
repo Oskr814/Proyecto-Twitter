@@ -142,3 +142,28 @@ h3{
     margin-left: auto;
     margin-right: auto;
 }
+/*====================tercera fase del landing=============================*/
+.land4{
+    background-position-x: 100%;
+    background-position-y: 100%;
+    background-repeat: no-repeat;
+    background-origin: initial;
+    background-color: #F5F8FA;
+    display: block;
+    height: 1500px;
+    max-width:100%;
+    text-align: center;
+}
+
+#placeholder4{
+    width: 65%;
+    font-weight: bold;
+    text-align: center;
+    letter-spacing: normal;
+    padding-top: 3em;
+}
+
+.tweets{
+padding:15px;
+float: left;
+}
