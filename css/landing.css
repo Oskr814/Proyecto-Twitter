@@ -24,8 +24,8 @@ body{
     border-radius: 100px;
     box-shadow: none;
     font-size: 15px;
-    margin-left: 1em;
     line-height: 13px;
+    position: relative;
 }
 .btn-primary{
     background-color: #1DA1F2;
@@ -63,7 +63,7 @@ body{
 h2{
     font-family: Helvetica Neue LT,Helvetica Neue,Helvetica,Arial,sans-serif;
     font-size: 22px; 
-    color: #A1D8FA;
+    color: #fff;
     padding: 0.3rem;
     white-space: normal;
     align-self: auto;
@@ -104,9 +104,41 @@ h3{
     font-size:50px;  
     color: #fff;
     font-weight: bold;
-   padding: 4.5em 1.5em;
+   padding-top: 4.5em;
 
 }
 /*====================tercera fase del landing=============================*/
+.land3{
+    background-position-x: 100%;
+    background-position-y: 100%;
+    background-repeat: no-repeat;
+    background-origin: initial;
+    background-color: #1FB650;
+    display: block;
+    height: 1900px;
+    max-width:100%;
+    text-align: center;
+}
+#placeholder2{
+    width: 65%;
+    font-weight: bold;
+    text-align: center;
+    letter-spacing: normal;
+    padding-top: 3em;
+}
 
+#marcaAgua1{
+    font-size: 8em;
+    color: #15A850;
+    font-weight: bold;  
+}
 
+#tabla {
+    position: absolute;
+}
+
+#placeholder3{
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+}
