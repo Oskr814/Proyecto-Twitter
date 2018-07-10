@@ -2,26 +2,90 @@ body{
     width: 100%;
     height: 100%;
     line-height: 2;
+    font-family: Helvetica, "Segoe UI", Helvetica, Arial, sans-serif;
 }
 
+/*Navbar/Parte superior*/
 .navbar{
     background-color: #f45d22; 
     
+}
+.navbar-text-left ,.navbar-text-right{
+    color: #fff !important;
+    font-size: 14px;
+}
+
+.navbar-text-center{
+    color: #ffbe78 !important;
+    font-size: 14px;
+    margin: 0 15px;
+}
+
+.navbar-text-center:hover{
+    color: #fff !important;
+    font-weight: 100;
+}
+
+.navbar-text-rounded{
+    border: 1px solid;
+    border-radius: 15px;
+}
+
+.nav-link{
+    padding: 0;
+}
+
+.nav-img{
+    width: 80%;
 }
 
 .navbar-brand{
     color: #fff;
 }
 
+.content{
+    margin-top: 150px;
+}
+
+/*Contenido principal*/
+.top{
+    font-size: 14px; 
+    padding: 5px;
+    font-weight: bold; 
+
+}
+
+.sub-top{
+    font-size: 12px;
+    padding: 5px;
+    color: #ccd6dd; 
+    font-weight: bold;  
+}
+
+h1{
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom:20px;
+    letter-spacing: 1px;
+}
+
+h2{
+    font-size: 22px;
+    font-weight: bold;
+    margin: 25px 0;
+}
+
+
 p{
     line-height: 25px;
 }
 .contenido-izq{
     position: sticky; 
-    top: 20px;
+    top: 120px;
     margin-top: 70px;
 }
- 
+
+/*Listas desplegables v1.0*/
 #main *{
     list-style: none;
     color: #aab8c2; 
@@ -61,6 +125,7 @@ a.nivel4-1{
     font-weight: 450;
     bottom: 10px;
 }
+
 #main li a{
     color: #222;
     text-decoration: none;
@@ -75,7 +140,60 @@ a.nivel4-1{
 	left: -1000em;
 }
 
-#main label:before{ content:"\025b8"; margin-right:4px;}
-#main input:checked ~ label:before{ content:"\025be";}
-#main .interior{display: none;}
-#main input:checked ~ ul{display:block;}
+#main label:before{ 
+    content:"\025b8";
+    margin-right:4px;
+}
+
+#main input:checked ~ label:before{
+    content:"\025be";
+}
+
+#main .interior{
+    display: none;
+}
+
+#main input:checked ~ ul{
+    display:block;
+}
+/* FIN Listas desplegables v1.0*/
+
+
+
+footer{
+    background-color: #F45D22;
+}
+
+.feedback{
+    box-sizing: border-box;
+    background-color:#FF8D57; 
+    padding: 50px;
+    text-align: center;
+    color:#fff;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+a:hover{
+    text-decoration: none;
+}
+
+footer a:hover{
+    color: #d49f66;
+}
+
+table { 
+    border-collapse: 
+    separate; border-spacing: 1px;
+    margin: 0 auto;
+    padding-top: 40px;
+ } 
+
+ th, td ,td a { 
+    padding: 0px 20px;
+    color: #ffbe78;
+    font-size: 14px;
+ }
+
+ 
+

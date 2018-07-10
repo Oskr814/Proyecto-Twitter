@@ -1,3 +1,4 @@
+<!--Diseño responsive pendiente-->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -10,28 +11,24 @@
     <link rel="stylesheet" href="css/cookies.css">
 </head>
 <body>
-    <div class="container-fluid">
-        <nav class="navbar navbar-expand-lg navbar-light">
+    <div class="container-fluid" id="top">
+        <nav class="navbar navbar-expand-lg navbar-light fixed-top">
             <img src="img/cookies-img.png" width="30" height="30" alt="">
-            <a class="navbar-brand navbar" href="#">Centro de ayuda</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            
+            <a class="navbar-brand navbar navbar-text-left" href="#"><b>Centro de ayuda</b></a>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav mr-auto">
                 <li class="nav-item active">
-                    <a class="nav-link" href="#">Temas de ayuda <span class="sr-only">(current)</span></a>
+                    <a class="nav-link navbar-text-center" href="#">Temas de ayuda</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Guias</a>
+                    <a class="nav-link navbar-text-center" href="#">Guias</a>
                 </li>
-                    <a class="nav-link" href="#">Comunicate con nosotros</a>
+                    <a class="nav-link navbar-text-rounded navbar-text-center" href="#">Comunicate con nosotros</a>
                 </li>
                 </ul>
                 <form class="form-inline my-2 my-lg-0">
-                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                <a href="#"><img class="nav-img" src="img/lupa.PNG"></a>
+                <a  class="nav-link navbar-text-right" href="#">Iniciar sesión</a>
                 </form>
             </div>
         </nav>
@@ -146,13 +143,16 @@
                                 </ul>
                             </li>
                         </ul>
-                    <div><a class="nivel4-1" href="#">Deslizar hacia arriba</a></div>
+                    <div><a class="nivel4-1" href="#top">Deslizar hacia arriba</a></div>
                 </div>
                 
                 
             </div>
-            <div class="col-4">
-                <h1>Nuestro uso de cookies y tecnologías similares</h1>
+            <div class="col-5 content">
+                <a class="top" href="#">Centro de ayuda</a><a class="top" href="">Políticas y pautas generales</a>
+                <p class="sub-top"> Nuestro uso de cookies y tecnologías similares</p>
+
+                <h1>Nuestro uso de cookies y<br> tecnologías similares</h1>
                 <p>
                     Nuestros servicios usan cookies y otras tecnologías similares, como píxeles o almacenamiento local, para brindarte una experiencia mejor, más rápida y más segura. Estas son algunas de las maneras en las que nuestros servicios (que incluyen nuestro conjunto de sitios web, SMS, API, notificaciones de correo electrónico, aplicaciones, botones, herramientas y anuncios) usan estas tecnologías: para iniciar tu sesión de Twitter y de Periscope, guardar tus preferencias, personalizar el contenido que ves, protegerte contra spam y abusos, y mostrarte anuncios que sean más útiles para ti.
                 </p>
@@ -316,11 +316,87 @@
                     </ul>
                 </p>
                 <h2>Añade este artículo a la barra de marcadores o compártelo</h2>
+                
+                
+                
+               
 
 
             </div>
         </div>
     </div>
+<div class="">
+    <footer id="footer">
+            <div class="feedback">
+                    <p>¿Te ha resultado útil este artículo? <a href=""><img src="img/emoji-smile.png"></a> <a href=""><img src="img/emoji-sad.png"></a></p>    
+                </div>
+            <table > 
+                <tr>
+                    <th>Sobre nosotros</th>
+                    <th>Empresas</th>
+                    <th>Desarrolladores</th>
+                    <th>Centro de ayuda</th>
+                    <th>Marketing</th>
+                </tr>
+                <tr>
+                    <td><a href="#">Compañia</a></td>
+                    <td><a href="#">Acerca de Twitter Ads</a></td>
+                    <td><a href="#">Documentación</a></td>
+                    <td><a href="#">Como usar Twitter</a></td>
+                    <td><a href="#">Informacion útil</a></td>
+                </tr>
+                <tr>
+                    <td><a href="#">Valores</a></td>
+                    <td><a href="#">Segmentación</a></td>
+                    <td><a href="#">Foros</a></td>
+                    <td><a href="#">Cómo administrar tu cuenta</a></td>
+                    <td><a href="#">Casos de éxito</a></td>
+                </tr>
+                <tr>
+                    <td><a href="#">Seguridad</a></td>
+                    <td><a href="#">Analytics</a></td>
+                    <td><a href="#">Comunidades</a></td>
+                    <td><a href="#">Cuenta</a></td>
+                    <td><a href="#">Soluciones</a></td>
+                </tr>
+                <tr>
+                    <td><a href="#">Blog</a></td>
+                    <td><a href="#">Ayuda de Twitter Ads</a></td>
+                    <td><a href="#">Blog para desarrolladores</a></td>
+                    <td><a href="#">Protección y seguiridad</a></td>
+                    <td><a href="#">Colecciones</a></td>
+                </tr>
+                <tr>
+                    <td><a href="#">Recursos de la marca</a></td>
+                    <td><a href="#">Blog para empresas</a></td>
+                    <td><a href="#"></a></td>
+                    <td><a href="#">Contáctanos</a></td>
+                    <td><a href="#">Blog de marketing</a></td>
+                </tr>
+                <tr>
+                    <td><a href="#">Empleos</a></td>
+                    <td><a href="#">Publicidad</a></td>
+                    <td><a href="#"></a></td>
+                    <td><a href="#"></a></td>
+                    <td><a href="#">Flight School</a></td>
+                </tr>
+                <tr>
+                    <td><a href="#">Inversores</a></td>
+                </tr>
+            </table>
+            <table>
+                <tr>
+                    <td>© 2018 Twitter, Inc.</td>
+                    <td><a href="">Cookies</a></td>
+                    <td><a href="">Privacidad</a></td>
+                    <td><a href="">Términos y Condiciones</a></td>
+                    <!--Select list-->
+                    <td><a href="">Español</a></td>
+                </tr>
+            </table>
+        </footer>
+    </div>
+    
     <script src="js/jquery-3.3.1.js"></script>
     <script src="js/bootstrap.min.js"></script>
 </body>
