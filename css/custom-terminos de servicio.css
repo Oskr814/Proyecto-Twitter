@@ -1,0 +1,28 @@
+.navbar{
+    background-color: #1DA1F2 !important;
+    border-bottom: solid 1px rgb(97, 182, 235);
+}
+
+
+.portada{
+    width: 100%;
+    background-image: url("../img/icono.png");
+    background-size: cover;
+    background-color: #1da1f2;
+    background-repeat: no-repeat;
+    font-size: 100px;
+    color: #fff;
+    display: flex;
+    padding: 100px;
+}
+
+footer{
+    display: flex;
+    text-align: center;
+    background-color:#1DA1F2; 
+}
+.footer-item, .footer-item a{
+    color: #fff;
+    float: left;
+    margin:40px;
+}
