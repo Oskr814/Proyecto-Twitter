@@ -40,15 +40,20 @@ body{
 
 /*Parte der*/
 .lado_der{
+    width: auto;
     position: absolute;
     left: 50%;
-    top: 50%;
+    top: 55%;
     transform: translateX(-50%) translateY(-50%);
     justify-content: center;
     align-content: center;
-    max-width: 360px;
 }
 
+.formulario{
+    border: solid 1px #1DA1F2;
+    border-radius: 20px;
+    padding: 20px;
+}
 .a-forget-pass{
   font-size: 14px;
   width: 73%; 
@@ -59,30 +64,38 @@ h1{
     font-size: 1.7em;
 }
 
-.link-formulario{
-    color: #fff;
+.titulo-formulario{
+    font-size: 25px;
+    font-weight: bold;
 }
 
-.link-landing{
-    color: #1da1f2;
-}
-.link-formulario:hover{
-    text-decoration: none;
-    color:#fff;
-}
-
-.link-landing:hover{
-    text-decoration: none;
+.terminos{
+    font-size: 12px;
 }
 /*Fin Parte der*/
 
 /*Inputs*/
-input{
+.input-user-login input{
     box-sizing: border-box;
     width: 210px;
     border-radius:3px;
     background-color: #fff;
     border: 1px solid #e6ecf0;
+    padding: 12px;
+    margin-top: 12px;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.formulario input{
+    box-sizing: border-box;
+    width: 350px;
+    border-radius:3px;
+    background-color: #fff;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    border-bottom: 1px solid #d9dbdd;
     padding: 12px;
     margin-top: 12px;
     font-size: 14px;
@@ -126,6 +139,14 @@ input{
     border-radius: 1em;
     width: 100%;
     margin: 10px;
+}
+
+.btn-registro{
+    margin: 10px;
+    background-color: #1da1f2;
+    color: #fff;
+    position: relative;
+    left: 60%;
 }
 /*Fin Botones*/
 

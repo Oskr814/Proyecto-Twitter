@@ -7,7 +7,7 @@
     <title>Twitter. Es lo que está pasando.</title>
     <link rel="icon" href="img/icono.ico">
     <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/custom.css">
+    <link rel="stylesheet" href="css/custom.1.css">
 </head>
 <body>
     <div class="container-fluid">
@@ -35,17 +35,25 @@
                     </div>
                 </div>
                 <div class="lado_der">
-                    <img src="img/img1.png"><br><br>
-                    <h1>Descubre lo que está<br> pasando en el mundo en este momento</h1><br>
-                    <Label style="font-weight:bold; font-size:16px">Únete hoy a Twitter.</Label><br>
-                    <button type="button" class="btn btn-primary" id="btn-primary-1"><a class="link-formulario" href="Registro-formularios v1.0.html">Registrarse</a></button><br>
-                    <button type="button" class="btn btn-light" id="btn-light-2"><a class="link-landing" href="landing.html" class="pie-pagina">Sobre nosotros</a></button>
+                   <div class="formulario">
+                       <img src="img/img1.png" alt="">
+                       <h2 class="titulo-formulario">Crear tu cuenta</h2>
+                       <form action="">
+                            <input type="text" placeholder="Nombre">
+                            <input type="text" placeholder="Teléfono">
+                            <input type="password" placeholder="Contraseña">
+                            <input type="password" placeholder="Confirmar contraseña">
+                            <input type="date">
+                            <button class="btn btn-light btn-registro" type="button">Registrate</button>
+                       </form>
+                   </div>
                 </div>
             </div>
         </div>
         <div id="row-2" class="row">
             <footer class="col-12">
                 <div class="pie-pagina">
+                    <a href="landing.html" class="pie-pagina">Sobre nosotros</a>
                     <a href="#" class="pie-pagina">Centro de Ayuda</a> 
                     <a href="#" class="pie-pagina">Blog</a>
                     <a href="status.html" class="pie-pagina">Estado</a>
