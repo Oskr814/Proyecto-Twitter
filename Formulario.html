@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Twitter. Es lo que está pasando.</title>
+    <link rel="icon" href="img/icono.ico">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/FontAwesome/css/all.min.css">
+    <link rel="stylesheet" href="css/custom-formulario.css">
+</head>
+<body>
+    <nav class="navbar navbar-light">
+        <a class="navbar-brand" href="index.html">
+                <h2 class="nav-inicio"><i class="fas fa-chevron-left"></i> Regresar</h2>
+           
+        </a>
+        <h2 class="nav-titulo">Twitter <img src="img/Formulario/logo-img.png" width="30" height="30" alt=""> </h2>
+    </nav>
+    <div class="container-fluid">
+        <div class="row h-100 w-100">
+            <!--Lado Derecho-->
+            <div class="col-12 col-sm-12">
+                <div class="lado_der">
+                   <div class="formulario">
+                       <img src="img/Formulario/img1.png" alt="">
+                       <h2 class="titulo-formulario">Crear tu cuenta</h2>
+                       <form action="">
+                            <input type="text" placeholder="Nombre Completo">
+                            <input id = "email" type="text" placeholder="Teléfono o Correo" onkeyup="validarEmail(this.value);" value=""><i id="invalid-email" class="invalid hidden">Teléfono o email invalido</i>
+                            <input id="password1" type="password" placeholder="Nueva Contraseña" onkeyup="capturarContraseña(this.value);">
+                            <input id="password2"  type="password" placeholder="Confirmar contraseña" onkeyup="validarContraseña(this.value);"><i id="invalid-password" class="invalid hidden">Las contraseñas con coinciden</i>
+                            <input placeholder="Fecha nacimiento" class="textbox-n" type="text" onfocus="(this.type='date')" onblur="(this.type='text')" id="date"><br>
+                            <button class="btn btn-light btn-registro" type="button">Registrate</button><br>
+                       </form>
+                       <a href="#">Ya tienes cuenta?</a>
+                   </div>
+                   
+                </div>
+            </div>
+        </div> 
+    </div>
+   
+    
+
+
+    <script src="js/controlador-formulario.js"></script>
+</body>
+</html>

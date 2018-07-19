@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Twitter. Es lo que está pasando.</title>
-    <link rel="icon" href="img/icono.ico">
+    <link rel="icon" href="img/Index/icono.ico">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/custom.css">
 </head>
@@ -13,39 +13,46 @@
     <div class="container-fluid">
         <div class="row h-100 w-100">
             <!--Lado Izquierdo-->
-            <div class="col-12 col-sm-12 col-md-6 col-lg-6 background_izq">
+            <div class="col-12 col-sm-12 col-md-12 col-lg-6 background_izq lado-inferior">
                 <div class="izquierdo">
-                    <div class="lado_izq"><label><img src="img/lupa.png"> Sigue lo que te interesa.</label></div>
-                    <div class="lado_izq"><label><img src="img/usuarios.png"> Entérate de lo que está hablando la gente.</label></div>
-                    <div class="lado_izq"><label><img src="img/comentarios.png "> Únete a la convesarción.</label></div>  
+                    <div class="lado_izq"><label><img src="img/Index/lupa.png"> Sigue lo que te interesa.</label></div>
+                    <div class="lado_izq"><label><img src="img/Index/usuarios.png"> Entérate de lo que está hablando la gente.</label></div>
+                    <div class="lado_izq"><label><img src="img/Index/comentarios.png "> Únete a la convesarción.</label></div>  
                 </div>
             
             </div>
 
             <!--Lado Derecho-->
-            <div class="col-12 col-sm-12 col-md-6 col-lg-6">
+            <div class="col-12 col-sm-12 col-md-12 col-lg-6 lado-superior">
                 <div>
                     <div class="input-user-login">
-                        <input type="text" placeholder="Teléfono, correo electrónico o nombre de usuario">
-                        <input type="password" placeholder="Contraseña">
-                        <button class="btn btn-light" id="btn-light-1">Iniciar sesión</button>
-                        <div class="a-forget-pass">
+                        <input class="ocultar"type="text" placeholder="Teléfono, correo electrónico o nombre de usuario">
+                        <input class="ocultar"type="password" placeholder="Contraseña">
+                        <button class="btn btn-light ocultar" id="btn-light-1">Iniciar sesión</button>
+                        <div class="a-forget-pass ocultar">
                             <a href="#">¿Olvidaste tu contraseña?</a> 
                         </div>
                     </div>
                 </div>
                 <div class="lado_der">
-                    <img src="img/img1.png"><br><br>
-                    <h1>Descubre lo que está<br> pasando en el mundo en este momento</h1><br>
-                    <Label style="font-weight:bold; font-size:16px">Únete hoy a Twitter.</Label><br>
-                    <button type="button" class="btn btn-primary" id="btn-primary-1"><a class="link-formulario" href="Registro-formularios v1.0.html">Registrarse</a></button><br>
-                    <button type="button" class="btn btn-light" id="btn-light-2"><a class="link-landing" href="landing.html" class="pie-pagina">Sobre nosotros</a></button>
+                    <div id="contenido-der">
+                        <img src="img/Index/img1.png"><br><br>
+                        <div class="text-promo">
+                            <h1>Descubre lo que está<br> pasando en el mundo en este momento</h1><br>
+                        </div>
+                        <h2 style="font-weight:bold; font-size:16px">Únete hoy a Twitter.</h2><br>
+                        <div class="btn-gurpo">
+                            <button type="button" class="btn btn-primary" id="btn-primary-1" onclick="redirijirFormulario();">Registrarse</button><br>
+                            <button type="button" class="btn btn-light" id="btn-light-2"><a class="link-landing" href="landing.html" class="pie-pagina">Iniciar sesión</a></button>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
         <div id="row-2" class="row">
             <footer class="col-12">
                 <div class="pie-pagina">
+                    <a href="landing.html" class="pie-pagina">Sobre nosotros</a>
                     <a href="#" class="pie-pagina">Centro de Ayuda</a> 
                     <a href="#" class="pie-pagina">Blog</a>
                     <a href="status.html" class="pie-pagina">Estado</a>
@@ -67,8 +74,6 @@
             </footer>
         </div>
     </div>
-
-
-    <script src="js/controlador.js"></script>
+   <script src="js/controlador.js"></script> 
 </body>
 </html>
