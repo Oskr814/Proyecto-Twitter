@@ -1,7 +1,6 @@
 body{
     height: 100%;
     width: 100%;
-    position: absolute;
     font-family: Helvetica;
     overflow-y: scroll;
     overflow-y: visible;
@@ -42,7 +41,8 @@ body{
 
 
 .formulario{
-    width: 400px;
+    width: 40%;
+    min-width: 300px;
     border: solid 1px #1DA1F2;
     border-radius: 20px;
     padding: 20px;
@@ -55,23 +55,30 @@ body{
 
 
 .titulo-formulario{
+    text-align: center;
     font-size: 25px;
     font-weight: bold;
+}
+
+.imagen-formulario{
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
 }
 /*Fin Parte der*/
 
 /*Inputs*/
 
 .formulario input{
-    box-sizing: border-box;
-    width: 350px;
+    width: 90%;
     background-color: #fff;
     border-top: none;
     border-right: none;
     border-left: none;
     border-bottom: 1px solid #e6e9ec;
-    padding: 12px;
+    padding: 10px;
     margin-top: 12px;
+    margin-left: 10px;
     font-size: 14px;
     line-height: 20px;
 }
