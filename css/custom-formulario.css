@@ -70,7 +70,7 @@ body{
 /*Inputs*/
 
 .formulario input{
-    width: 90%;
+    width: 85%;
     background-color: #fff;
     border-top: none;
     border-right: none;
@@ -78,7 +78,7 @@ body{
     border-bottom: 1px solid #e6e9ec;
     padding: 10px;
     margin-top: 12px;
-    margin-left: 10px;
+    margin-left: 15px;
     font-size: 14px;
     line-height: 20px;
 }
@@ -89,6 +89,13 @@ body{
     padding-left: 10px;
 }
 
+.fa-check-circle{
+    color: rgb(6, 185, 0);
+}
+
+.fa-times-circle{
+    color: red;
+}
 .hidden{
     display: none;
 }
