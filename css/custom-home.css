@@ -3,52 +3,102 @@ body{
     height: 100%;
     margin: 0;
     padding: 0;
-    background-color: rgb(216, 212, 212);
+    background-color: #E6ECF0;
+    font-family: "Segoe UI",Arial,sans-serif;
 }
 
+.container-fluid{
+    padding: 0;
+}
+
+.container{
+    margin-top: 50px;
+}
 .row{
-    justify-content: center;
+    padding: 0px;
 }
 /*INICIO Nav Bar*/
 .navbar{
     background-color: #fff !important;
+    box-shadow: 1px 1px rgba(197, 194, 194, 0.767);
+    padding: 8px 50px;
+}
+
+a.nav-link{
+    font-weight: bold;
+    font-size: 14px;
+    color: #009999;
+    padding: 5px;
+    position: relative;
+    top: 5px;
+}
+
+a.nav-link:hover{
+    border-bottom: solid 2px #009999;
+}
+
+.icon{
+    margin: 0 5px;
+    font-size: 20px;
 }
 .navbar-img-logo{
     position: relative;
     left: 50%;
+    width: 20px;
 }
 
 #navbar-img-perfil-1{
-    width: 40px;
-    margin: 0 15px;
+    width: 32px;
+    margin: 0 10px;
 }
 
 nav form input[type=search]{
+    background-color: #f5f8fa;
     border-radius: 25px;
-    font-size: 15px;
+    font-size: 12px;
 }
 .btn-twittear{
-    background-color: #009999;
+    background-color: #32ADAD;
     color: #fff;
-    font-size:16px;
+    font-size:14px;
     font-weight: bold;
     border-radius: 30px;
-    margin: 5px;
+    margin: 5px 0px;
+}
 
+.btn-twittear:hover{
+    background-color: #009999;
+}
+
+li form{
+    margin: 0 !important;
+    padding: 0;
+    min-width: 312px;
+    position: absolute;
+    top: 50%;
+    left: 90%;
+    transform: translateX(-90%) translateY(-50%);
+}
+
+.navbar-nav{
+    width: 100%;
 }
 /*FIN Nav Bar*/
 
 /*INICIO col-izq*/
 
 .col-izq{
-    height: 300px;
+    height: 212px;
+    min-width: 280px;
+    max-width: 280px;
     padding: 0px;
-    margin-top: 15px;
+    margin-top: 10px;
     background-color: white;
 }
 
 .info-user{
     padding: 10px;
+    padding-bottom: 0px;
 
 }
 .nombre-usuario{
@@ -68,7 +118,7 @@ nav form input[type=search]{
 }
 #portada{
     width: 100%;
-    height: 160px;
+    height: 95px;
     background-image: url("../img/goku.jpg");
     background-repeat: no-repeat;
     background-size: cover;
@@ -95,22 +145,35 @@ ul#user-porfile-preview li{
     float: left;
     color: #8E8787;
 }
+
+#tendencias{
+    background-color: #fff;
+    margin-top: 10px;
+    padding: 15px;
+    min-height: 300px;
+}
 /*FIN col-izq*/
 
 /*INICIO col-central*/
 .col-central{
-    margin: 15px;
+    padding: 0 15px;
+    min-width: 580px;
+    max-width: 580px;
+    margin: 10px;
     background-color: #fff;
 }
 
 .row-c1{
     width: 100%;
-    padding: 15px 35px;
+    padding: 15px 30px;
     background-color: #E5F4F4;
 }
 
 .row-c2{
+    justify-content: center;
     background-color: #F5F8FA;
+    padding: 5px 0;
+    border: solid 1px #e5eaec;
 }
 
 #nuevos-tweets{
@@ -121,7 +184,7 @@ ul#user-porfile-preview li{
 
 .row-c3{
     justify-content: left;
-    margin-left: 2px;
+  
 }
 #img-perfil-3{
     width: 30px;
@@ -129,14 +192,68 @@ ul#user-porfile-preview li{
 }
 
 #post-tweet{
+    font-size: 14px;
     width: 90%;
-    border-radius: 20px;
-    border: solid 1px #707070;
+    padding: 5px 10px;
+    border-radius: 10px;
+    border: solid 0.5px #c7c7c7;
+}
+
+#post-tweet:focus{
+    outline: none;
+    box-shadow: 0px 0px 5px #009999;
+}
+
+#timeline{
+    width: 100%;
+    padding: 15px 0;
+}
+
+.posts{
+    max-height: 500px;
+    border-bottom: solid 1px #e5eaec;
+    max-height: 500px;
+    min-height: 413px;
+    
+}
+.timeline-post{
+    width: 100%;
+    float: left;
+    padding: 12px;
+}
+
+.timeline-text{
+    font-size: 14px;
+    position: relative;
+    bottom: 20px;
+    left: 65px;
+}
+
+.timeline-img{
+    width: 506px;
+    border-radius: 5px;
+    float: right;
+}
+
+.contenedor-feedback{
+    position: relative;
+    left: 6%;
+}
+
+.feedback{
+    float: left;
+    margin: 0 30px;
+    color: #657786;
+    font-size: 18px;
+    line-height: 18px;
 }
 /*FIN col-central*/
 
 /*INICIO col-der*/
 .col-der{
+    min-width: 280px;
+    max-width: 280px;
+    padding: 0 15px
 }
 
 .sug-link{
@@ -146,7 +263,8 @@ ul#user-porfile-preview li{
 }
 
 .row-d1{
-    height: 400px;
+    padding: 15px;
+    height: 315px;
 }
 
 .row-d2{
@@ -155,30 +273,87 @@ ul#user-porfile-preview li{
 
 .row-d1, .row-d2{
     background-color: #fff;
-    margin-top: 15px;
+    margin-top: 10px;
 }
 .sugerencias{
-    width: 88%;
-    height: 100px;
-    border-bottom: solid 1px #C1B4B4;
+    width: 95%;
+    height: 75px;
+    border-bottom: solid 1px rgb(226, 224, 224);
+}
+
+#sugerencia3{
+    border:none;
+}
+
+.sug-user{
+    font-size: 14px;
+    color: #8E8787;
 }
 
 .btn-sugerencias{
     background-color: #fff;
     border: solid 1px #707070;
     border-radius: 15px;
-    padding: 5px 20px;
+    padding: 5px 25px;
     color: #009999;
-    font-size: 14;
-    font-size: 13px;
+    font-size: 12px;
     font-weight: bold;
     position: relative;
-    bottom: 25px;
-    left: 75px;
+    bottom: 15px;
+    left: 60px;
+}
+
+.btn-sugerencias:hover{
+    background-color: rgb(243, 243, 243);
 }
 
 #img-sug-1, #img-sug-2, #img-sug-3{
-    width: 80px;
-    padding: 15px;
+    width: 48px;
+    margin-right: 10px;
 }
 /*FIN col-der*/
+
+/*Ocultar elementos*/
+@media (min-width: 576px) {
+    .container {
+      max-width: 540px;
+    }
+  }
+  
+  @media (min-width: 768px) {
+    .container {
+      max-width: 720px;
+    }
+    
+  }
+  
+  @media (min-width: 992px) {
+    .container {
+      max-width: 960px;
+    }
+    
+  }
+  
+  @media (min-width: 1200px) {
+    .container {
+      max-width: 1200px;
+    }
+    
+  }
+  
+  @media (max-width:992px){
+    .row{
+        justify-content: center;
+    }
+
+  }
+
+  @media (max-width:1200px){
+    .col-der{
+        position: absolute;
+        top: 583px;
+    }
+
+  }
+/**/
+
