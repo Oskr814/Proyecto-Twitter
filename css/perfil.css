@@ -69,6 +69,24 @@ nav form input[type=search]{
     font-size: 15px;
 }
 
+
+#far{
+    color: #657786;
+    font-weight: bold;
+}
+
+#far li a:hover{
+    color: #47B2F4;
+    }
+
+#fas{
+    color: #657786;
+    font-weight: bold;
+}
+
+#fas li a:hover{
+    color: #47B2F4;
+    }
 /*FIN Nav Bar*/
 
 
@@ -92,7 +110,6 @@ nav form input[type=search]{
 .menus li a:hover{
 color: #47B2F4;
 }
-
 
 .submenu{
     position: absolute;
