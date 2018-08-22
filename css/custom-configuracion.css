@@ -6,3 +6,204 @@ body{
     background-color: #E6ECF0;
     font-family: "Segoe UI",Arial,sans-serif;
 }
+
+/*INICIO col-izq*/
+ul.conf-list li{
+    padding: 5px 10px;
+    font-size: 14px;
+    cursor: pointer;
+    border-bottom: #e0dfdf 1px solid;
+    color: #8d7d7d;
+}
+ul.conf-list li:hover{
+    background-color: #f0ecec;
+}
+.col-izq{
+    height: 212px;
+    min-width: 280px;
+    max-width: 280px;
+    padding: 0px;
+    margin-top: 10px;
+    background-color: white;
+}
+
+
+#btn-guardar-notificaciones{
+    background-color: #32ADAD;
+    color: #fff;
+    font-size: 15px !important;
+    font-weight: bold !important;
+    border-radius: 30px !important;
+    padding: 5px;
+}
+
+.info-user{
+    padding: 10px;
+    padding-bottom: 0px;
+
+}
+.nombre-usuario{
+    width: 100%;
+    position: relative;
+    bottom: 60px;
+    text-align: center;
+
+}
+#usuario{
+    position: relative;
+    bottom: 10px;
+    left: 5px;
+    font-size: 14px;
+    color: #8E8787;
+    
+}
+#portada{
+    width: 100%;
+    height: 95px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#img-perfil-2{
+    width: 60px;
+    position: relative;
+    bottom: 35px;
+}
+#user-porfile-preview{
+    position: absolute;
+    bottom: 5px;
+    font-weight: bold;
+}
+ul{
+    padding: 0px;
+    list-style: none;
+    font-size: 13px;
+    
+}
+
+ul#user-porfile-preview li{
+    margin: 0px 10px;
+    float: left;
+    color: #8E8787;
+  
+}
+
+#ajustes{
+    background-color: #fff;
+    margin-top: 10px;
+    padding: 15px 0;
+    min-height: 300px;
+}
+/*FIN col-izq*/
+
+/*INICIO col-central*/
+.col-central{
+    padding: 0 15px;
+    min-width: 580px;
+    max-width: 580px;
+    margin: 10px;
+    background-color: #fff;
+}
+
+.ajustes-cuenta, .notificaciones-correo, .notificaciones{
+    padding: 0px 40px;
+    font-size: 15px;
+}
+
+
+
+.row-c1{
+    width: 100%;
+    padding: 0px 20px;
+    justify-content: center;
+}
+
+
+#subir-img{
+    position: relative;
+    bottom: 25px;
+    left: 460px;
+    color: #32ADAD;
+}
+
+#nuevos-tweets{
+    padding: 5px;
+    color: #009999;
+    font-size: 15px;
+}
+
+
+#img-perfil-3{
+    width: 30px;
+    margin-right: 5px;
+}
+
+#post-tweet{
+    font-size: 14px;
+    width: 90%;
+    padding: 5px 10px;
+    border-radius: 10px;
+    border: solid 0.5px #c7c7c7;
+}
+
+#post-tweet:focus{
+    outline: none;
+    box-shadow: 0px 0px 5px #009999;
+    height: 60px;
+}
+
+#btn-post-tweet-twittear{
+    position: absolute;
+    top: 90px;
+    left: 450px;
+}
+
+#timeline{
+    width: 100%;
+    padding: 15px 0;
+}
+
+.posts{
+    max-height: 500px;
+    border-bottom: solid 1px #e5eaec;
+    max-height: 500px;
+    min-height: 413px;
+    
+}
+.timeline-post{
+    width: 100%;
+    float: left;
+    padding: 12px;
+}
+
+.timeline-text{
+    font-size: 14px;
+    position: relative;
+    bottom: 20px;
+    left: 60px;
+}
+
+.timeline-img{
+    width: 506px;
+    border-radius: 5px;
+    float: right;
+    position: relative;
+    bottom: 15px;
+}
+
+.contenedor-feedback{
+    position: relative;
+    left: 6%;
+}
+
+.feedback{
+    float: left;
+    margin: 0 30px;
+    color: #657786;
+    font-size: 18px;
+    line-height: 18px;
+}
+/*FIN col-central*/
+
+.oculto{
+    display: none;
+}
