@@ -53,6 +53,10 @@ body{
     
 }
 
+.oculto{
+    display: none;
+}
+
 
 .titulo-formulario{
     text-align: center;

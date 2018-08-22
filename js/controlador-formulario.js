@@ -1,7 +1,7 @@
 
 var password1;
 var password2;
-
+var parametros;
 function validarNombre(name){
     if(name.length == 0 ){
         console.log("asdas");
@@ -57,27 +57,63 @@ function validarContraseña(contraseña){
 }
 
 function validarCampos(){
-    
+    var camposVacios = 0;
     if(document.getElementById("name").value == ""){
         document.getElementById("invalid-name").classList.remove("hidden");
-        document.getElementById("name").style.borderBottomColor = "red";   
-    }  
-
+        document.getElementById("name").style.borderBottomColor = "red";
+        camposVacios++;
+    }
     if(document.getElementById("email").value == ""){
         document.getElementById("email").style.borderBottomColor = "red";
+        camposVacios++;
     }
-    
-
-    if(document.getElementById("password1").value == ""){
+     if(document.getElementById("password1").value == ""){
         document.getElementById("password1").style.borderBottomColor = "red";
+        camposVacios++;
     }
-
-    if(document.getElementById("password2").value == ""){
+     if(document.getElementById("password2").value == ""){
         document.getElementById("password2").style.borderBottomColor = "red";
-    }
-
+        camposVacios++;
+    } 
+    
     if(document.getElementById("date").value == ""){
         document.getElementById("date").style.borderBottomColor = "red";
+        camposVacios++;
     }
-    location.href ="https://www.youtube.com/watch?v=EhVB22S1Zqk";
+    if(camposVacios == 0){
+        return true;
+    }else
+        return false;
+    
+    
 }
+
+
+/*Jquery*/
+$("#btn-registro-usuario").click(function(){
+    if(validarCampos() == true){
+        parametros = "nombre="+$("#name").val()+"&"
+                       +"usuario="+$("#user-name").val()+"&"
+                       +"email="+$("#email").val()+"&"
+                       +"password="+$("#password1").val()+"&"
+                       +"date="+$("#date").val()+"&";
+        $.ajax({
+            url: "ajax/registro.php",
+            data: parametros,
+            dataType: "json",
+            method: "POST",
+            success: function(respuesta){
+                if(respuesta.codigoRespuesta == 0){
+                    window.location = "home.php"
+                }
+            },
+            onerror: function(error){
+                console.log(error);
+            }
+        });
+      
+   }
+});
+
+
+
