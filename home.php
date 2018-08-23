@@ -1,5 +1,5 @@
 <?php
-  
+  include("validar-sesion.php");
   include("navbar.php");
   
 ?>
@@ -19,10 +19,10 @@
                         <div class="col-sm-5 col-md-3 col-lg-3 col-xl-3 col-izq">
                           <div>
                               <div>
-                              <img id="portada" src="img/gta.jpg">
+                              <img id="portada" src="'.$urlFoto->buscarImagenPortada().'">
                               </div>
                               <div class="info-user">
-                                  <a href=""><img src="data/porfile-photos/default-profile.jpg" alt="" class="rounded-circle" id="img-perfil-2"></a>
+                                  <a href=""><img src="'.$urlFoto->buscarImagenPerfil().'" alt="" class="rounded-circle" id="img-perfil-2"></a>
                                   <div class="nombre-usuario">
                                       <b id="nombre-home">'.$_SESSION["nombre"].'</b><br>
                                       <a href="#" id="usuario-home" style="font-size:14px;">@'.$_SESSION["usuario"].'</a>

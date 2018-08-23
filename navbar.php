@@ -1,5 +1,6 @@
 <?php
-    include("validar-sesion.php");
+    include("ajax/cargar-perfil.php");
+    $urlFoto = new imagenes();
     echo '
         <link rel="stylesheet" href="css/custom-navbar.css">
         <link rel="stylesheet" href="css/bootstrap.min.css">
@@ -14,10 +15,10 @@
                             <a class="nav-link" href="home.php"><i class="icon fas fa-home"></i>Inicio</a>
                             </li>
                             <li class="nav-item">
-                            <a class="nav-link" href="#"><i class="icon far fa-bell"></i>Notificaciones</a>
+                            <a class="nav-link" href="notificaciones.php"><i class="icon far fa-bell"></i>Notificaciones</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#"><i class="icon far fa-envelope"></i>Mensajes</a>
+                                <a class="nav-link" href="" data-toggle="modal" data-target="#exampleModal"><i class="icon far fa-envelope"></i>Mensajes</a>
                             </li>
                             <li class="nav-item">
                                 
@@ -27,7 +28,7 @@
                                 <input class="form-control mr-sm-2" type="search" placeholder="Buscar en Twitter" aria-label="Search">
                                 <div class="dropdown">
                                     <a href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                    <img src="data/porfile-photos/default-profile.jpg" alt="" class="rounded-circle" id="navbar-img-perfil-1">
+                                    <img src="'.$urlFoto->buscarImagenPerfil().'" alt="" class="rounded-circle" id="navbar-img-perfil-1">
                                     </a>
 
                                     <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
@@ -50,6 +51,27 @@
                         
                         </div>
                     </nav>
+                </div>
+
+                <!-- Modal -->
+                <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        ...
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Save changes</button>
+                    </div>
+                    </div>
+                </div>
                 </div>
                 <script src="js/jquery-3.3.1.js"></script>
                 <script src="js/bootstrap.min.js"></script>';

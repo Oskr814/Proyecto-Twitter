@@ -1,5 +1,14 @@
 <?php
+  include("validar-sesion.php");
   include("navbar.php");
+  $archivo = fopen("data/usuarios.json", "a+");
+  $usuario;
+  while($linea = fgets($archivo)){
+    $usuario = json_decode($linea, true);
+    if($usuario["usuario"]==$_SESSION["usuario"]){
+        break;
+    }
+  }
   echo'<html>
   <head>
       <meta charset="utf-8" />
@@ -15,10 +24,10 @@
                   <div class="col-sm-5 col-md-3 col-lg-3 col-xl-3 col-izq">
                     <div>
                         <div>
-                        <img id="portada" src="img/gta.jpg">
+                        <img id="portada" src="'.$urlFoto->buscarImagenPortada().'">
                         </div>
                         <div class="info-user">
-                            <a href=""><img src="data/porfile-photos/default-profile.jpg" alt="" class="rounded-circle" id="img-perfil-2"></a>
+                            <a href=""><img src="'.$urlFoto->buscarImagenPerfil().'" alt="" class="rounded-circle" id="img-perfil-2"></a>
                             <div class="nombre-usuario">
                                 <b id="nombre-home">'.$_SESSION["nombre"].'</b><br>
                                 <a href="#" id="usuario-home" style="font-size:14px;">@'.$_SESSION["usuario"].'</a>
@@ -57,10 +66,17 @@
                         <div id="div-cuenta" class="">
                             <div style="font-weight: bold;font-size: 20px;">Cuenta</div><hr>
                             <div class="ajustes-cuenta">
-                                Nombre de usuario: <br>
-                                <span>@usuario</span><br>
-                                Correo electronico: <br><br>
-                                Idioma: Español <br><br>
+                                Nombre de usuario:  '.$usuario["nombre"].' <br>
+                                <span style="position:relative; left:135px">@'.$usuario["usuario"].'</span><br>
+                                Correo electronico: '.$usuario["email"].' <br><br>
+                                Idioma: Español <br><br><hr>
+                                <form method="post" id="form-foto-perfil" enctype="multipart/form-data" >
+                                <b>Subir foto de perfil:</b><br><input type="file" name="perfil"><br>
+                                </form>
+                                <form method="post" id="form-foto-portada" enctype="multipart/form-data" >
+                                <b>Subir foto de portada:</b><br><input type="file" name="portada"><br>
+                                </form>
+                                <div id="respuesta"></div> 
                             </div>
                             <div style="font-weight: bold;font-size: 20px;">Contenido<hr></div>
                             <div class="ajustes-cuenta">

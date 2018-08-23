@@ -91,7 +91,6 @@ ul#user-porfile-preview li{
     background-color: #fff;
     margin-top: 10px;
     padding: 15px 0;
-    min-height: 300px;
 }
 /*FIN col-izq*/
 
@@ -106,7 +105,7 @@ ul#user-porfile-preview li{
 
 .ajustes-cuenta, .notificaciones-correo, .notificaciones{
     padding: 0px 40px;
-    font-size: 15px;
+    font-size: 14px;
 }
 
 
