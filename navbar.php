@@ -2,9 +2,10 @@
     include("ajax/cargar-perfil.php");
     $urlFoto = new imagenes();
     echo '
-        <link rel="stylesheet" href="css/custom-navbar.css">
+        
         <link rel="stylesheet" href="css/bootstrap.min.css">
         <link rel="stylesheet" href="css/FontAwesome/css/all.css">
+        <link rel="stylesheet" href="css/custom-navbar.css">
         <div class="container-fluid">
                     <nav class="navbar navbar-expand-md fixed-top  bg-light">
 
@@ -73,8 +74,7 @@
                     </div>
                 </div>
                 </div>
-                <script src="js/jquery-3.3.1.js"></script>
-                <script src="js/bootstrap.min.js"></script>';
+                ';
 
 
 

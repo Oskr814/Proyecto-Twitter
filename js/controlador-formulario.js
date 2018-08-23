@@ -4,7 +4,6 @@ var password2;
 var parametros;
 function validarNombre(name){
     if(name.length == 0 ){
-        console.log("asdas");
         document.getElementById("invalid-name").classList.remove("hidden");
         document.getElementById("name").style.borderBottomColor = "red"
         document.getElementById("img-valid-name").classList.add("hidden");
@@ -14,6 +13,21 @@ function validarNombre(name){
         document.getElementById("name").style.borderBottomColor = "green";
         document.getElementById("img-valid-name").classList.remove("hidden");
         document.getElementById("img-invalid-name").classList.add("hidden");
+    }
+       
+}
+
+function validarNombreUsuario(user_name){
+    if(user_name.length == 0 ){
+        document.getElementById("invalid-user-name").classList.remove("hidden");
+        document.getElementById("user-name").style.borderBottomColor = "red"
+        document.getElementById("img-valid-user-name").classList.add("hidden");
+        document.getElementById("img-invalid-user-name").classList.remove("hidden");
+    }else{ 
+    document.getElementById("invalid-user-name").classList.add("hidden"); 
+        document.getElementById("user-name").style.borderBottomColor = "green";
+        document.getElementById("img-valid-user-name").classList.remove("hidden");
+        document.getElementById("img-invalid-user-name").classList.add("hidden");
     }
        
 }
@@ -63,6 +77,11 @@ function validarCampos(){
         document.getElementById("name").style.borderBottomColor = "red";
         camposVacios++;
     }
+    if(document.getElementById("user-name").value == ""){
+        document.getElementById("invalid-user-name").classList.remove("hidden");
+        document.getElementById("user-name").style.borderBottomColor = "red";
+        camposVacios++;
+    }
     if(document.getElementById("email").value == ""){
         document.getElementById("email").style.borderBottomColor = "red";
         camposVacios++;
@@ -103,11 +122,24 @@ $("#btn-registro-usuario").click(function(){
             dataType: "json",
             method: "POST",
             success: function(respuesta){
+                console.log(respuesta);
                 if(respuesta.codigoRespuesta == 0){
                     window.location = "home.php"
+                }else{
+                    if(respuesta.mensajeUsuario!=null){
+                        $("#invalid-user-name").html(respuesta.mensajeUsuario);
+                        document.getElementById("invalid-user-name").classList.remove("hidden");
+                        document.getElementById("user-name").style.borderBottomColor = "red";
+                    }
+                    if(respuesta.mensajeEmail!=null){
+                        $("#invalid-email").html(respuesta.mensajeEmail);
+                        document.getElementById("invalid-email").classList.remove("hidden");
+                        document.getElementById("email").style.borderBottomColor = "red";
+                    }
+                    
                 }
             },
-            onerror: function(error){
+            error: function(error){
                 console.log(error);
             }
         });

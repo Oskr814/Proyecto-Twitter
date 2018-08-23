@@ -20,39 +20,23 @@
     </nav>
     <div class="container">
         <div class="col-12 col-sm-12">
-                <div class="formulario">
-                    <img class="imagen-formulario" src="img/Formulario/img1.png">
-                    <h2 class="titulo-formulario">Crear tu cuenta</h2>
-                        <div id="info-usuario" class="">
-                            <input id="name" type="text" placeholder="Nombre completo" onkeyup="validarNombre(this.value);"><i id="img-valid-name" class="fas fa-check-circle hidden"></i><i id="img-invalid-name"class="fas fa-times-circle hidden"></i><br><i id="invalid-name" class="invalid hidden">Este campo no puede estar vacío</i>
-                            <input id="user-name" type="text" placeholder="Nombre de usuario" onkeyup="validarNombre(this.value);"><i id="img-valid-name" class="fas fa-check-circle hidden"></i><i id="img-invalid-name"class="fas fa-times-circle hidden"></i><br><i id="invalid-name" class="invalid hidden">Este campo no puede estar vacío</i>
-                            <input id = "email" type="text" placeholder="Teléfono o Correo" onkeyup="validarEmail(this.value);" value=""><i id="img-valid-mail" class="fas fa-check-circle hidden"></i><i id="img-invalid-mail"class="fas fa-times-circle hidden"></i><i id="invalid-email" class="invalid hidden">Teléfono o email invalido</i>
-                            <input id="password1" type="password" placeholder="Nueva contraseña" onkeyup="capturarContraseña(this.value);"><i id="img-valid-password" class="fas fa-check-circle hidden"></i><i id="img-invalid-password"class="fas fa-times-circle hidden"></i>
-                            <input id="password2"  type="password" placeholder="Confirmar contraseña" onkeyup="validarContraseña(this.value);"><br><i id="invalid-password" class="invalid hidden">Las contraseñas no coinciden</i>
-                            <input id="date" placeholder="Fecha nacimiento" class="textbox-n" type="text" onfocus="(this.type='date')" onblur="(this.type='text')" id="date"><i id="img-valid-date" class="fas fa-check-circle hidden"></i><i id="img-invalid-date"class="fas fa-times-circle hidden"></i><br><br>
-                            <a href="#">Ya tienes cuenta?</a><br>
-                            <button id="btn-registro-usuario" class="btn btn-light btn-registro" type="button">Siguiente</button><br>
-                        </div>
-                        
-                        <!--<div id="foto-usuario" class="oculto">
-                            <form action="upload.php" method="post" enctype="multipart/form-data">
-                                Subir foto de perfil:<input type="file" name="foto-perfil" id="foto-perfil"><br>
-                                Subir foto de perfil:<input type="file" name="foto-portada" id="foto-portada"><br>
-                                <textarea id="txt-usuario" class="oculto" name="usuario"></textarea>
-                                <button id="btn-registro-usuario" class="btn btn-light btn-registro" type="submit">Registrate</button><br>
-                            </form>
-                        </div>-->
-                    
-                    
-                    
+            <div class="formulario">
+                <img class="imagen-formulario" src="img/Formulario/img1.png">
+                <h2 class="titulo-formulario">Crear tu cuenta</h2>
+                <div id="info-usuario" class="">
+                    <input id="name" type="text" placeholder="Nombre completo" onkeyup="validarNombre(this.value);"><i id="img-valid-name" class="fas fa-check-circle hidden"></i><i id="img-invalid-name"class="fas fa-times-circle hidden"></i><br><i id="invalid-name" class="invalid hidden">Este campo no puede estar vacío</i>
+                    <input id="user-name" type="text" placeholder="Nombre de usuario" onkeyup="validarNombreUsuario(this.value);"><i id="img-valid-user-name" class="fas fa-check-circle hidden"></i><i id="img-invalid-user-name"class="fas fa-times-circle hidden"></i><br><i id="invalid-user-name" class="invalid hidden">Este campo no puede estar vacío</i>
+                    <input id = "email" type="text" placeholder="Teléfono o Correo" onkeyup="validarEmail(this.value);" value=""><i id="img-valid-mail" class="fas fa-check-circle hidden"></i><i id="img-invalid-mail"class="fas fa-times-circle hidden"></i><br><i id="invalid-email" class="invalid hidden">Teléfono o email invalido</i>
+                    <input id="password1" type="password" placeholder="Nueva contraseña" onkeyup="capturarContraseña(this.value);"><i id="img-valid-password" class="fas fa-check-circle hidden"></i><i id="img-invalid-password"class="fas fa-times-circle hidden"></i>
+                    <input id="password2"  type="password" placeholder="Confirmar contraseña" onkeyup="validarContraseña(this.value);"><br><i id="invalid-password" class="invalid hidden">Las contraseñas no coinciden</i>
+                    <input id="date" placeholder="Fecha nacimiento" class="textbox-n" type="text" onfocus="(this.type='date')" onblur="(this.type='text')" id="date"><i id="img-valid-date" class="fas fa-check-circle hidden"></i><i id="img-invalid-date"class="fas fa-times-circle hidden"></i><br><br>
+                    <a href="#">Ya tienes cuenta?</a><br>
+                    <button id="btn-registro-usuario" class="btn btn-light btn-registro" type="button">Siguiente</button><br>
                 </div>
-                
             </div>
+            <div id="respuesta"></div>
         </div>
-       
-   
-    
-
+    </div>
     <script src="js/jquery-3.3.1.js"></script>
     <script src="js/controlador-formulario.js"></script>
 </body>

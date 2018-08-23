@@ -52,7 +52,7 @@
                         <div class="col-sm-7 col-md-7 col-lg-6  col-xl-6 col-central">
                           <div class="row">
                             <div class="row-c1">
-                              <a href=""><img id="img-perfil-3" class="rounded-circle" src="data/porfile-photos/default-profile.jpg" alt=""></a>
+                              <a href=""><img id="img-perfil-3" class="rounded-circle" src="'.$urlFoto->buscarImagenPerfil().'" alt=""></a>
                               <input id="post-tweet" type="text" placeholder="¿Qué está pasando?">
                               <button id="btn-post-tweet-twittear" class="btn btn-twittear my-2 my-sm-0" type="button" style="display:none;">Twittear</button>
                               <div id="subir-img"><i id="post-tweet-img" class="far fa-images" style=""></i></div>
@@ -154,7 +154,8 @@
                   </div>
                   
               </div>
-              
+              <script src="js/jquery-3.3.1.js"></script>
+              <script src="js/bootstrap.min.js"></script>
               <script src="js/controlador-home.js"></script>
               
         </body>
