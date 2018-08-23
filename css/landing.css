@@ -8,7 +8,7 @@ body{
 }
 
 .container-fluid{
-    height: 95%;
+    height: 100%;
     width: 100%;
 }
 
@@ -37,12 +37,68 @@ body{
     padding: 12px;
 }
 /*fin botones*/
-
 .nav-t{
-    padding: 1 1.5rem;
+    margin: auto;
     width: 100%;  
     background-color: #1DA1F2 ;
+    
 }
+.navt-t ul{
+list-style: none;
+}
+/*====================navbar=============================*/
+
+.menus a{
+    color: #A1D8FA;
+}
+
+.menus >li{
+    display: inline-block;
+    position: relative;
+}
+.menus >li >a{
+    display: block;
+    padding: 5px 45px;
+    color: #0000 ;
+    text-decoration: none;
+}
+.menus li a:hover{
+color: #fff;
+}
+
+
+.submenu{
+    position: absolute;
+    background: #fff;
+    color: #fff;
+    font-weight: bold;
+    width: 200%;
+   visibility: hidden;
+}
+
+.submenu li a{
+    display: in-block; 
+    padding: 5px;
+    color: #000;
+    text-decoration: none;
+}
+.submenu li a:hover{
+    display: in-block; 
+    padding: 5px;
+    color: #1DA1F2;
+    text-decoration: none;
+}
+.menus li:hover .submenu{
+ color:#fff;
+ visibility: visible;
+}
+
+.button-style{
+    border: none;
+    
+}
+
+
 /*====================primera fase del landing=============================*/
 .land1{
     background-color: #1DA1F2; 
@@ -115,7 +171,7 @@ h3{
     background-origin: initial;
     background-color: #1FB650;
     display: block;
-    height: 1900px;
+    height: 2060px;
     max-width:100%;
     text-align: center;
 }
@@ -134,15 +190,13 @@ h3{
 }
 
 #tabla {
-    position: absolute;
+    position: relative;
 }
 
 #placeholder3{
     width: 60%;
-    margin-left: auto;
-    margin-right: auto;
 }
-/*====================tercera fase del landing=============================*/
+/*====================cuarta fase del landing=============================*/
 .land4{
     background-position-x: 100%;
     background-position-y: 100%;
@@ -164,6 +218,163 @@ h3{
 }
 
 .tweets{
-padding:15px;
-float: left;
+margin:30px;
+position: relative;
+top:45px;
+}
+
+/*====================quinta fase del landing=============================*/
+.land5{
+    background-position-x: 100%;
+    background-position-y: 100%;
+    background-repeat: no-repeat;
+    background-origin: initial;
+    background-color: #E0245E;
+    display: block;
+    height: 1000px;
+    max-width:100%;
+}
+
+#placeholder5{
+    width: 65%;
+    font-weight: bold;
+    letter-spacing: normal;
+    padding-top: 3em;
+    margin-left: 75px;
+}
+
+.tweets{
+text-align: center;
+margin-left: auto;
+margin-right: auto;
+}
+
+/*====================sexta fase del landing=============================*/
+.land6{
+    background-image: url(../img/desplazamiento.png);
+    background-position-x: 26%;
+    background-position-y: 85%;
+    background-repeat: no-repeat;
+    background-origin: initial;
+    background-color: #794BC4;
+    display: block;
+    height: 660px;
+    max-width:100%;
+    text-align: center;
+}
+
+#placeholder6{
+    width: 40%;
+    font-weight: bold;
+    letter-spacing: normal;
+    padding-top:22em;
+    text-align: center;
+    
+}
+/*====================septima fase del landing=============================*/
+.land7{
+    background-position-x: 100%;
+    background-position-y: 100%;
+    background-repeat: no-repeat;
+    background-origin: initial;
+    background-color: #fff;
+    display: block;
+    height: 420px;
+    max-width:100%;
+}
+
+#placeholder7{
+    width: 65%;
+    font-weight: bold;
+    letter-spacing: normal;
+    padding-top: 5em;
+    margin-left: 75px;
+   
+}
+/*====================octava fase del landing=============================*/
+.land8{
+    background-position-x: 100%;
+    background-position-y: 100%;
+    background-repeat: no-repeat;
+    background-origin: initial;
+    background-color: #1DA1F2;
+    display: block;
+    height: 380px;
+    max-width:100%;
+    color: #69C5F7;
+}
+
+.table2 {
+    width: 80%;
+    letter-spacing: normal;
+    padding-top: 2em;
+    border-spacing: 10px 5px;
+    border-collapse: separate;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+.table2 a{
+    color: #97e3ff;
+}
+
+.table2 a:hover{
+    color: #fff;
+}
+
+th{
+    font-weight: bold;
+}
+
+#imgs{
+    width: 100%;
+}
+
+
+/*====================media Querys=============================*/
+
+@media screen and (max-width: 1000px) {
+    h1 {
+        font-size: 2.1em;
+        }
+    h2{
+        font-size: 15px;
+    }
+    #placeholder1{
+        width: 94%;
+    }
+    h3{
+        font-size: 2.1em;
+    }
+
+   #imgs{
+       width: 80%;
+   }
+
+   .table2{
+       font-size: 90%;
+       width: 100%;
+   }
+
+   
+}
+@media screen and (max-width: 1100px) {
+    .table2{
+        font-size: 90%;
+        width: 100%;
+    }  
+}
+
+@media screen and (max-width: 700px) {
+    #marcaAgua1{
+       font-size: 5em;
+   }
+   .table2{
+    font-size:80%;
+    width: 100%;
+    }
+    #placeholder6{
+        width: 80%;
+    }
+
 }
