@@ -53,6 +53,10 @@ body{
     font-size: 0.9em;
 }
 
+.btnCrear a:hover{
+    background-color: #E8F5FD;
+}
+
 .btnSeguir{
     background-color: #fff;
     border-color: #1DA1F2;
@@ -155,13 +159,22 @@ color: #47B2F4 !important;
     left: 17%;
     transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
+    visibility: hidden;
     border: none;
     cursor: pointer;
     border-radius: 5px;
     background-color: transparent;
     
   }
- /*====================tercera fase del perfil=============================*/
+
+  #items{
+    margin-left:325px; 
+    position: absolute; 
+    margin-top:19%; 
+    font-size: 14px; 
+    padding: 5px 0px;
+  }
+ /*====================tercera fase de listas=============================*/
 .seccion3{
     background-color: #E6ECF0; 
     display: block;

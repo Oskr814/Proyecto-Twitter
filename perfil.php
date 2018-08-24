@@ -11,7 +11,7 @@ echo '
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Perfil</title>
     <link rel="icon" href="img/icono.ico">
     <link rel="stylesheet" href="css/FontAwesome/css/fontawesome.min.css">
     <link rel="stylesheet" href="css//FontAwesome/css/all.css">
@@ -22,19 +22,20 @@ echo '
 <body>
       <section class="seccion1 shadow-sm p-3 mb-5 ">  
           <div class="container">
-            <img src="img/perfilPOO.jpg">
+         
+            <img src="'.$urlFoto->buscarImagenPerfil().'">
             <button class="btn2"><img src="img/camara.png" id="imgCamara"></button>
           </div> 
-          
-           <ul class="menus" style="margin-left:325px; position: absolute; margin-top:160px  " >
-                    <li><a href="#">Tweets <span id="contador-tweets"></span></a></li>
-                    <li><a href="#">Listas</a></li>
+
+            <ul class="menus" id="items" >
+                    <li><a href="#" style="color: #47B2F4">Tweets <span id="contador-tweets"></span></a></li>
+                    <li><a href="#">Siguiendo</a></li>
+                    <li><a href="#">Me gusta</a></li>
+                    <li><a href="#" >Listas</a></li>
                     <li><a href="#">Momentos</a></li>
             </ul>
 
             <button class="btn btn-2" type="submit">Editar Perfil</button>
-
-
       </section>
 
       <section class="seccion2 shadow-sm"></section>
@@ -43,7 +44,7 @@ echo '
       <section class="seccion3">    
         <div class="contenedor1">
             <div><h5><b>'.$_SESSION["nombre"].'</b></h5></div>   
-             <div><p style="font-size:13px; color:#657786">'.$_SESSION["usuario"].'</p></div> 
+             <div><p style="font-size:13px; color:#657786">@'.$_SESSION["usuario"].'</p></div> 
             <div><p style="font-size:13px; color:#657786">Se unió en</p></div>
         </div>  
 
@@ -53,7 +54,6 @@ echo '
             <hr>
             
         <div id="tweets">
-
         </div>
             <div class="navbar-img-logo" style="margin-bottom:15px"><img src="img/pajaronegro.png" ></div>
         </div>

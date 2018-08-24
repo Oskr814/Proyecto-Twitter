@@ -24,11 +24,11 @@ echo '
  
       <section class="seccion1 shadow-sm p-3 mb-5 ">  
           <div class="container">
-            <img src="img/perfilPOO.jpg">
+            <img src="'.$urlFoto->buscarImagenPerfil().'">
             <button class="btn2"><img src="img/camara.png" id="imgCamara"></button>
           </div> 
           
-           <ul class="menus" style="margin-left:325px; position: absolute; margin-top:160px; font-size: 14px; padding: 5px 0px" >
+           <ul class="menus" id="items">
                     <li><a href="#">Tweets</a></li>
                     <li><a href="#">Siguiendo</a></li>
                     <li><a href="#">Me gusta</a></li>
@@ -47,8 +47,8 @@ echo '
     
         <div>
                 <div class="contenedor1">
-                    <div><h5><b>POO</b></h5></div>   
-                    <div><p style="font-size:13px; color:#657786">@POO2periodo2018</p></div> 
+                    <div><h5><b>'.$_SESSION["nombre"].'</b></h5></div>   
+                    <div><p style="font-size:13px; color:#657786">@'.$_SESSION["usuario"].'</p></div>  
                     <div><p style="font-size:13px; color:#657786">Se unió en</p></div>
                 </div>  
         </div>
@@ -75,7 +75,8 @@ echo '
                     <h5><b>Crear una lista</b></h5>
                     <p>Una lista es un grupo administrado de usuarios de Twitter y una forma genial de organizar tus intereses. <a href="#"> Más información</a></p>
                 
-                    <button class="btn btnCrear" type="submit">Crear nueva lista</button>
+                    <button type="button" class="btn btn-info btn-lg  btnCrear" data-toggle="modal" data-target="#myModal">Crar nueva lista</button>
+
                 </div>
             </div>
             <br>

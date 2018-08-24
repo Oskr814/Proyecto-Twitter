@@ -19,7 +19,7 @@ $.ajax({
                 <div id="texto3" style="color:#657786"><p>${respuesta[i].usuario}</p></div> 
                 <div id="texto3" style="color:#657786"><p>${fecha.getDate()}</p></div>
                 <br>
-                <div id="tweet" ><p>${respuesta[i].tweet}</p></div>
+                <div id="tweet"><p>${respuesta[i].tweet}</p></div>
 
                 <div style="margin-left:80px">
                     <img src="img/tweet/comentar.png" style="margin-right:55px">
