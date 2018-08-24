@@ -74,14 +74,14 @@ $(document).ready(function(){
         method: "POST",
         dataType: "json",
         success: function(respuesta){
-            for(var i = respuesta.length-1 ; i>=0 ; i--){ 
+            for(var i = respuesta.length-1 ; i>=0 ; i--){
                 $("#timeline").append(`
                 <div id="div-timeline-post">
                         <div class="timeline-post">
                             <img class="rounded-circle user-porfile-timeline" src="${respuesta[i].imgUsuario}" alt=""><b>${respuesta[i].nombre}</b><span class="sug-user">${respuesta[i].usuario}</span><br>
                             <p class="timeline-text" id="text-post1">${respuesta[i].tweet}</p>
                             <div id="img-post1">
-                            <img class="timeline-img" src="${respuesta[i].urlImagen}" alt="">
+                            <img class="timeline-img" src="${respuesta[i].urlImagen}" alt="" style="">
                             </div>
                         </div>
                         <div class="contenedor-feedback">
@@ -99,4 +99,19 @@ $(document).ready(function(){
             console.log(error);
         }
     });
+
+    $("#post-tweet").click(function(){
+        if($("#post-tweet").val() == "" ){
+            $("#btn-post-tweet-twittear").prop("disabled", true);
+         }
+    });
+
+    $("#post-tweet").keyup(function(){
+        if($("#post-tweet").val() != "" ){
+            $("#btn-post-tweet-twittear").prop("disabled", false);
+         }else
+            $("#btn-post-tweet-twittear").prop("disabled", true)
+    
+    });
+    
 });
