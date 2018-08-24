@@ -14,8 +14,8 @@
                     $tweets[] = $registro;
             }
             fclose($archivo);
-            echo json_encode($tweets);
+            
            }
         }
-    }    
+    }  echo json_encode($tweets);  
 ?>

@@ -35,7 +35,10 @@ echo '
                     <li><a href="#">Momentos</a></li>
             </ul>
 
-            <button class="btn btn-2" type="submit">Editar Perfil</button>
+            <button type="button" class="btn btn-2 btn-info btn-lg" data-toggle="modal" data-target="#myModal">Editar Perfil</button>
+
+
+
       </section>
 
       <section class="seccion2 shadow-sm"></section>

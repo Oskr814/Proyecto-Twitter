@@ -49,6 +49,10 @@ text-align: justify;
     margin-top: 20%;
     font-size: 0.9em;
 }
+
+.btn btn-2 :hover{
+    background-color: #F5F8FA !important;
+}
 /*fin botones*/
 
 
