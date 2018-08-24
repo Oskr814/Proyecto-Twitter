@@ -1,16 +1,12 @@
-<?php
-  include("validar-sesion.php");
-  include("navbar.php");
-  
-?>
-<?php
-  echo  '<html>
+<html>
         <head>
             <meta charset="utf-8" />
             <meta http-equiv="X-UA-Compatible" content="IE=edge">
             <title>Twitter</title>
             <link rel="shortcut icon" href="img/icono.ico" type="image/x-icon">
             <meta name="viewport" content="width=device-width, initial-scale=1">
+            <link rel="stylesheet" href="css/FontAwesome/css/all.min.css">
+            <link rel="stylesheet" href="css/bootstrap.min.css">
             <link rel="stylesheet" href="css/custom-home.css">
         </head>
         <body>
@@ -52,15 +48,15 @@
                         <div class="col-sm-7 col-md-7 col-lg-6  col-xl-6 col-central">
                           <div class="row">
                             <div class="row-c1">
-                            <a href=""><img id="img-perfil-3" class="rounded-circle" src="'.$urlFoto->buscarImagenPerfil().'" alt=""></a>
-                            <textarea id="post-tweet" name="" id="" cols="30" rows="2" placeholder="¿Qué está pasando?"></textarea>
-                            <input id="post-tweet-hashtag" type="text" placeholder="#hashtag" style="display:none;">
-                            <button id="btn-post-tweet-twittear" class="btn btn-twittear my-2 my-sm-0" type="button" style="display:none;" >Twittear</button>
-                            <div id="respuesta"></div>
-                            <div><label id="subir-img" for="post-photo" style="display:none;"><i id="post-tweet-img" class="far fa-images" style=""></i></label></div>
-                            <form method="post" id="form-post-photo" enctype="multipart/form-data">
-                              <input id="post-photo" type="file" style="display:none;" name="post-photo">
-                            </form>
+                              <a href=""><img id="img-perfil-3" class="rounded-circle" src="'.$urlFoto->buscarImagenPerfil().'" alt=""></a>
+                              <textarea id="post-tweet" name="" id="" cols="30" rows="2" placeholder="¿Qué está pasando?"></textarea>
+                              <input id="post-tweet-hashtag" type="text" placeholder="#hashtag">
+                              <button id="btn-post-tweet-twittear" class="btn btn-twittear my-2 my-sm-0" type="button" >Twittear</button>
+                              <div id="respuesta"></div>
+                              <div><label id="subir-img" for="post-photo"><i id="post-tweet-img" class="far fa-images" style=""></i></label></div>
+                              <form method="post" id="form-post-photo" enctype="multipart/form-data">
+                                <input id="post-photo" type="file" style="display:none;" name="post-photo">
+                              </form>
                               
                             </div>
                           </div>
@@ -69,7 +65,19 @@
                           </div>
                           <div class="row row-c3">
                             <div id="timeline">
-                                
+                                <div class="timeline-post" >
+                                    <img class="rounded-circle" id="img-sug-1" src="img/timeline/Rockstar_Games_Logo.svg.png" alt=""><b>Cuenta</b><span class="sug-user" id="sug-user1">@cuenta</span><br>
+                                    <span class="timeline-text" id="text-post1">GTA V esta que lo peta</span>
+                                    <div id="img-post1">
+                                      <img class="timeline-img" src="img/gta.jpg" alt="">
+                                    </div>
+                                </div>
+                                <div class="contenedor-feedback">
+                                    <div id="" class="feedback"><i class="far fa-comment"></i></div>
+                                    <div id="" class="feedback"><i class="fas fa-retweet"></i></div>
+                                    <div id="" class="feedback"><i class="far fa-heart"></i></div>
+                                    <div id="" class="feedback"><i class="far fa-envelope"></i></div>
+                                </div>
                               </div>
                           </div>
                           
@@ -102,5 +110,4 @@
               <script src="js/controlador-home.js"></script>
               
         </body>
-        </html>';
-?>
+        </html>
