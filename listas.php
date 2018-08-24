@@ -36,7 +36,7 @@ echo '
                     <li><a href="#">Momentos</a></li>
             </ul>
 
-            <button class="btn btn-2" type="submit">Editar Perfil</button>
+            <button class="btn btn-2" type="button">Editar Perfil</button>
       </section>
 
 

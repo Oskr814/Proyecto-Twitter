@@ -35,7 +35,7 @@ echo '
                     <li><a href="#">Momentos</a></li>
             </ul>
 
-            <button type="button" class="btn btn-2 btn-info btn-lg" data-toggle="modal" data-target="#myModal">Editar Perfil</button>
+            <button class="btn btn-2" type="button">Editar Perfil</button>
 
 
 
@@ -58,28 +58,18 @@ echo '
             
         <div id="tweets">
         </div>
-            <div class="navbar-img-logo" style="margin-bottom:15px"><img src="img/pajaronegro.png" ></div>
+
+        <div class="navbar-img-logo" style="margin-bottom:15px"><img src="img/pajaronegro.png" ></div>
         </div>
         
-        <div class="contenedor3" >
+        <div class="contenedor3">
             <div style="margin:15px">
                 <h5><b>Tendencias para ti</b></h5>
 
-                <a href="#"><b>#CasoPandora</b></a><br>
-                <a href="#"><b>Elvin Santos</b></a><br>
-                <a href="#"><b>#HackedByCalleYPoché3</b></a><br>
-                <p>78,6 mil Tweets</p>
-                <a href="#"><b>#8YearsOfOneDirection</b></a><br>
-                <p>3,91 M Tweets</p>
-                <a href="#"><b>Copa Presidente</b></a><br>
-                <p>1.078 Tweets</p>
-                <a href="#"><b>Motagua</b></a><br>
-                <a href="#"><b>#ParoDeTransporte</b></a><br>
-                <p>1.278 Tweets</p>
-                <a href="#"><b>EN VIVO</b></a><br>
-                <p>62,8 mil Tweets</p>
-                <a href="#"><b>#fenafuth2018</b></a><br>
-                <a href="#"><b>#Tegucigalpa</b></a>
+        <div id="tendencias">
+        </div>
+                
+                
             </div>
         </div>
         
@@ -105,6 +95,7 @@ echo '
       <script src="js/jquery-3.3.1.js"></script>
       <script src="js/bootstrap.js"></script>
       <script src="js/controlador-profile.js"></script>
+      <script src="js/controlador-trends.js"></script>
 </body>
 </html>';
 ?>
