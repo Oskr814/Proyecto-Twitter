@@ -37,8 +37,6 @@ echo '
 
             <button class="btn btn-2" type="button">Editar Perfil</button>
 
-
-
       </section>
 
       <section class="seccion2 shadow-sm"></section>
@@ -66,11 +64,9 @@ echo '
             <div style="margin:15px">
                 <h5><b>Tendencias para ti</b></h5>
 
-        <div id="tendencias">
-        </div>
-                
-                
+            <div id="tendencias">
             </div>
+         </div>
         </div>
         
         <div class="contenedor4">

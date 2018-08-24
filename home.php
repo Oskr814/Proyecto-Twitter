@@ -44,9 +44,13 @@
                                   </ul>
                               </div>
                           </div>
-                          <div id="tendencias">
-                            <b>Tendecias para tí</b><br>
-                            <span class="tendecias">#Tendencia</span>
+
+                          <div>
+                            
+                            
+                            <div id="tendencias">
+                            <h5><b>Tendencias para ti</b></h5>
+                            </div>
                           </div>
                         </div>
                         <div class="col-sm-7 col-md-7 col-lg-6  col-xl-6 col-central">
@@ -101,6 +105,7 @@
               <script src="js/jquery-3.3.1.js"></script>
               <script src="js/bootstrap.min.js"></script>
               <script src="js/controlador-home.js"></script>
+               <script src="js/controlador-trends.js"></script>
               
         </body>
         </html>';
