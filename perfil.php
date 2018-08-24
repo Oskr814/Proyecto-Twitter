@@ -21,7 +21,7 @@ echo '
 </head>
 <body>
       <section class="seccion1 shadow-sm p-3 mb-5 ">  
-          <div class="container">
+          <div class="container" id="portada">
          
             <img src="'.$urlFoto->buscarImagenPerfil().'">
             <button class="btn2"><img src="img/camara.png" id="imgCamara"></button>
@@ -35,7 +35,13 @@ echo '
                     <li><a href="#">Momentos</a></li>
             </ul>
 
-            <button class="btn btn-2" type="button">Editar Perfil</button>
+       <!--     <form method="post" id="form-foto-perfil" enctype="multipart/form-data" >
+            <b>Subir foto de perfil:</b><br><input type="file" name="perfil"><br>
+            </form>
+            <form method="post" id="form-foto-portada" enctype="multipart/form-data" >
+            <b>Subir foto de portada:</b><br><input type="file" name="portada"><br>
+            </form>
+            <div id="respuesta"></div>  -->
 
       </section>
 
@@ -46,7 +52,7 @@ echo '
         <div class="contenedor1">
             <div><h5><b>'.$_SESSION["nombre"].'</b></h5></div>   
              <div><p style="font-size:13px; color:#657786">@'.$_SESSION["usuario"].'</p></div> 
-            <div><p style="font-size:13px; color:#657786">Se unió en</p></div>
+            <div><p style="font-size:13px; color:#657786">Se unió en '.$_SESSION["date"].'</p></div>
         </div>  
 
         <div class="contenedor2">
@@ -92,6 +98,7 @@ echo '
       <script src="js/bootstrap.js"></script>
       <script src="js/controlador-profile.js"></script>
       <script src="js/controlador-trends.js"></script>
+      <script src="js/controlador-configuraciones.js"></script>
 </body>
 </html>';
 ?>

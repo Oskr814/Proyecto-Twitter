@@ -45,9 +45,7 @@
                               </div>
                           </div>
 
-                          <div>
-                            
-                            
+                          <div>                                           
                             <div id="tendencias">
                             <h5><b>Tendencias para ti</b></h5>
                             </div>
