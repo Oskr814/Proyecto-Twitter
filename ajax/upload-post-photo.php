@@ -41,7 +41,7 @@ if (isset($_FILES["post-photo"]))
     {
     $resultado['codigo']=0;
     $src = $carpeta.$nombre;
-    move_uploaded_file($ruta_provisional, "E:/wamp64/www/proyecto/Proyecto-Twitter/data/tweets/photos/$nombre");
+    move_uploaded_file($ruta_provisional, "C:/wamp64/www/Proyecto-Twitter/data/tweets/photos/$nombre");
     $resultado['codigo']=1;
     $resultado["ruta"]=$src;
     echo json_encode($resultado);

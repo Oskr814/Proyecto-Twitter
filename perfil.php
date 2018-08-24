@@ -1,3 +1,10 @@
+<?php
+  include("validar-sesion.php");
+  include("navbar.php");
+  
+?>
+<?php
+echo '
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,7 +13,6 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <link rel="icon" href="img/icono.ico">
-    <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/FontAwesome/css/fontawesome.min.css">
     <link rel="stylesheet" href="css//FontAwesome/css/all.css">
     <link rel="stylesheet" href="css/perfil.css">
@@ -14,47 +20,6 @@
 
 </head>
 <body>
-    
-<nav class="navbar navbar-expand-lg bg-light ">
-    
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <img class="navbar-img-logo" src="img/img1.1.png">
-          <ul class="navbar-nav mr-auto menus" style="margin-left:75px">
-                <li class="nav-item active ">
-                  <i class="fas fa-home"></i> <a class="nav-link" href="#" id="imgIconos">Inicio</a>
-                </li>
-                 
-                <li class="nav-item ">
-                    <i class="far fa-bell"></i> <a class="nav-link" href="#" id="imgIconos">Notificaciones</a>
-                </li>
-
-                <li class="nav-item ">
-                    <i class="far fa-envelope"></i><a class="nav-link" href="#" id="imgIconos">Mensajes</a>
-                </li>
-          </ul>
-
-          <form class="form-inline my-2 my-lg-0">
-            <input class="form-control mr-sm-2" type="search" placeholder="Buscar en Twitter" aria-label="Search">
-            <a href=""><img src="img/profile.jpg" alt="" class="rounded-circle" id="navbar-img-perfil-1"></a>
-
-            <div class="row">
-                <div class="col-md-7 col-md-offset-2">
-                    <button type="button" class="btn btn-default dropdown-toggle">imagen<span class="caret"></span></button>
-                    <ul class="dropdown-menu">
-                      <li><a href="#">HTML</a></li>
-                      <li><a href="#">CSS</a></li>
-                      <li><a href="#">JavaScript</a></li>
-                    </ul>
-                </div>    
-            </div>      
-
-
-            <button class="btn btn-primary my-2 my-sm-0" type="submit">Twittear</button>
-          </form>
-        </div>
-</nav>
-
-
       <section class="seccion1 shadow-sm p-3 mb-5 ">  
           <div class="container">
             <img src="img/perfilPOO.jpg">
@@ -62,7 +27,7 @@
           </div> 
           
            <ul class="menus" style="margin-left:325px; position: absolute; margin-top:160px  " >
-                    <li><a href="#">Tweets</a></li>
+                    <li><a href="#">Tweets <span id="contador-tweets"></span></a></li>
                     <li><a href="#">Listas</a></li>
                     <li><a href="#">Momentos</a></li>
             </ul>
@@ -77,8 +42,8 @@
 
       <section class="seccion3">    
         <div class="contenedor1">
-            <div><h5><b>POO</b></h5></div>   
-             <div><p style="font-size:13px; color:#657786">@POO2periodo2018</p></div> 
+            <div><h5><b>'.$_SESSION["nombre"].'</b></h5></div>   
+             <div><p style="font-size:13px; color:#657786">'.$_SESSION["usuario"].'</p></div> 
             <div><p style="font-size:13px; color:#657786">Se unió en</p></div>
         </div>  
 
@@ -86,24 +51,10 @@
             <div style="float:left" id="textoSup"><b>Tweets</b></div>
             <div id="textoSup"><a href="#"><b>Respuestas</b></a></div>
             <hr>
-            <div style="float:left">
-                <a href=""><img src="img/profile.jpg" class="rounded-circle" id="navbar-img-perfil-1"></a>
-            </div>
+            
+        <div id="tweets">
 
-                    <div id="texto3"><p><b>POO</b></p></div>
-                    <div id="texto3" style="color:#657786"><p>@POO2periodo2018</p></div> 
-                    <div id="texto3" style="color:#657786"><p>tiempo transcurrido</p></div>
-            <br>
-            <div id="tweet" ><p>tweet</p></div>
-
-            <div style="margin-left:80px">
-                <img src="img/tweet/comentar.png" style="margin-right:55px">
-                <img src="img/tweet/compartir.png" style="margin-right:55px">
-                <img src="img/tweet/like.png" style="margin-right:55px">
-                <img src="img/tweet/estadisticas.png">
-            </div>
-
-            <hr>
+        </div>
             <div class="navbar-img-logo" style="margin-bottom:15px"><img src="img/pajaronegro.png" ></div>
         </div>
         
@@ -150,5 +101,7 @@
   
       <script src="js/jquery-3.3.1.js"></script>
       <script src="js/bootstrap.js"></script>
+      <script src="js/controlador-profile.js"></script>
 </body>
-</html>
+</html>';
+?>

@@ -1,3 +1,10 @@
+<?php
+  include("validar-sesion.php");
+  include("navbar.php");
+  
+?>
+<?php
+echo '
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -157,4 +164,5 @@
         <script src="js/jquery-3.3.1.js"></script>
         <script src="js/bootstrap.js"></script>
 </body>
-</html>
+</html>';
+?>

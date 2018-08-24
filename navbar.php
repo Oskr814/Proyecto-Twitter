@@ -36,9 +36,9 @@
                                     <a class="dropdown-item" href="#"><b>'.$_SESSION["nombre"].'</b><br>
                                     <span>@'.$_SESSION["usuario"].'</span>
                                     </a><hr>
-                                    <a class="dropdown-item" href="#">Perfil</a>
-                                    <a class="dropdown-item" href="#">Listas</a>
-                                    <a class="dropdown-item" href="#">Momentos</a><hr>
+                                    <a class="dropdown-item" href="perfil.php">Perfil</a>
+                                    <a class="dropdown-item" href="listas.php">Listas</a>
+                                    <a class="dropdown-item" href="momentos.php">momentos</a><hr>
                                     <a class="dropdown-item" href="configuracion.php">Configuracion y privacidad</a>
                                     <a class="dropdown-item" href="#">Cento de ayuda</a>
                                     <a class="dropdown-item" id="logout" href="logout.php">Cerrar sesión</a>

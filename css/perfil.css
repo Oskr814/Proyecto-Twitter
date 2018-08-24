@@ -8,11 +8,6 @@ body{
     
 }
 
-.container-fluid{
-    height: 100%;
-    width: 100%;
-}
-
 .center{
     margin-left: auto;
     margin-right: auto;
@@ -51,6 +46,7 @@ body{
 /*fin botones*/
 
 /*INICIO Nav Bar*/
+/*
 .navbar{
     background-color: #fff !important;
 }
@@ -68,32 +64,14 @@ nav form input[type=search]{
     border-radius: 25px;
     font-size: 15px;
 }
-
-
-#far{
-    color: #657786;
-    font-weight: bold;
-}
-
-#far li a:hover{
-    color: #47B2F4;
-    }
-
-#fas{
-    color: #657786;
-    font-weight: bold;
-}
-
-#fas li a:hover{
-    color: #47B2F4;
-    }
+*/
 /*FIN Nav Bar*/
 
 
 /*====================navbar=============================*/
 
 .menus a{
-    color: #657786;
+    color: #657786 !important;
     font-weight: bold;
 }
 
@@ -108,7 +86,7 @@ nav form input[type=search]{
     text-decoration: none;
 }
 .menus li a:hover{
-color: #47B2F4;
+color: #47B2F4 !important;
 }
 
 .submenu{
