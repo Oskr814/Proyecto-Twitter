@@ -106,14 +106,15 @@ $(document).ready(function(){
         method: "POST",
         dataType: "json",
         data: "codigo=0",
-        success: function(respuesta){
-            var respuestaPeticion1 = respuesta;
-           $.ajax({
+        success: function(respuestaPeticion1){
+            console.log(respuestaPeticion1);
+          $.ajax({
                 url: "ajax/cargar-sugerencias.php",
                 method: "POST",
                 dataType: "json",
                 data: "codigo=1",
                 success: function(respuesta){
+                    console.log(respuesta);
                     for(var i = 0 ; i<3 ; i++){
                         var x = Math.floor((Math.random() * respuesta.length));
                         while(x==y){
@@ -121,8 +122,8 @@ $(document).ready(function(){
                         }
                         $("#sugerencias").append(`
                             <div class="sugerencias">
-                                <img class="rounded-circle img-sug" src="${respuesta[x].urlFotoPerfil}" alt=""><b>${respuestaPeticion1[x].nombre}</b><span class="sug-user">@${respuesta[x].usuario}</span><br>
-                                <button class="btn btn-sugerencias" type="button">Seguir</button>
+                                <img id="img-user-sug${i+1}" class="rounded-circle img-sug" src="${respuesta[x].urlFotoPerfil}" alt=""><b id="name-sug${i+1}">${respuestaPeticion1[x].nombre}</b><span class="sug-user" id="user-name-sug${i+1}">@${respuesta[x].usuario}</span><br>
+                                <button id="btn-seguir${i+1}" class="btn btn-sugerencias" type="button">Seguir</button>
                             </div>
                         `);
                         var y = x;
@@ -151,6 +152,48 @@ $(document).ready(function(){
          }else
             $("#btn-post-tweet-twittear").prop("disabled", true)
     
+    });
+
+    /*Agregar a lista siguiendo*/
+    $(window).click(function(e) {
+        var btn = e.target.id;
+        var parametros;
+        switch(btn){
+            case "btn-seguir1":
+                parametros = "nombre="+$("#name-sug1").text()+"&"
+                            +"usuario="+$("#user-name-sug1").text()+"&"
+                            +"urlFotoPerfil="+$("#img-user-sug1").attr("src");
+                break;
+            case "btn-seguir2":
+                parametros = "nombre="+$("#name-sug2").text()+"&"
+                            +"usuario="+$("#user-name-sug2").text()+"&"
+                            +"urlFotoPerfil="+$("#img-user-sug2").attr("src");
+                break;
+            case "btn-seguir3":
+                parametros = "nombre="+$("#name-sug3").text()+"&"
+                            +"usuario="+$("#user-name-sug3").text()+"&"
+                            +"urlFotoPerfil="+$("#img-user-sug3").attr("src");
+                break;
+            default:
+                break;
+        }
+        
+        if(parametros!=null){
+            $.ajax({
+                url: "ajax/following.php",
+                method: "POST",
+                dataType: "json",
+                data: parametros,
+                success: function(respuesta){
+                    $("#"+btn).html(respuesta.mensaje);
+                },
+                error: function(error){
+                    console.log(error);
+                }
+            });
+        }
+        
+                
     });
     
 });
