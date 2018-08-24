@@ -55,6 +55,20 @@ $(document).ready(function(){
         $("#div-cuentas-silenciadas").attr("class", "oculto");
         $("#div-cuentas-bloqueadas").attr("class", "");
     });
+
+    $.ajax({
+        url: "ajax/cargar-estadisticas.php",
+        method: "POST",
+        dataType: "json",
+        success: function(respuesta){
+            $("#numTweets").html(respuesta.numTweets);
+            $("#numFollow").html(respuesta.numFollow);
+            $("#numSeg").html(Math.floor((Math.random() * 500)));
+        },
+        error: function(error){
+            console.log(error);
+        }
+    });
 });
 
 $("input[name='perfil']").change(function(){
