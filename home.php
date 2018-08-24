@@ -31,15 +31,15 @@
                                   <ul id="user-porfile-preview">
                                     <li>
                                       Tweets
-                                      <ul><li>#</li></ul>
+                                      <ul><li id="numTweets">0</li></ul>
                                     </li>
                                     <li>
                                       Siguiendo
-                                      <ul><li>#</li></ul>
+                                      <ul><li id="numFollow">0</li></ul>
                                     </li>
                                     <li>
                                       Seguidores
-                                      <ul><li>#</li></ul>
+                                      <ul><li id="numSeg">0</li></ul>
                                     </li>
                                   </ul>
                               </div>
@@ -63,11 +63,12 @@
                             <form method="post" id="form-post-photo" enctype="multipart/form-data">
                               <input id="post-photo" type="file" style="display:none;" name="post-photo">
                             </form>
+                            <div id="respuesta"></div>
                               
                             </div>
                           </div>
                           <div class="row row-c2">
-                            <a id="nuevos-tweets" href="">Ver # Tweets nuevos</a>
+                            <a id="nuevos-tweets" href="">Ver Tweets nuevos</a>
                           </div>
                           <div class="row row-c3">
                             <div id="timeline">

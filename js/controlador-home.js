@@ -8,7 +8,7 @@ $(document).ready(function(){
         }
                 
     });
-    var urlImagen;
+    var urlImagen="";
     $("input[name='post-photo']").change(function(){
         var formData = new FormData($("#form-post-photo")[0]);
         $.ajax({
@@ -22,6 +22,8 @@ $(document).ready(function(){
             { 
                 if (datos.codigo==1) {
                     urlImagen = datos.ruta;
+                    
+                    $("#respuesta").html(urlImagen);
                 }
             },
             error: function(error){
@@ -44,21 +46,28 @@ $(document).ready(function(){
             data: parametros, 
             success: function(respuesta)
             {   
+                var postSinImagen;
+                if(respuesta.urlImagen == ""){
+                    postSinImagen = "display:none";
+                }else
+                    postSinImagen = "";
                 $("#timeline").prepend(`
                 <div class="timeline-post">
                     <img class="rounded-circle user-porfile-timeline" src="${respuesta.imgUsuario}" alt=""><b>${respuesta.nombre}</b><span class="sug-user">${respuesta.usuario}</span><br>
                     <p class="timeline-text" id="text-post1">${respuesta.tweet}</p>
                     <div id="img-post1">
-                    <img class="timeline-img" src="${respuesta.urlImagen}" alt="">
+                    <img class="timeline-img" src="${respuesta.urlImagen}" alt="" style="${postSinImagen}">
                     </div>
-                </div>
-                <div class="contenedor-feedback">
                     <div id="" class="feedback"><i class="far fa-comment"></i></div>
                     <div id="" class="feedback"><i class="fas fa-retweet"></i></div>
                     <div id="" class="feedback"><i class="far fa-heart"></i></div>
                     <div id="" class="feedback"><i class="far fa-envelope"></i></div>
                 </div>
+              
+                    
+              
                 `);;
+                urlImagen = "";
             },
             error: function(error){
                 console.log(error);
@@ -67,6 +76,9 @@ $(document).ready(function(){
         $("#post-tweet-hashtag").attr("style", "display:none;");
         $("#btn-post-tweet-twittear").attr("style", "display:none;");
         $("#subir-img").attr("style", "display:none;");
+        $("#post-tweet").val("");
+        $("#post-photo").replaceWith($("#post-photo").val('').clone(true));
+        
     });
     //Peticion ajax para cargar tweets usuario al momento de que el documento esta listo
     $.ajax({
@@ -74,24 +86,27 @@ $(document).ready(function(){
         method: "POST",
         dataType: "json",
         success: function(respuesta){
+            var postSinImagen;
             for(var i = respuesta.length-1 ; i>=0 ; i--){
+                if(respuesta[i].urlImagen == ""){
+                    postSinImagen = "display:none";
+                }else
+                    postSinImagen = "";
                 $("#timeline").append(`
-                <div id="div-timeline-post">
                         <div class="timeline-post">
                             <img class="rounded-circle user-porfile-timeline" src="${respuesta[i].imgUsuario}" alt=""><b>${respuesta[i].nombre}</b><span class="sug-user">${respuesta[i].usuario}</span><br>
                             <p class="timeline-text" id="text-post1">${respuesta[i].tweet}</p>
                             <div id="img-post1">
-                            <img class="timeline-img" src="${respuesta[i].urlImagen}" alt="" style="">
+                            <img class="timeline-img" src="${respuesta[i].urlImagen}" alt="" style="${postSinImagen}">
                             </div>
-                        </div>
-                        <div class="contenedor-feedback">
                             <div id="" class="feedback"><i class="far fa-comment"></i></div>
                             <div id="" class="feedback"><i class="fas fa-retweet"></i></div>
                             <div id="" class="feedback"><i class="far fa-heart"></i></div>
                             <div id="" class="feedback"><i class="far fa-envelope"></i></div>
                         </div>
-                    </div>
-                </div>
+                        
+             
+              
                 `);
             }
         },
@@ -194,6 +209,20 @@ $(document).ready(function(){
         }
         
                 
+    });
+
+    $.ajax({
+        url: "ajax/cargar-estadisticas.php",
+        method: "POST",
+        dataType: "json",
+        success: function(respuesta){
+            $("#numTweets").html(respuesta.numTweets);
+            $("#numFollow").html(respuesta.numFollow);
+            $("#numSeg").html(Math.floor((Math.random() * 500)));
+        },
+        error: function(error){
+            console.log(error);
+        }
     });
     
 });
