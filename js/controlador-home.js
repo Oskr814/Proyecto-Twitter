@@ -68,7 +68,7 @@ $(document).ready(function(){
         $("#btn-post-tweet-twittear").attr("style", "display:none;");
         $("#subir-img").attr("style", "display:none;");
     });
-    
+    //Peticion ajax para cargar tweets usuario al momento de que el documento esta listo
     $.ajax({
         url: "ajax/cargar-tweets.php",
         method: "POST",
@@ -94,6 +94,45 @@ $(document).ready(function(){
                 </div>
                 `);
             }
+        },
+        error: function(error){
+            console.log(error);
+        }
+    });
+
+    //Peticion ajax para cargar sugerencias de usuarios a quien seguir
+    $.ajax({
+        url: "ajax/cargar-sugerencias.php",
+        method: "POST",
+        dataType: "json",
+        data: "codigo=0",
+        success: function(respuesta){
+            var respuestaPeticion1 = respuesta;
+           $.ajax({
+                url: "ajax/cargar-sugerencias.php",
+                method: "POST",
+                dataType: "json",
+                data: "codigo=1",
+                success: function(respuesta){
+                    for(var i = 0 ; i<3 ; i++){
+                        var x = Math.floor((Math.random() * respuesta.length));
+                        while(x==y){
+                            x = Math.floor((Math.random() * respuesta.length));
+                        }
+                        $("#sugerencias").append(`
+                            <div class="sugerencias">
+                                <img class="rounded-circle img-sug" src="${respuesta[x].urlFotoPerfil}" alt=""><b>${respuestaPeticion1[x].nombre}</b><span class="sug-user">@${respuesta[x].usuario}</span><br>
+                                <button class="btn btn-sugerencias" type="button">Seguir</button>
+                            </div>
+                        `);
+                        var y = x;
+                    }
+                },
+                error: function(error){
+                    console.log(error);
+                }
+            });
+            
         },
         error: function(error){
             console.log(error);

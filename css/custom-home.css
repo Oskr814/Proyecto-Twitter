@@ -263,7 +263,7 @@ ul#user-porfile-preview li{
     margin-top: 10px;
 }
 .sugerencias{
-    width: 95%;
+    width: 100%;
     height: 75px;
     border-bottom: solid 1px rgb(226, 224, 224);
 }
@@ -294,7 +294,7 @@ ul#user-porfile-preview li{
     background-color: rgb(243, 243, 243);
 }
 
-#img-sug-1, #img-sug-2, #img-sug-3{
+.img-sug{
     width: 48px;
     margin-right: 10px;
 }
