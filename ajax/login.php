@@ -8,6 +8,7 @@
                 && $registroUsuario["password"] == $_POST["password"]){
                     $_SESSION["nombre"] = $registroUsuario["nombre"];
                     $_SESSION["usuario"] = $registroUsuario["usuario"];
+                    $_SESSION["date"] = $registroUsuario["date"];
                     echo '{"codigo":"0"}';
                     exit();
                 }
