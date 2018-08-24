@@ -86,7 +86,7 @@ echo '
                     <div class="pie-pagina">
                         <a href="#" class="pie-pagina">2018 Twitter</a>
                         <a href="landing.html" class="pie-pagina">Sobre nosotros</a>
-                        <a href="#" class="pie-pagina">Centro de Ayuda</a>                       
+                        <a href="centroAyuda" class="pie-pagina">Centro de Ayuda</a>                       
                         <a href="#" class="pie-pagina">Condiciones</a> 
                         <a href="#" class="pie-pagina">Política de Privacidad</a>
                         <a href="cookies.html" class="pie-pagina">Cookies</a>

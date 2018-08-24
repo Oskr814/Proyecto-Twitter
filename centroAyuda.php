@@ -1,3 +1,9 @@
+<?php
+  include("validar-sesion.php"); 
+?>
+<?php
+  echo  '
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -51,18 +57,14 @@
 
           <button class="btn btn-primary my-2 my-sm-0" type="submit">Comunicate con nosotros</button>
             <a href=""><img src="img/profile.jpg" alt="" class="rounded-circle" id="navbar-img-perfil-1"></a>
-          <!--<form class="form-inline my-2 my-lg-0">
-            <button class="btn btn-primary my-2 my-sm-0" type="submit">Comunicate con nosotros</button>
-            <a href=""><img src="img/profile.jpg" alt="" class="rounded-circle" id="navbar-img-perfil-1"></a>
-          </form>
-        -->
+          
         </div>
 </nav>
 
 
       <section class="seccion1 shadow-sm p-3 mb-5 ">    
             <div class="contenedor1">             
-                <p>Hola <span style="color: #fff">%%%%%%%%%%</span>,</p>
+                <p>Hola <span style="color: #fff">@'.$_SESSION["usuario"].'</span>,</p>
                 <p style="width: 75%">¿En qué podemos ayudarte?</p>
             </div>
         <div class="contenedor2">
@@ -340,7 +342,9 @@
                         </table>
                     </section>
 
-
-
+       <script src="js/jquery-3.3.1.js"></script>
+       <script src="js/bootstrap.js"></script>
+       <script src="js/controlador-profile.js"></script>
     </body>
-</html>
+</html>'
+?>

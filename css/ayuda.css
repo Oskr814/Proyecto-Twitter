@@ -81,7 +81,7 @@ nav form input[type=search]{
 
 
 .menus a{
-    color: #A1D8FA;
+    color: #A1D8FA !important;
    /* font-weight: bold;*/
     font-size: 14px;
     font-weight: 550;
@@ -98,14 +98,14 @@ nav form input[type=search]{
     text-decoration: none;
 }
 .menus li a:hover{
-color: #fff;
+color: #fff !important;
 }
 
 
 .submenu{
     position: absolute;
     background: #fff;
-    color: #fff;
+    color: #fff !important;
     font-weight: bold;
     width: 200%;
    visibility: hidden;
@@ -121,7 +121,7 @@ color: #fff;
 .submenu li a:hover{
     display: in-block; 
     padding: 5px;
-    color: #005FD1;
+    color: #005FD1 !important;
     text-decoration: none;
 }
 .menus li:hover .submenu{

@@ -21,47 +21,6 @@ echo '
 
 </head>
 <body>
-    
-<nav class="navbar navbar-expand-lg bg-light ">
-    
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <img class="navbar-img-logo" src="img/img1.1.png">
-          <ul class="navbar-nav mr-auto menus" style="margin-left:75px">
-                <li class="nav-item active ">
-                  <i class="fas fa-home"></i> <a class="nav-link" href="#" id="imgIconos">Inicio</a>
-                </li>
-                 
-                <li class="nav-item ">
-                    <i class="far fa-bell"></i> <a class="nav-link" href="#" id="imgIconos">Notificaciones</a>
-                </li>
-
-                <li class="nav-item ">
-                    <i class="far fa-envelope"></i><a class="nav-link" href="#" id="imgIconos">Mensajes</a>
-                </li>
-          </ul>
-
-          <form class="form-inline my-2 my-lg-0">
-            <input class="form-control mr-sm-2" type="search" placeholder="Buscar en Twitter" aria-label="Search">
-            <a href=""><img src="img/profile.jpg" alt="" class="rounded-circle" id="navbar-img-perfil-1"></a>
-
-            <div class="row">
-                <div class="col-md-7 col-md-offset-2">
-                    <button type="button" class="btn btn-default dropdown-toggle">imagen<span class="caret"></span></button>
-                    <ul class="dropdown-menu">
-                      <li><a href="#">HTML</a></li>
-                      <li><a href="#">CSS</a></li>
-                      <li><a href="#">JavaScript</a></li>
-                    </ul>
-                </div>    
-            </div>      
-
-
-            <button class="btn btn-primary my-2 my-sm-0" type="submit">Twittear</button>
-          </form>
-        </div>
-</nav>
-
-
       <section class="seccion1 shadow-sm p-3 mb-5 ">  
           <div class="container">
             <img src="img/perfilPOO.jpg">
