@@ -77,7 +77,8 @@
                         <div class="col-xl-3 col-der">
                             <div class="row row-d1">
                                 <b>A quién seguir</b><a href="" class="sug-link">Actualizar</a><a href="" class="sug-link">Ver todos</a>
-                                <div class="sugerencias" id="sugerencia1">
+                                <div id="sugerencias"></div>
+                                <!--<div class="sugerencias" id="sugerencia1">
                                     <img class="rounded-circle" id="img-sug-1" src="img/profile.jpg" alt=""><b id="sug-username1">Cuenta</b><span class="sug-user" id="sug-@user1">@cuenta</span><br>
                                     <button class="btn btn-sugerencias" type="button">Seguir</button>
                                 </div>
@@ -89,7 +90,7 @@
                                 <div class="sugerencias" id="sugerencia3">
                                     <img class="rounded-circle" id="img-sug-3" src="img/profile.jpg" alt=""><b id="sug-username3">Cuenta</b><span class="sug-user" id="sug-@user3">@cuenta</span><br>
                                     <button class="btn btn-sugerencias" type="button">Seguir</button>
-                                </div>
+                                </div>-->
                           </div>
                           <div class="row row-d2">Slide bar</div>
                         </div>
