@@ -70,7 +70,6 @@ $("input[name='perfil']").change(function(){
         {   console.log(datos.actualizar);
             if (datos.codigo==1) {
                 $("#respuesta").html(datos.mensaje);
-                $("#first3").html(datos.actualizar);
                 $("#img-perfil-2").attr("src", datos.actualizar);
                 $("#navbar-img-perfil-1").attr("src", datos.actualizar);
             }else{

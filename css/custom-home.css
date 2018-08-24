@@ -60,6 +60,14 @@ body{
     position: relative;
     bottom: 35px;
 }
+
+.user-porfile-timeline{
+    width: 48px;
+    margin-right: 10px;
+    position: relative;
+    top: 8px;
+}
+
 #user-porfile-preview{
     position: absolute;
     bottom: 5px;
@@ -111,8 +119,10 @@ ul#user-porfile-preview li{
 #subir-img{
     position: relative;
     bottom: 25px;
-    left: 460px;
+    left: 130px;
     color: #32ADAD;
+    background: transparent;
+    border-style: none;
 }
 
 #nuevos-tweets{
@@ -128,6 +138,8 @@ ul#user-porfile-preview li{
 #img-perfil-3{
     width: 30px;
     margin-right: 5px;
+    position: relative;
+    bottom: 20px;
 }
 
 #post-tweet{
@@ -141,18 +153,31 @@ ul#user-porfile-preview li{
 #post-tweet:focus{
     outline: none;
     box-shadow: 0px 0px 5px #009999;
-    height: 60px;
+}
+
+#post-tweet-hashtag{
+    font-size: 14px;
+    width: 90%;
+    position: relative;
+    left: 40px;
+    bottom: 8px;
+    padding: 5px 10px;
+    border-radius: 10px;
+    border: solid 0.5px #c7c7c7;
+}
+
+#post-tweet-hashtag:focus{
+    outline: none;
+    box-shadow: 0px 0px 5px #009999;
 }
 
 #btn-post-tweet-twittear{
-    position: absolute;
-    top: 90px;
-    left: 450px;
+    position: relative;
+    left: 40px;
 }
 
 #timeline{
     width: 100%;
-    padding: 15px 0;
 }
 
 .posts{
@@ -169,14 +194,18 @@ ul#user-porfile-preview li{
 }
 
 .timeline-text{
+    line-height: 18px;
     font-size: 14px;
     position: relative;
     bottom: 20px;
     left: 60px;
+    max-width: 486px;
+    margin: 5px 0px;
 }
 
 .timeline-img{
     width: 506px;
+    height: 380px;
     border-radius: 5px;
     float: right;
     position: relative;
@@ -194,6 +223,16 @@ ul#user-porfile-preview li{
     color: #657786;
     font-size: 18px;
     line-height: 18px;
+}
+
+#div-timeline-post{
+    border-bottom: solid 1px #d5d8da;
+    height: 55%;
+}
+
+#div-timeline-post:hover{
+    background-color: #f0eeee96;
+    cursor: pointer;
 }
 /*FIN col-central*/
 
