@@ -61,7 +61,7 @@
                             <form method="post" id="form-post-photo" enctype="multipart/form-data">
                               <input id="post-photo" type="file" style="display:none;" name="post-photo">
                             </form>
-                            <div id="respuesta"></div>
+                            
                               
                             </div>
                           </div>
@@ -70,7 +70,7 @@
                           </div>
                           <div class="row row-c3">
                             <div id="timeline">
-                                
+                                <div id="respuesta" class=""></div>
                               </div>
                           </div>
                           

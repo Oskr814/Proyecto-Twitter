@@ -180,6 +180,16 @@ ul#user-porfile-preview li{
     width: 100%;
 }
 
+#respuesta{
+    position: absolute;
+    top: 252px;
+    justify-content: center;
+    text-align: center;
+    font-weight: bold;
+    font-size: 14px;
+    color: #0c7a7a;
+}
+
 .posts{
     max-height: 500px;
     border-bottom: solid 1px #e5eaec;
@@ -191,6 +201,12 @@ ul#user-porfile-preview li{
     width: 100%;
     float: left;
     padding: 12px;
+    border-bottom: solid 1px #d5d8da;
+}
+
+.timeline-post:hover{
+    background-color: #f0eeee96;
+    cursor: pointer;
 }
 
 .timeline-text{

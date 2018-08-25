@@ -16,6 +16,7 @@
         $respuesta["numFollow"] = $numFollow;
         $respuesta["mensaje"] = "Siguiendo";
         $respuesta["codigo"] = "1";
+        $respuesta["usuario"] = $_POST["usuario"];
         echo json_encode($respuesta); //Satisfactorio
    }else{
         $respuesta["mensaje"] = "Error";

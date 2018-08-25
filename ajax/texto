@@ -1,0 +1,46 @@
+if(file_exists("../data/usuarios.json")){
+            $archivo = fopen("../data/usuarios.json", "r");
+            while($linea = fgets($archivo)){
+                $registro = json_decode($linea, true);
+                $usuarios[] = $registro;
+            }
+            fclose($archivo);
+            for($i=0 ; $i<count($usuarios) ; $i++){ 
+                if(file_exists("../data/following/@".$usuarios[$i]["usuario"]."following.json")){
+                    $archivo = fopen("../data/following/@".$usuarios[$i]["usuario"]."following.json", "r");
+                    while($linea = fgets($archivo)){
+                        $registro = json_decode($linea, true);
+                        if('@'.$_SESSION["usuario"] == $registro["usuario"]){
+                            $seguidores["nombre"] = $usuarios[$i]["nombre"];
+                            $seguidores["usuario"] = $usuarios[$i]["usuario"];
+                            if(!file_exists("../data/followers/@".$_SESSION["usuario"]."followers.json")){
+                                $followers = fopen("../data/followers/@".$_SESSION["usuario"]."followers.json", "w");
+                                fwrite($followers, json_encode($seguidores)."\n");
+                                fclose($followers);
+                            }
+                            $followers = fopen("../data/followers/@".$_SESSION["usuario"]."followers.json", "a+");
+                            while($linea = fgets($followers)){
+                                $registro = json_decode($linea, true);
+                                if($registro["usuario"] != $seguidores["usuario"]){
+                                    fwrite($followers, json_encode($seguidores)."\n");
+                                }
+                            }
+                            fclose($followers);
+                            
+                        } 
+                    }
+                }
+            }
+            $respuesta["codigo"] = 1; //Existo
+            $respuesta["mensaje"] = "Exito!";
+            echo json_encode($respuesta);
+        }else{
+            $respuesta["codigo"] = 0;
+            $respuesta["mensaje"] = "No existe el archivo usuarios.json";
+            echo json_encode($respuesta);  
+        }
+    }else{
+        $respuesta["codigo"] = 0; //No hay una sesion activa
+        $respuesta["mensaje"] = "error en la sesíon";
+        echo json_encode($respuesta);
+    }

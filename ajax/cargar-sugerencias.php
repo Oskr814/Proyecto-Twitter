@@ -15,7 +15,7 @@
                 while($linea = fgets($archivo)){
                     $registro = json_decode($linea, true);
                     if($registro["usuario"] != $_SESSION["usuario"]){
-                        $excluir;
+                        $excluir = 0;
                         for($i = 0 ; $i<count($following) ; $i++){
                             if("@".$registro["usuario"] == $following[$i]["usuario"]){
                                 $excluir = 1;
@@ -24,7 +24,6 @@
                         if($excluir != 1){
                             $usuarios[] = $registro;
                         }
-                        $excluir = 0;
                     }
                     
                     
@@ -57,7 +56,7 @@
                     while($linea = fgets($archivo)){
                         $registro = json_decode($linea, true);
                         if($registro["usuario"] != $_SESSION["usuario"]){
-                            $excluir;
+                            $excluir = 0;
                             for($i = 0 ; $i<count($following) ; $i++){
                                 if("@".$registro["usuario"] == $following[$i]["usuario"]){
                                     $excluir = 1;
@@ -66,7 +65,7 @@
                             if($excluir != 1){
                                 $usuarios[] = $registro;
                             }
-                            $excluir = 0;
+                           
                         }
                         
                         

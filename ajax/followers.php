@@ -1,26 +1,30 @@
 <?php
     session_start();
     $seguidores = array();
-    if(file_exists("../data/usuarios.json")){
-        $archivo = fopen("../data/usuarios.json", "r");
-        while($linea = fgets($archivo)){
-            $registro = json_decode($linea, true);
-            $usuarios[] = $registro;
+    $respuesta = array();
+    if(isset($_SESSION["usuario"])){
+        if(!file_exists("../data/followers/".$_POST["followed"].".json")){
+            $archivo = fopen("../data/followers/".$_POST["followed"].".json","w");
+            fclose($archivo);
         }
+        $seguidores["nombre"] = $_POST["nombre"];
+        $seguidores["usuario"] = $_POST["usuario"];
+        $seguidores["imgUsuario"] = $_POST["imgUsuario"];
+        $archivo = fopen("../data/followers/".$_POST["followed"].".json","a+");
+        fwrite($archivo, json_encode($seguidores));
         fclose($archivo);
-        for($i=0 ; $i<count($usuarios) ; $i++){ 
-            if(file_exists("../data/following/@".$usuarios[$i]["usuario"]."following.json")){
-                $archivo = fopen("../data/following/@".$usuarios[$i]["usuario"]."following.json", "r");
-                while($linea = fgets($archivo)){
-                    $registro = json_decode($linea, true);
-                    if('@'.$_SESSION["usuario"] == $registro["usuario"]){
-                        $numSeg++;
-                    }
-                }
-            }
-        }
-
+        $respuesta["mensaje"] = "Exito!";
+        $respuesta["codigo"] = "1";
+        echo json_encode($respuesta);
+    }else{
+        $respuesta["mensaje"] = "Error!";
+        $respuesta["codigo"] = "0";
+        echo json_encode($respuesta);
     }
+
+        
+        
+    
 
 
 ?>
