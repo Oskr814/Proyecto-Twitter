@@ -21,19 +21,20 @@ echo '
 </head>
 <body>
       <section class="seccion1 shadow-sm p-3 mb-5 ">  
-          <div class="container">
-            <div id="foto-portada"><img src="'.$urlFoto->buscarImagenPortada().'"></div>
+          <div class="container" id="portada">
+         
             <img src="'.$urlFoto->buscarImagenPerfil().'">
             <button class="btn2"><img src="img/camara.png" id="imgCamara"></button>
           </div> 
 
             <ul class="menus" id="items" >
-                    <li><a href="#" style="color: #47B2F4">Tweets <span id="contador-tweets"></span></a></li>
+                    <li><a href="#" style="color: #47B2F4 !important">Tweets <span id="contador-tweets"></span></a></li>
                     <li><a href="#">Siguiendo</a></li>
                     <li><a href="#">Me gusta</a></li>
-                    <li><a href="#" >Listas</a></li>
-                    <li><a href="#">Momentos</a></li>
+                    <li><a href="listas.php" >Listas</a></li>
+                    <li><a href="momentos.php">Momentos</a></li>
             </ul>
+            <button class="btn btn-2" type="button"><a href="configuracion.php" style=" color: #6E7D86 !important"> Editar Perfil</a></button>
 
        <!--     <form method="post" id="form-foto-perfil" enctype="multipart/form-data" >
             <b>Subir foto de perfil:</b><br><input type="file" name="perfil"><br>
