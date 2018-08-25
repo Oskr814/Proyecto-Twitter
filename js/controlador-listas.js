@@ -4,8 +4,6 @@ $(document).ready(function(){
                             +"usuario="+$("#usuario-lista").text()+"&"
                             +"nombreLista="+$("#nombre-lista").val()+"&"
                             +"descripcion="+$("#descripcion").val();
-
-        $("#btn-guardar").attr("disabled",true);
         
         $.ajax({
                 url: "ajax/guardar-lista.php",
@@ -40,7 +38,7 @@ $(document).ready(function(){
           <div style="color:#657786"><p> # miembros</p></div>
         </div>
             <div style="float: right; padding:10px">
-                <a href=""><img src="${respuesta[i].urlImagen}" class="rounded-circle" id="navbar-img-perfil-2"></a>
+                <a href=""><img src="${respuesta[i].imgUsuario}" class="rounded-circle" id="navbar-img-perfil-2"></a>
             </div>   
         </div>   
             <hr>`         

@@ -24,7 +24,7 @@ echo '
  
       <section class="seccion1 shadow-sm p-3 mb-5 ">  
           <div class="container">
-            <img src="'.$urlFoto->buscarImagenPerfil().'">
+            <img src="'.$urlFoto->buscarImagenPerfil().'" id="imgPerfil">
             <button class="btn2"><img src="img/camara.png" id="imgCamara"></button>
           </div> 
           
@@ -59,7 +59,7 @@ echo '
                 <div id="textoSup"><a href="#"><b>Miembro de</b></a></div>
                 <hr>
 
-                <div id="listas">
+                <div id="listas" style="margin-left:15px">
                 </div>
                 
             </div>          
