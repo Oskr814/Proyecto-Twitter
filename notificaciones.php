@@ -47,21 +47,10 @@
             <div class="row row-d1">
               <b>A quién seguir</b><a href="" class="sug-link">Actualizar</a><a href="" class="sug-link">Ver todos</a>
               <div id="sugerencias"></div>
-              <!--<div class="sugerencias" id="sugerencia1">
-                  <img class="rounded-circle" id="img-sug-1" src="img/profile.jpg" alt=""><b id="sug-username1">Cuenta</b><span class="sug-user" id="sug-@user1">@cuenta</span><br>
-                  <button class="btn btn-sugerencias" type="button">Seguir</button>
-              </div>
-              <div class="sugerencias" id="sugerencia2">
-                  <img class="rounded-circle" id="img-sug-2" src="img/profile.jpg" alt=""><b id="sug-username2">Cuenta</b><span class="sug-user" id="sug-@user2">@cuenta</span><br>
-                  <button class="btn btn-sugerencias" type="button">Seguir</button>
-              </div>
               
-              <div class="sugerencias" id="sugerencia3">
-                  <img class="rounded-circle" id="img-sug-3" src="img/profile.jpg" alt=""><b id="sug-username3">Cuenta</b><span class="sug-user" id="sug-@user3">@cuenta</span><br>
-                  <button class="btn btn-sugerencias" type="button">Seguir</button>
-              </div>-->
             </div>
        
+
             <div class="contenedor4">
             <div id="row-2" class="row">
                 <footer class="col-12">
@@ -87,6 +76,7 @@
     <script src="js/bootstrap.js"></script>
     <script src="js/controlador-notificaciones.js"></script>
     <script src="js/controlador-trends.js"></script>
+    <script src="js/controlador-home.js"></script>
     
 </body>
 </html>';

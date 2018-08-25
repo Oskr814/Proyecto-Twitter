@@ -168,6 +168,10 @@ background-color: #E6ECF0;
     justify-content: center;
 }
 
+.pie-pagina a{
+    color: #6E7D86;
+}
+
 .row-d2 a{
     color: #6E7D86;
 }

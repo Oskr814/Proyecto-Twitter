@@ -31,7 +31,7 @@ echo '
                     <li><a href="#" style="color: #47B2F4 !important">Tweets <span id="contador-tweets"></span></a></li>
                     <li><a href="#">Siguiendo</a></li>
                     <li><a href="#">Me gusta</a></li>
-                    <li><a href="listas.php" >Listas</a></li>
+                    <li><a href="listas.php" >Listas <span id="contador-listas"></a></li>
                     <li><a href="momentos.php">Momentos</a></li>
             </ul>
             <button class="btn btn-2" type="button"><a href="configuracion.php" style=" color: #6E7D86 !important"> Editar Perfil</a></button>
@@ -100,6 +100,7 @@ echo '
       <script src="js/controlador-profile.js"></script>
       <script src="js/controlador-trends.js"></script>
       <script src="js/controlador-configuraciones.js"></script>
+      <script src="js/controlador-listas.js"></script>
 </body>
 </html>';
 ?>

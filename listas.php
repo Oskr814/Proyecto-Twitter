@@ -125,44 +125,11 @@ echo '
             <br>
 
             <div class="contenedor4" >
-                <div style="margin:15px">
-                    <h5><b>A quién seguir.</b></h5>
-<!--primer usuario-->                   
-                    <div style="float:left;  margin-left: 0">
-                        <a href=""><img src="img/profile.jpg" class="rounded-circle" id="navbar-img-perfil-1"></a>
-                    </div>
-
-                    <div>
-                        <div id="texto3"><p><b>POO</b></p></div>
-                        <div id="texto3" style="color:#657786"><p>@POO2periodo2018</p></div>
-                        <button class="btn btnSeguir" type="submit">Seguir</button>
-                        <hr>
-                    </div>    
-<!--segundo usuario-->
-                    <div style="float:left;  margin-left: 0">
-                        <a href=""><img src="img/profile.jpg" class="rounded-circle" id="navbar-img-perfil-1"></a>
-                    </div>
-                    <div>
-                        <div id="texto3"><p><b>POO</b></p></div>
-                        <div id="texto3" style="color:#657786"><p>@POO2periodo2018</p></div>
-                        <button class="btn btnSeguir" type="submit">Seguir</button>
-                        <hr>
-                    </div> 
-<!--tercero usuario-->
-                    <div style="float:left;  margin-left: 0">
-                        <a href=""><img src="img/profile.jpg" class="rounded-circle" id="navbar-img-perfil-1"></a>
-                    </div>
-                    <div>
-                        <div id="texto3"><p><b>POO</b></p></div>
-                        <div id="texto3" style="color:#657786"><p>@POO2periodo2018</p></div>
-                        <button class="btn btnSeguir" type="submit">Seguir</button>
-                        <hr>
-                    </div> 
-
-                   <a href="#">Encuentra a personas que conoces</a> 
-
-                </div>
-            </div>
+            <div class="row row-d1">
+                <b>A quién seguir</b><a href="" class="sug-link">Actualizar</a><a href="" class="sug-link">Ver todos</a>
+                <div id="sugerencias"></div>
+            
+             </div>
 
         <div class="contenedor5">
         <div style="margin:15px">
@@ -198,6 +165,7 @@ echo '
       <script src="js/controlador-configuraciones.js"></script>
       <script src="js/controlador-profile.js"></script>
       <script src="js/controlador-listas.js"></script>
+       <script src="js/controlador-home.js"></script>
 </body>
 </html>';
 ?>
