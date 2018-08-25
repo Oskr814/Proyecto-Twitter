@@ -18,14 +18,14 @@
 a.nav-link{
     font-weight: bold;
     font-size: 14px;
-    color: #009999;
+    color: #1DA1F2;
     padding: 5px;
     position: relative;
     top: 5px;
 }
 
 a.nav-link:hover{
-    border-bottom: solid 2px #009999;
+    border-bottom: solid 2px #1DA1F2;
 }
 
 .icon{
@@ -49,7 +49,7 @@ nav form input[type=search]{
     font-size: 12px;
 }
 .btn-twittear{
-    background-color: #32ADAD;
+    background-color: #1DA1F2;
     color: #fff;
     font-size: 14px !important;
     font-weight: bold !important;
@@ -58,7 +58,7 @@ nav form input[type=search]{
 }
 
 .btn-twittear:hover{
-    background-color: #009999;
+    background-color: #1DA1F2;
 }
 
 li form{
