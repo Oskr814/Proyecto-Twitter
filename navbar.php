@@ -6,6 +6,7 @@
         <link rel="stylesheet" href="css/bootstrap.min.css">
         <link rel="stylesheet" href="css/FontAwesome/css/all.css">
         <link rel="stylesheet" href="css/custom-navbar.css">
+        
         <div class="container-fluid">
                     <nav class="navbar navbar-expand-md fixed-top  bg-light">
 
@@ -33,8 +34,8 @@
                                     </a>
 
                                     <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                                    <a class="dropdown-item" href="perfil.php"><b>'.$_SESSION["nombre"].'</b><br>
-                                    <span>@'.$_SESSION["usuario"].'</span>
+                                    <a class="dropdown-item" href="perfil.php"><b id="nav-nombre">'.$_SESSION["nombre"].'</b><br>
+                                    <span id="nav-usuario">@'.$_SESSION["usuario"].'</span>
                                     </a><hr>
                                     <a class="dropdown-item" href="perfil.php">Perfil</a>
                                     <a class="dropdown-item" href="listas.php">Listas</a>
@@ -59,21 +60,40 @@
                 <div class="modal-dialog" role="document">
                     <div class="modal-content">
                     <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                        <b class="modal-title" id="exampleModalLabel">Mensajes directos</b>
+                        <button type="button" class=" btn"data-toggle="modal" data-target="#modal-nuevo-msj">Nuevo mensaje</button>
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
                         </button>
                     </div>
-                    <div class="modal-body">
-                        ...
+                    <div class="modal-body" id="mensajes">
+                        Sin mensajes que mostrar
                     </div>
                     <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                        <button type="button" class="btn btn-primary">Save changes</button>
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
                     </div>
                     </div>
                 </div>
                 </div>
+                <div class="modal fade" id="modal-nuevo-msj" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                        <div class="modal-header">
+                            <b class="modal-title" id="exampleModalLabel">Mensajes directos</b>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body" id="mensajes">
+                            <label for="destinatario">Para:</label><input type="text" id="destinatario"><br>
+                            <label for="mensaje">Mensaje:</label><textarea id="mensaje" name="" id="" cols="30" rows="2"></textarea><br>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-primary" data-dismiss="modal" id="btn-enviar-mensaje">Enviar</button>
+                        </div>
+                        </div>
+                    </div>
+                    </div>
                 ';
 
 

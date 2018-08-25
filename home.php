@@ -45,8 +45,7 @@
                               </div>
                           </div>
                           <div id="tendencias">
-                            <b>Tendecias para tí</b><br>
-                            <span class="tendecias">#Tendencia</span>
+                            <b>Tendecias en Twitter <a href="" style="font-size:12px;">Actualizar</a></b><br>
                           </div>
                         </div>
                         <div class="col-sm-7 col-md-7 col-lg-6  col-xl-6 col-central">
@@ -125,6 +124,8 @@
               <script src="js/jquery-3.3.1.js"></script>
               <script src="js/bootstrap.min.js"></script>
               <script src="js/controlador-home.js"></script>
+              <script src="js/controlador-trends.js"></script>
+              <script src="js/controlador-mensajes.js"></script>
               
         </body>
         </html>';

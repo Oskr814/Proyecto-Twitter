@@ -12,7 +12,7 @@ $.ajax({
          $('#tweets').prepend(
           `
                 <div style="float:left">
-                <a href=""><img src="img/profile.jpg" class="rounded-circle" id="navbar-img-perfil-1"></a>
+                <a href=""><img src="${respuesta[i].imgUsuario}" class="rounded-circle" id="navbar-img-perfil-1"></a>
                 </div>
 
                 <div id="texto3"><p><b>${respuesta[i].nombre}</b></p></div>
