@@ -191,12 +191,6 @@ ul#user-porfile-preview li{
     width: 100%;
     float: left;
     padding: 12px;
-    border-bottom: solid 1px #d5d8da;
-}
-
-.timeline-post:hover{
-    background-color: #f0eeee96;
-    cursor: pointer;
 }
 
 .timeline-text{
@@ -231,7 +225,15 @@ ul#user-porfile-preview li{
     line-height: 18px;
 }
 
+#div-timeline-post{
+    border-bottom: solid 1px #d5d8da;
+    height: 55%;
+}
 
+#div-timeline-post:hover{
+    background-color: #f0eeee96;
+    cursor: pointer;
+}
 /*FIN col-central*/
 
 /*INICIO col-der*/

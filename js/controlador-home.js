@@ -128,6 +128,7 @@ $(document).ready(function(){
                 dataType: "json",
                 data: "codigo=1",
                 success: function(respuesta){
+                    console.log(respuesta);
                     for(var i = 0 ; i<3 ; i++){
                         var x = Math.floor((Math.random() * respuesta.length));
                         while(x==y){
