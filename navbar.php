@@ -33,7 +33,7 @@
                                     </a>
 
                                     <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                                    <a class="dropdown-item" href="#"><b>'.$_SESSION["nombre"].'</b><br>
+                                    <a class="dropdown-item" href="perfil.php"><b>'.$_SESSION["nombre"].'</b><br>
                                     <span>@'.$_SESSION["usuario"].'</span>
                                     </a><hr>
                                     <a class="dropdown-item" href="perfil.php">Perfil</a>

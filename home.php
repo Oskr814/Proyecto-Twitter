@@ -31,15 +31,15 @@
                                   <ul id="user-porfile-preview">
                                     <li>
                                       Tweets
-                                      <ul><li id="numTweets">0</li></ul>
+                                      <ul><li id="numTweets"></li></ul>
                                     </li>
                                     <li>
                                       Siguiendo
-                                      <ul><li id="numFollow">0</li></ul>
+                                      <ul><li id="numFollow"></li></ul>
                                     </li>
                                     <li>
                                       Seguidores
-                                      <ul><li id="numSeg">0</li></ul>
+                                      <ul><li id="numSeg"></li></ul>
                                     </li>
                                   </ul>
                               </div>
@@ -70,6 +70,7 @@
                           </div>
                           <div class="row row-c3">
                             <div id="timeline">
+                    
                                 <div id="respuesta" class=""></div>
                               </div>
                           </div>
@@ -93,7 +94,29 @@
                                     <button class="btn btn-sugerencias" type="button">Seguir</button>
                                 </div>-->
                           </div>
-                          <div class="row row-d2">Slide bar</div>
+                          <div class="row row-d2">
+                              <footer class="col-12">
+                                  <div class="pie-pagina">
+                                  <table id="table-footer">
+                                    <tr>
+                                      <td><a href="#" class="pie-pagina">2018 Twitter</a></td>
+                                      <td><a href="landing.php" class="pie-pagina">Sobre nosotros</a></td>
+                                      <td><a href="centroAyuda.php" class="pie-pagina">Centro de Ayuda</a> </td>
+                                    </tr>
+                                    <tr>
+                                      <td><a href="condiciones.php" class="pie-pagina">Condiciones</a> </td>
+                                      <td><a href="#" class="pie-pagina">Política de Privacidad</a></td>
+                                      <td><a href="cookies.php" class="pie-pagina">Cookies</a></td>
+                                    </tr>
+                                  <tr>
+                                    <td><a href="#" class="pie-pagina">Informacíon sobre anuncios</a> </td>
+                                    <td></td>
+                                    <td></td>
+                                  </tr>
+                                  </table>           
+                                  </div>
+                              </footer>
+                          </div>
                         </div>
                         <!---->
                   </div>
