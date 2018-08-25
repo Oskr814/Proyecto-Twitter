@@ -201,6 +201,7 @@ $(document).ready(function(){
                 data: parametros,
                 success: function(respuesta){
                     $("#"+btn).html(respuesta.mensaje);
+                    $("#numFollow").html(respuesta.numFollow);
                 },
                 error: function(error){
                     console.log(error);
