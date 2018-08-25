@@ -129,7 +129,7 @@ echo '
                 <b>A quién seguir</b><a href="" class="sug-link">Actualizar</a><a href="" class="sug-link">Ver todos</a>
                 <div id="sugerencias"></div>
             
-             </div>
+             </div></div>
 
         <div class="contenedor5">
         <div style="margin:15px">
