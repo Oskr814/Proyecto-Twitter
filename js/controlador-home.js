@@ -122,14 +122,12 @@ $(document).ready(function(){
         dataType: "json",
         data: "codigo=0",
         success: function(respuestaPeticion1){
-            console.log(respuestaPeticion1);
           $.ajax({
                 url: "ajax/cargar-sugerencias.php",
                 method: "POST",
                 dataType: "json",
                 data: "codigo=1",
                 success: function(respuesta){
-                    console.log(respuesta);
                     for(var i = 0 ; i<3 ; i++){
                         var x = Math.floor((Math.random() * respuesta.length));
                         while(x==y){
@@ -219,7 +217,7 @@ $(document).ready(function(){
         success: function(respuesta){
             $("#numTweets").html(respuesta.numTweets);
             $("#numFollow").html(respuesta.numFollow);
-            $("#numSeg").html(Math.floor((Math.random() * 500)));
+            $("#numSeg").html(respuesta.numSeg);
         },
         error: function(error){
             console.log(error);

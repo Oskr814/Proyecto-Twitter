@@ -31,15 +31,15 @@
                                   <ul id="user-porfile-preview">
                                     <li>
                                       Tweets
-                                      <ul><li id="numTweets">0</li></ul>
+                                      <ul><li id="numTweets"></li></ul>
                                     </li>
                                     <li>
                                       Siguiendo
-                                      <ul><li id="numFollow">0</li></ul>
+                                      <ul><li id="numFollow"></li></ul>
                                     </li>
                                     <li>
                                       Seguidores
-                                      <ul><li id="numSeg">0</li></ul>
+                                      <ul><li id="numSeg"></li></ul>
                                     </li>
                                   </ul>
                               </div>

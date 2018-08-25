@@ -21,8 +21,8 @@ echo '
 </head>
 <body>
       <section class="seccion1 shadow-sm p-3 mb-5 ">  
-          <div class="container" id="portada">
-         
+          <div class="container">
+            <div id="foto-portada"><img src="'.$urlFoto->buscarImagenPortada().'"></div>
             <img src="'.$urlFoto->buscarImagenPerfil().'">
             <button class="btn2"><img src="img/camara.png" id="imgCamara"></button>
           </div> 
