@@ -29,14 +29,14 @@ echo '
           </div> 
           
            <ul class="menus" id="items">
-                    <li><a href="#">Tweets</a></li>
+                    <li><a href="perfil.php">Tweets <span id="contador-tweets"></span></a></li>
                     <li><a href="#">Siguiendo</a></li>
                     <li><a href="#">Me gusta</a></li>
-                    <li><a href="#" style="color: #47B2F4">Listas</a></li>
-                    <li><a href="#">Momentos</a></li>
+                    <li><a href="#" style="color: #47B2F4 !important">Listas</a></li>
+                    <li><a href="momentos.php">Momentos</a></li>
             </ul>
 
-            <button class="btn btn-2" type="button">Editar Perfil</button>
+             <button class="btn btn-2" type="button"><a href="configuracion.php" style=" color: #6E7D86 !important"> Editar Perfil</a></button>
       </section>
 
 
@@ -49,7 +49,7 @@ echo '
                 <div class="contenedor1">
                     <div><h5><b>'.$_SESSION["nombre"].'</b></h5></div>   
                     <div><p style="font-size:13px; color:#657786">@'.$_SESSION["usuario"].'</p></div>  
-                    <div><p style="font-size:13px; color:#657786">Se unió en</p></div>
+                    <div><p style="font-size:13px; color:#657786">Se unió en '.$_SESSION["date"].'</p></div>
                 </div>  
         </div>
 
@@ -74,8 +74,55 @@ echo '
                 <div style="margin:15px">
                     <h5><b>Crear una lista</b></h5>
                     <p>Una lista es un grupo administrado de usuarios de Twitter y una forma genial de organizar tus intereses. <a href="#"> Más información</a></p>
-                
+    
+    <!-- ventana modal-->    
                     <button type="button" class="btn btn-info btn-lg  btnCrear" data-toggle="modal" data-target="#myModal">Crar nueva lista</button>
+                   
+                <!-- Modal -->
+                    <div id="myModal" class="modal fade" role="dialog">
+                      <div class="modal-dialog">
+                    
+                <!-- Modal content-->
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h5 class="modal-title"><b>Crear una nueva lista</b></h5>  
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>                
+                          </div>
+
+                          <div class="modal-body">
+                                <form>
+                                    <div class="form-group">
+                                        <label>Nombre de la lista:</label>
+                                        <input type="text" class="form-control" id="nombre-lista">
+                                    </div>
+                                    
+                                    <div class="form-group">
+                                        <label>Descripción:</label> 
+                                        <input type="text" class="form-control" id="descripcion">
+                                        <p style="color: #6E7F8D">Menos de 100 caracteres, opcional</p>
+                                    </div>
+                                </form>
+                                    <br>
+                                    <h5><b>Privacidad</b></h5>
+                                    <hr>
+                                <form>
+                                    <div class="radio">
+                                        <label><input type="radio" name="tipo-privacidad" checked>Pública </label><label style="color: #6E7F8D">·Cualquiera puede seguir esta lista</label>
+                                    </div>
+
+                                    <div class="radio">
+                                        <label><input type="radio" name="tipo-privacidad">Privada </label><label style="color: #6E7F8D">·Solo tú puedes acceder a esta lista</label>
+                                    </div>
+                                </form>
+                          </div>
+                          <div class="modal-footer">
+                            <button id="btn-guardar" type="button" class="btn btn-default" data-dismiss="modal">Guardar</button>
+                          </div>
+                        </div>
+                    
+                      </div>
+                    </div>
+    <!-- fin ventana modal-->
 
                 </div>
             </div>
@@ -121,27 +168,15 @@ echo '
                 </div>
             </div>
 
-            <div class="contenedor5" >
-                <div style="margin:15px">
-                    <h5><b>Tendencias para ti</b></h5>
+            <div class="contenedor5">
+            <div style="margin:15px">
+                <h5><b>Tendencias para ti</b></h5>
 
-                    <a href="#"><b>#CasoPandora</b></a><br>
-                    <a href="#"><b>Elvin Santos</b></a><br>
-                    <a href="#"><b>#HackedByCalleYPoché3</b></a><br>
-                    <p>78,6 mil Tweets</p>
-                    <a href="#"><b>#8YearsOfOneDirection</b></a><br>
-                    <p>3,91 M Tweets</p>
-                    <a href="#"><b>Copa Presidente</b></a><br>
-                    <p>1.078 Tweets</p>
-                    <a href="#"><b>Motagua</b></a><br>
-                    <a href="#"><b>#ParoDeTransporte</b></a><br>
-                    <p>1.278 Tweets</p>
-                    <a href="#"><b>EN VIVO</b></a><br>
-                    <p>62,8 mil Tweets</p>
-                    <a href="#"><b>#fenafuth2018</b></a><br>
-                    <a href="#"><b>#Tegucigalpa</b></a>
-                </div>
+            <div id="tendencias">
             </div>
+         </div>
+        </div>
+
             <br>
             <div class="contenedor6">
                 <div id="row-2" class="row">
@@ -161,9 +196,11 @@ echo '
         </div>
       </section>
      
-  
       <script src="js/jquery-3.3.1.js"></script>
       <script src="js/bootstrap.js"></script>
+      <script src="js/controlador-trends.js"></script>
+      <script src="js/controlador-configuraciones.js"></script>
+      <script src="js/controlador-profile.js"></script>
 </body>
 </html>';
 ?>

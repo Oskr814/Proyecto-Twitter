@@ -14,6 +14,11 @@ body{
     margin-right: auto;
     display: block;
 }
+
+#navbar-img-perfil-2{
+    width: 65px;
+    margin: 0 15px;
+}
 /*------>>botones<<--------------*/
 .btn{
     text-align: center;
@@ -41,8 +46,12 @@ body{
     position: relative;
     float: right;
     margin-right: 5%;
-    margin-top: 170px;
+    margin-top: 20%;
     font-size: 0.9em;
+}
+.btn btn-2 :hover{
+    background-color: #F5F8FA !important;
+    color: #6E7D86 !important;
 }
 
 .btnCrear{
@@ -116,6 +125,7 @@ color: #47B2F4 !important;
 
 .button-style{
     border: none;
+
     
 }
 
@@ -124,7 +134,7 @@ color: #47B2F4 !important;
     background-color: #1DA1F2; 
     display: block;
     align-items: center;
-    height: 170px;
+    height: 40%;
     max-width:100%;  
 }
 /*====================segunda fase del perfil=============================*/
@@ -139,8 +149,8 @@ color: #47B2F4 !important;
 /*foto del perfil*/
 .container {
     position: absolute;
-    margin-left: 100px;
-    margin-top: 45px;
+    margin-left: 7%;
+    margin-top: 10%;
     width: 50%;
   }
   
