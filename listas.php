@@ -47,8 +47,8 @@ echo '
     
         <div>
                 <div class="contenedor1">
-                    <div><h5><b>'.$_SESSION["nombre"].'</b></h5></div>   
-                    <div><p style="font-size:13px; color:#657786">@'.$_SESSION["usuario"].'</p></div>  
+                    <div><h5 id="nombre-lista"><b>'.$_SESSION["nombre"].'</b></h5></div>   
+                    <div><p style="font-size:13px; color:#657786" id="usuario-lista">@'.$_SESSION["usuario"].'</p></div>  
                     <div><p style="font-size:13px; color:#657786">Se unió en '.$_SESSION["date"].'</p></div>
                 </div>  
         </div>

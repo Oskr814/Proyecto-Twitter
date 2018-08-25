@@ -1,7 +1,9 @@
 $(document).ready(function(){
 $("#btn-guardar").click(function(){
-     var  parametros = "nombre="+$("#nombre-lista").val()+"&"
-                       +"descripcion="+$("#descripcion").val();
+     var  parametros = "nombre="+$("#nombre-lista").text()+"&"
+                        +"usuario="+$("#usuario-lista").text()+"&"
+                        +"nombreLista="+$("#nombre-lista").val()+"&"
+                        +"descripcion="+$("#descripcion").val();
 
     $("#btn-guardar").attr("disabled",true);
         $.ajax({
