@@ -3,8 +3,9 @@ $(document).ready(function(){
         var  parametros = "nombre="+$("#nombre").text()+"&"
                             +"usuario="+$("#usuario-lista").text()+"&"
                             +"nombreLista="+$("#nombre-lista").val()+"&"
-                            +"descripcion="+$("#descripcion").val();
-        
+                            +"descripcion="+$("#descripcion").val()+"&"
+                            +"imgUsuario="+$("#imgPerfil").attr("src");
+  
         $.ajax({
                 url: "ajax/guardar-lista.php",
                 data: parametros,
@@ -21,6 +22,8 @@ $(document).ready(function(){
             });
     });
 
+    
+    
     $.ajax({
     url: "ajax/cargar-lista.php",
     dataType: "json",
@@ -31,17 +34,17 @@ $(document).ready(function(){
     for (let i = 0; i < respuesta.length; i++) {
         contador++;
      $('#listas').prepend(
-      `<div>
-        <div style="margin-left: 15pxs">
+      ` <div style="float: right">
+         <a href=""><img src="${respuesta[i].imgUsuario}" class="rounded-circle" id="navbar-img-perfil-2"></a>
+        </div> 
+        <div style="margin-left: 15px; font-size: 13px;">
           <div><a href="#"><b>${respuesta[i].nombreLista}</b></a></div>      
           <div><p>${respuesta[i].descripcion}</p></div> 
-          <div style="color:#657786"><p> # miembros</p></div>
         </div>
-            <div style="float: right; padding:10px">
-                <a href=""><img src="${respuesta[i].imgUsuario}" class="rounded-circle" id="navbar-img-perfil-2"></a>
-            </div>   
-        </div>   
-            <hr>`         
+            
+            <hr> 
+            `  
+            
         );             
     }
     

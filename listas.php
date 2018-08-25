@@ -59,7 +59,7 @@ echo '
                 <div id="textoSup"><a href="#"><b>Miembro de</b></a></div>
                 <hr>
 
-                <div id="listas" style="margin-left:15px">
+                <div id="listas">
                 </div>
                 
             </div>          
