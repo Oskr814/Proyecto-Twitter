@@ -10,9 +10,10 @@
         $respuesta = $_POST;
         $respuesta["codigo"] = 1;
         echo json_encode($respuesta);
+        $respuesta["mensajeRespuesta"]="la lista fue creada con éxito.";
     }else{
         $respuesta["codigo"] = 0;
         echo json_encode($respuesta);
-        $respuesta["mensajeRespuesta"]="la lista fue creada con éxito.";
+       
     }
 ?>

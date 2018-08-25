@@ -17,7 +17,7 @@ $.ajax({
 
                 <div id="texto3"><p><b>${respuesta[i].nombre}</b></p></div>
                 <div id="texto3" style="color:#657786"><p>${respuesta[i].usuario}</p></div> 
-                <div id="texto3" style="color:#657786"><p>${fecha.getDate()}</p></div>
+                <div id="texto3" style="color:#657786"><p>Publicado el ${fecha.getDate()}/${fecha.getMonth()}//${fecha.getFullYear()} a las ${fecha.getHours()} horas</p></div>
                 <br>
                 <div id="tweet"><p>${respuesta[i].tweet}</p></div>
 

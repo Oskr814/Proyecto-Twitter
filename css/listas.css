@@ -17,7 +17,8 @@ body{
 
 #navbar-img-perfil-2{
     width: 65px;
-    margin: 0 15px;
+    top: 0%;
+    padding: 0.5px 15px;
 }
 /*------>>botones<<--------------*/
 .btn{

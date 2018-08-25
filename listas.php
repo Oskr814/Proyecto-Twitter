@@ -24,7 +24,7 @@ echo '
  
       <section class="seccion1 shadow-sm p-3 mb-5 ">  
           <div class="container">
-            <img src="'.$urlFoto->buscarImagenPerfil().'">
+            <img src="'.$urlFoto->buscarImagenPerfil().'" id="imgPerfil">
             <button class="btn2"><img src="img/camara.png" id="imgCamara"></button>
           </div> 
           
@@ -32,7 +32,7 @@ echo '
                     <li><a href="perfil.php">Tweets <span id="contador-tweets"></span></a></li>
                     <li><a href="#">Siguiendo</a></li>
                     <li><a href="#">Me gusta</a></li>
-                    <li><a href="#" style="color: #47B2F4 !important">Listas</a></li>
+                    <li><a href="#" style="color: #47B2F4 !important">Lista <span id="contador-listas"></span></a></li>
                     <li><a href="momentos.php">Momentos</a></li>
             </ul>
 
@@ -47,7 +47,7 @@ echo '
     
         <div>
                 <div class="contenedor1">
-                    <div><h5 id="nombre-lista"><b>'.$_SESSION["nombre"].'</b></h5></div>   
+                    <div><h5 id="nombre"><b>'.$_SESSION["nombre"].'</b></h5></div>   
                     <div><p style="font-size:13px; color:#657786" id="usuario-lista">@'.$_SESSION["usuario"].'</p></div>  
                     <div><p style="font-size:13px; color:#657786">Se unió en '.$_SESSION["date"].'</p></div>
                 </div>  
@@ -58,14 +58,10 @@ echo '
                 <div style="float:left" id="textoSup"><b>Suscrito a</b></div>
                 <div id="textoSup"><a href="#"><b>Miembro de</b></a></div>
                 <hr>
-                <div style="margin-left: 15px; font-size: 13px; float: left;">
-                    <div><a href="#"><b>POO</b></a></div>      
-                    <div><p>Descripción</p></div> 
-                    <div style="color:#657786"><p> # miembros</p></div>
+
+                <div id="listas">
                 </div>
-                <div style="float: right;">
-                    <a href=""><img src="img/profile.jpg" class="rounded-circle" id="navbar-img-perfil-2"></a>
-                </div>   
+                
             </div>          
         </div>
 
@@ -168,13 +164,13 @@ echo '
                 </div>
             </div>
 
-            <div class="contenedor5">
-            <div style="margin:15px">
-                <h5><b>Tendencias para ti</b></h5>
+        <div class="contenedor5">
+        <div style="margin:15px">
+            <h5><b>Tendencias para ti</b></h5>
 
             <div id="tendencias">
             </div>
-         </div>
+        </div>
         </div>
 
             <br>
@@ -201,6 +197,7 @@ echo '
       <script src="js/controlador-trends.js"></script>
       <script src="js/controlador-configuraciones.js"></script>
       <script src="js/controlador-profile.js"></script>
+      <script src="js/controlador-listas.js"></script>
 </body>
 </html>';
 ?>
