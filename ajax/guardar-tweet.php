@@ -9,7 +9,7 @@
         fclose($archivo);
         
         //Escribir en archivos de seguidores
-        if(file_exists("../data/followers/".$_POST["usuario"]).".json"){
+        if(file_exists("../data/followers/".$_POST["usuario"].".json")){
             $archivo = fopen("../data/followers/".$_POST["usuario"].".json", "r");
             while($linea = fgets($archivo)){
                 $registro = json_decode($linea, true);
@@ -22,6 +22,7 @@
             }
             fclose($archivo);
         }
+
         $respuesta = $_POST;
         $respuesta["codigo"] = 1;
         echo json_encode($respuesta);

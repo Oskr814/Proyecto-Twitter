@@ -9,7 +9,11 @@
         if(file_exists("../data/tweets/@".$_SESSION["usuario"]."tweets.json")){
             $archivo = fopen("../data/tweets/@".$_SESSION["usuario"]."tweets.json", "r");
             while($linea = fgets($archivo)){
-                $numTweets++;
+                $registro = json_decode($linea, true);
+                if($registro["usuario"] == "@".$_SESSION["usuario"]){
+                    $numTweets++;
+                }
+                
             }
         }
 
