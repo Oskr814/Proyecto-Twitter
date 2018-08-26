@@ -226,3 +226,30 @@ background-color: #E6ECF0;
     display: none;
 }
 
+#followers, #following{
+    margin: 10px;
+}
+
+#usuario-followers{
+    color: #657786;
+    position: relative;
+    top: 20px;
+    right: 85px;
+}
+#div-followers, #div-following{
+    width: 100%;
+    border-bottom: solid 1px rgb(211, 209, 209);
+    margin: 5px;
+}
+
+#div-followers:hover, #div-following:hover{
+    background-color: #dfe2e659;
+}
+
+.inline{
+    display: inline;
+}
+
+#link-follower:hover{
+    text-decoration: none;
+}
