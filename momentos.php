@@ -36,10 +36,10 @@ echo '
 
         <div style="max-width: 200px;"> 
            <ul class="menus" id="items" >
-                    <li><a href="#">Tweets <span id="contador-tweets"></span></a></li>
+                    <li><a href="perfil.php">Tweets <span id="contador-tweets"></span></a></li>
                     <li><a href="#">Siguiendo</a></li>
                     <li><a href="#">Me gusta</a></li>
-                    <li><a href="#" >Listas <span id="contador-listas"></a></li>
+                    <li><a href="listas.php" >Listas <span id="contador-listas"></a></li>
                     <li><a href="#" style="color: #47B2F4 !important">Momentos</a></li>
             </ul>
         </div> 
@@ -64,7 +64,7 @@ echo '
 
                 <div class="col-sm-7 col-md-7 col-lg-6  col-xl-6 col-central">
                         <div class="row">
-                            <div>
+                            <div style="width:100%; background-color: #fff;">
                         
                                 <div style="float:left; margin-bottom: 15px" id="textoSup"><b>Momentos</b></div>  <br>
                                 <hr>
@@ -80,7 +80,7 @@ echo '
                                 </div>
 
                                     <ul class="menus2" style="float: right;">
-                                        <li><a href="#" ><i class="fas fa-angle-down"></i> </a>
+                                        <li><a href="#" ><i class="fas fa-angle-down" style="color: #1DA1F2 !important"></i> </a>
                                             <ul class="submenu">
                                                 <li><a href="#">Ver estadísticas</a></li>
                                                 <hr>
