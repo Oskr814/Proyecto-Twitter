@@ -327,5 +327,25 @@ $(document).ready(function(){
         }
                 
     });
+
+    //Procesar busqueda
+    $("#busqueda").click(function(){
+        var parametro = "busqueda="+$("#input-busqueda").val();
+        console.log(parametro);
+        $.ajax({
+            url: "ajax/cargar-busqueda.php",
+            method: "POST",
+            dataType: "json",
+            data: parametro,
+            success: function(respuesta){
+                if(respuesta.codigo == 1){
+                    location.href = "busqueda.php";
+                }
+            },
+            error: function(error){
+                console.log(error);
+            }
+        });
+    });
 });
 

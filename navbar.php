@@ -27,7 +27,7 @@
                             </li>
                             <li>
                                 <form class="form-inline">
-                                <input class="form-control mr-sm-2" type="search" placeholder="Buscar en Twitter" aria-label="Search">
+                                <input class="form-control mr-sm-2" type="search" placeholder="Buscar en Twitter" aria-label="Search" id="input-busqueda"><i class="fas fa-search buscar" id="busqueda"></i>
                                 <div class="dropdown">
                                     <a href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                     <img src="'.$urlFoto->buscarImagenPerfil().'" alt="" class="rounded-circle" id="navbar-img-perfil-1">

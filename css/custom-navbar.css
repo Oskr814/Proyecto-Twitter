@@ -43,6 +43,18 @@ a.nav-link:hover{
     margin: 0 10px;
 }
 
+.buscar{
+    position: absolute;
+    left: 150px;
+    color: #969b9b;
+}
+
+.buscar:hover{
+    cursor: pointer;
+    color: #1DA1F2;
+    font-size: 16px;
+}
+
 .follower-img-perfil, .following-img-perfil{
     width: 32px;
     margin: 0 10px;
