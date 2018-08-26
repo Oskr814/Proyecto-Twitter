@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>System Status Page </title>
+    <link rel="icon" href="img/Index/icono.ico">
     <link rel="icon" href="img/favicon-statuspage.png">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/status.css">

@@ -14,8 +14,10 @@ $(document).ready(function(){
             data: parametros,
             success: function(respuesta){
                 $("#mensajes").append( `
-                    <div id="div-msj"><img class="rounded-circle user-porfile-mensaje" src="${respuesta.imgDestinatario}" alt=""><b>${respuesta.nombreDestinatario}</b><span class="sug-user">${respuesta.destinatario}</span><br></div>
-                    <div id="modal-mensaje">Tú:<p>${respuesta.mensaje}</p></div>
+                <div id="div-msj">
+                <img class="rounded-circle user-porfile-mensaje" src="${respuesta.imgDestinatario}" alt=""><b>${respuesta.nombreDestinatario}</b><span class="sug-user">${respuesta.destinatario}</span><i class="tipo-msj">${respuesta.tipo}</i><br>
+                <p id="modal-mensaje">Tú: ${respuesta.mensaje}</p>
+                </div>
                 `);
     
             },

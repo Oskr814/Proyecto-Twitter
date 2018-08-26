@@ -9,7 +9,7 @@
             <meta charset="utf-8" />
             <meta http-equiv="X-UA-Compatible" content="IE=edge">
             <title>Twitter</title>
-            <link rel="shortcut icon" href="img/icono.ico" type="image/x-icon">
+            <link rel="icon" href="img/Index/icono.ico">
             <meta name="viewport" content="width=device-width, initial-scale=1">
             <link rel="stylesheet" href="css/custom-home.css">
         </head>
