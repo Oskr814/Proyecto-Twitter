@@ -16,7 +16,7 @@ body{
 
 
 .container{
-    margin-top: 50px;
+    margin-top: 0px;
 }
 .row{
     padding: 0px;
@@ -39,7 +39,6 @@ body{
     min-width: 580px;
     max-width: 580px;
     margin: 10px;
-    background-color: #fff;
 }
 
 .row-c1{
@@ -70,8 +69,8 @@ body{
 }
 
 .row-d1{
-    padding: 15px;
-    height: 200px;
+    padding: 10px;
+    height: 220px;
 }
 
 .row-d2{
@@ -444,4 +443,47 @@ color: #47B2F4;
    font-size: 0.8em;
 }
 
+/*Ocultar elementos*/
+@media (min-width: 576px) {
+    .container {
+      max-width: 540px;
+    }
+  }
+  
+  @media (min-width: 768px) {
+    .container {
+      max-width: 720px;
+    }
+    
+  }
+  
+  @media (min-width: 992px) {
+    .container {
+      max-width: 960px;
+    }
+    
+  }
+  
+  @media (min-width: 1200px) {
+    .container {
+      max-width: 1200px;
+    }
+    
+  }
+  
+  @media (max-width:992px){
+    .row{
+        justify-content: center;
+    }
+
+  }
+
+  @media (max-width:1200px){
+    .col-der{
+        position: absolute;
+        top: 583px;
+    }
+
+  }
+/**/
 

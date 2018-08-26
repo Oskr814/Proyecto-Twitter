@@ -34,7 +34,8 @@ $(document).ready(function(){
     for (let i = 0; i < respuesta.length; i++) {
         contador++;
      $('#listas').prepend(
-      ` <div style="float: right">
+      ` <hr> 
+      <div style="float: right">
          <a href=""><img src="${respuesta[i].imgUsuario}" class="rounded-circle" id="navbar-img-perfil-2"></a>
         </div> 
         <div style="margin-left: 15px; font-size: 13px;">
@@ -42,7 +43,7 @@ $(document).ready(function(){
           <div><p>${respuesta[i].descripcion}</p></div> 
         </div>
             
-            <hr> 
+            
             `  
             
         );             
