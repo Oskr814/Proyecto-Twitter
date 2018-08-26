@@ -259,6 +259,15 @@ ul#user-porfile-preview li{
     background-color: #f0eeee96;
     cursor: pointer;
 }
+
+.link-user-preview{
+    color: #707070;
+}
+
+.link-user-preview:hover{
+    text-decoration: none;
+    color: #969090;
+}
 /*FIN col-central*/
 
 /*INICIO col-der*/
@@ -391,6 +400,20 @@ ul#user-porfile-preview li{
 
 .tendencia{
     font-size: 14px;
+}
+
+.sug-link:hover{
+    text-decoration: none;
+    color: #1e8b8b;
+    
+}
+
+.sug-link{
+    cursor: pointer;
+}
+
+.name-sug:hover{
+    color: rgb(43, 142, 204);
 }
 
 

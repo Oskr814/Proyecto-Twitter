@@ -150,10 +150,12 @@ $(document).ready(function(){
                     }else if(respuesta.length<3){
                         for(var i=0 ; i<respuesta.length; i++){
                             $("#sugerencias").append(`
+                            <a class="sug-link" id="sug-link${i+1}">
                             <div class="sugerencias">
-                                <img id="img-user-sug${i+1}" class="rounded-circle img-sug" src="${respuesta[i].urlFotoPerfil}" alt=""><b id="name-sug${i+1}">${respuestaPeticion1[i].nombre}</b><span class="sug-user" id="user-name-sug${i+1}">@${respuesta[i].usuario}</span><br>
+                                <img id="img-user-sug${i+1}" class="rounded-circle img-sug" src="${respuesta[i].urlFotoPerfil}" alt=""><b id="name-sug${i+1}" class="name-sug">${respuestaPeticion1[i].nombre}</b><span class="sug-user" id="user-name-sug${i+1}">@${respuesta[i].usuario}</span><br>
                                 <button id="btn-seguir${i+1}" class="btn btn-sugerencias" type="button">Seguir</button>
                             </div>
+                            </a>
                         `); 
                         }
                     }else{
@@ -164,8 +166,10 @@ $(document).ready(function(){
                             }
                             $("#sugerencias").append(`
                                 <div class="sugerencias">
-                                    <img id="img-user-sug${i+1}" class="rounded-circle img-sug" src="${respuesta[x].urlFotoPerfil}" alt=""><b id="name-sug${i+1}">${respuestaPeticion1[x].nombre}</b><span class="sug-user" id="user-name-sug${i+1}">@${respuesta[x].usuario}</span><br>
-                                    <button id="btn-seguir${i+1}" class="btn btn-sugerencias" type="button">Seguir</button>
+                                    <a class="sug-link" id="sug-link${i+1}">
+                                        <img id="img-user-sug${i+1}" class="rounded-circle img-sug" src="${respuesta[x].urlFotoPerfil}" alt=""><b id="name-sug${i+1}" class="name-sug">${respuestaPeticion1[x].nombre}</b><span class="sug-user" id="user-name-sug${i+1}">@${respuesta[x].usuario}</span><br>
+                                        <button id="btn-seguir${i+1}" class="btn btn-sugerencias" type="button">Seguir</button>
+                                    </a>
                                 </div>
                             `);
                             var y = x;
@@ -274,4 +278,54 @@ $(document).ready(function(){
             console.log(error);
         }
     });
+
+    //Cargar perfil usuario seleccionado
+    $(window).click(function(e) {
+        var usuarioSeleccionado = e.target.id;
+        console.log(usuarioSeleccionado);
+        var parametros = "";
+        switch(usuarioSeleccionado){
+            case "name-sug1":
+            case "user-name-sug1":
+            case "img-user-sug1":
+                parametros = "nombre="+$("#name-sug1").text()+"&"
+                            +"usuario="+$("#user-name-sug1").text()+"&"
+                            +"imgUsuario="+$("#img-user-sug1").attr("src"); 
+                break;
+            case "name-sug2":
+            case "user-name-sug2":
+            case "img-user-sug2":
+                parametros = "nombre="+$("#name-sug2").text()+"&"
+                            +"usuario="+$("#user-name-sug2").text()+"&"
+                            +"imgUsuario="+$("#img-user-sug2").attr("src");
+                break;
+            case "name-sug3":
+            case "user-name-sug3":
+            case "img-user-sug3":
+                parametros = "nombre="+$("#name-sug3").text()+"&"
+                            +"usuario="+$("#user-name-sug3").text()+"&"
+                            +"imgUsuario="+$("#img-user-sug3").attr("src");
+                break;
+        }
+
+        if(parametros != ""){
+            $.ajax({
+                url: "ajax/cargar-perfil-seleccionado.php",
+                method: "POST",
+                dataType: "json",
+                data: parametros,
+                success: function(respuesta){
+                    console.log(respuesta);
+                    if(respuesta.codigo == 1){
+                        location.href = "perfilseleccionado.php";
+                    }
+                },
+                error: function(error){
+                    console.log(error);
+                }
+            });
+        }
+                
+    });
 });
+

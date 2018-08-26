@@ -30,15 +30,15 @@
                                   
                                   <ul id="user-porfile-preview">
                                     <li>
-                                      Tweets
+                                      <a href="perfil.php" class="link-user-preview">Tweets</a>
                                       <ul><li id="numTweets"></li></ul>
                                     </li>
                                     <li>
-                                      Siguiendo
+                                    <a href="Siguiendo.php" class="link-user-preview">Siguiendo</a>
                                       <ul><li id="numFollow"></li></ul>
                                     </li>
                                     <li>
-                                      Seguidores
+                                      <a href="Seguidores.php" class="link-user-preview">Seguidores</a>
                                       <ul><li id="numSeg"></li></ul>
                                     </li>
                                   </ul>

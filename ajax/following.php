@@ -15,12 +15,14 @@
         }
         fclose($archivo);
         $archivoUsuario = fopen("../data/tweets/@".$_SESSION["usuario"]."tweets.json","a+");
-        $archivoSiguiendo = fopen("../data/tweets/".$_POST["usuario"]."tweets.json","r");
-        while($linea = fgets($archivoSiguiendo)){
-            $registro = json_decode($linea, true);
-            fwrite($archivoUsuario, json_encode($registro)."\n");
+        if(file_exists("../data/tweets/".$_POST["usuario"]."tweets.json")){
+            $archivoSiguiendo = fopen("../data/tweets/".$_POST["usuario"]."tweets.json","r");
+            while($linea = fgets($archivoSiguiendo)){
+                $registro = json_decode($linea, true);
+                fwrite($archivoUsuario, json_encode($registro)."\n");
+            }
+            fclose($archivoSiguiendo);
         }
-        fclose($archivoSiguiendo);
         fclose($archivoUsuario);
         $respuesta["numFollow"] = $numFollow;
         $respuesta["mensaje"] = "Siguiendo";
