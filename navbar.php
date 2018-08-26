@@ -61,7 +61,7 @@
                     <div class="modal-content">
                     <div class="modal-header">
                         <b class="modal-title" id="exampleModalLabel">Mensajes directos</b>
-                        <button type="button" class=" btn"data-toggle="modal" data-target="#modal-nuevo-msj">Nuevo mensaje</button>
+                        <button type="button" class=" btn"data-toggle="modal" data-target="#modal-nuevo-msj" id="nuevo-msj">Nuevo mensaje</button>
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
                         </button>
@@ -79,14 +79,15 @@
                     <div class="modal-dialog" role="document">
                         <div class="modal-content">
                         <div class="modal-header">
-                            <b class="modal-title" id="exampleModalLabel">Mensajes directos</b>
+                            <b class="modal-title" id="exampleModalLabel">Enviar mensaje</b>
+                            <img class="navbar-img-logo" src="img/img1.png" alt="" id="modal-img">
                             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                             <span aria-hidden="true">&times;</span>
                             </button>
                         </div>
-                        <div class="modal-body" id="mensajes">
-                            <label for="destinatario">Para:</label><input type="text" id="destinatario"><br>
-                            <label for="mensaje">Mensaje:</label><textarea id="mensaje" name="" id="" cols="30" rows="2"></textarea><br>
+                        <div class="modal-body" id="modal-msj-nuevo">
+                            <label for="destinatario">Para:</label><br><input type="text" id="destinatario"><br>
+                            <label for="mensaje">Mensaje:</label><br><textarea id="mensaje" name="" id="" cols="30" rows="3"></textarea><br>
                         </div>
                         <div class="modal-footer">
                             <button type="button" class="btn btn-primary" data-dismiss="modal" id="btn-enviar-mensaje">Enviar</button>
