@@ -26,8 +26,8 @@ body{
 
 .col-izq{
     height: 212px;
-    min-width: 280px;
-    max-width: 280px;
+    min-width: 250px;
+    max-width: 250px;
     padding: 0px;
     margin-top: 10px;
 }
@@ -36,7 +36,8 @@ body{
 /*INICIO col-central*/
 .col-central{
     padding: 0 15px;
-    width: 42%;
+    min-width: 580px;
+    max-width: 580px;
     margin: 10px;
     background-color: #fff;
 }
@@ -59,7 +60,7 @@ body{
 .col-der{
     min-width: 280px;
     max-width: 280px;
-    padding: 0 15px
+    padding: 0 15px;
 }
 
 .sug-link{
