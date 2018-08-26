@@ -31,9 +31,30 @@ $(document).ready(function(){
     });
     //Guardar tweet
     $("#btn-post-tweet-twittear").click(function(){
+        var textoTweet = $("#post-tweet").val();
+        var textoTweetEmoji = "";
+        if(textoTweet.includes(":)")){
+            textoTweetEmoji = textoTweet.replace(":)", "<img src='img/emojis/emoji1.png'>");
+        }else if(textoTweet.includes("XD")){
+            textoTweetEmoji = textoTweet.replace("XD", "<img src='img/emojis/emoji2.png'>");
+        }else if(textoTweet.includes(":P")){
+            textoTweetEmoji = textoTweet.replace(":P", "<img src='img/emojis/emoji3.png'>");
+        }else if(textoTweet.includes(":(")){
+            textoTweetEmoji = textoTweet.replace(":(", "<img src='img/emojis/emoji4.png'>");
+        }else if(textoTweet.includes(":*")){
+            textoTweetEmoji = textoTweet.replace(":*", "<img src='img/emojis/emoji5.png'>");
+        }else if(textoTweet.includes("X_X")){
+            textoTweetEmoji = textoTweet.replace("X_X", "<img src='img/emojis/emoji6.png'>");
+        }else if(textoTweet.includes("|**|")){
+            textoTweetEmoji = textoTweet.replace("|**|", "<img src='img/emojis/emoji7.png'>");
+        }else if(textoTweet.includes(":G")){ 
+        textoTweetEmoji = textoTweet.replace(":G", "<img src='img/emojis/emoji8.png'>");
+        }else
+            textoTweetEmoji = textoTweet;
+
         var parametros = "nombre="+$("#nombre-home").text()+"&"
                         +"usuario="+$("#usuario-home").text()+"&"
-                        +"tweet="+$("#post-tweet").val()+"&"
+                        +"tweet="+textoTweetEmoji+"&"
                         +"hashtag="+$("#post-tweet-hashtag").val()+"&"
                         +"urlImagen="+urlImagen+"&"
                         +"imgUsuario="+$("#img-perfil-2").attr("src");
