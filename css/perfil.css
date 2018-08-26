@@ -125,6 +125,15 @@ color: #47B2F4 !important;
     align-items: center;
     height: 40%;
     max-width:100%;  
+    background-image: url(../data/portada-photos/europa.jpg);
+}
+.imgPortada{
+    background-image: url(../data/portada-photos/europa.jpg);
+    display: block;
+    align-items: center;
+    position: absolute;
+    height: 40%;
+    max-width:100%; 
 }
 /*====================segunda fase del perfil=============================*/
 .seccion2{

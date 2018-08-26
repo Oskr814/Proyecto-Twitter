@@ -25,6 +25,7 @@ echo '
             </div> 
             <img class="imgPerfil" src="'.$urlFoto->buscarImagenPerfil().'">
 
+
             <ul class="menus" id="items" >
                     <li><a href="#" style="color: #47B2F4 !important">Tweets <span id="contador-tweets"></span></a></li>
                     <li><a href="#">Siguiendo</a></li>
@@ -99,6 +100,7 @@ echo '
       <script src="js/controlador-trends.js"></script>
       <script src="js/controlador-configuraciones.js"></script>
       <script src="js/controlador-listas.js"></script>
+      <script src="js/controlador-home.js"></script>
 </body>
 </html>';
 ?>
