@@ -13,6 +13,121 @@ body{
     margin-right: auto;
     display: block;
 }
+
+
+.container{
+    margin-top: 50px;
+}
+.row{
+    padding: 0px;
+}
+
+/*INICIO col-izq*/
+
+.col-izq{
+    height: 212px;
+    min-width: 280px;
+    max-width: 280px;
+    padding: 0px;
+    margin-top: 10px;
+}
+
+
+/*INICIO col-central*/
+.col-central{
+    padding: 0 15px;
+    width: 42%;
+    margin: 10px;
+    background-color: #fff;
+}
+
+.row-c1{
+    width: 100%;
+    padding: 15px 30px;
+    background-color: #E5F4F4;
+}
+
+.row-c2{
+    justify-content: center;
+    background-color: #F5F8FA;
+    padding: 5px 0;
+    border: solid 1px #e5eaec;
+}
+
+
+/*INICIO col-der*/
+.col-der{
+    min-width: 280px;
+    max-width: 280px;
+    padding: 0 15px
+}
+
+.sug-link{
+    font-size: 13px;
+    color: #009999;
+    padding: 5px;
+}
+
+.row-d1{
+    padding: 15px;
+    height: 200px;
+}
+
+.row-d2{
+    padding: 15px;
+    height: 325px;
+    
+}
+
+.row-d3{
+  height: 60px;  
+}
+
+
+.row-d1, .row-d2, .row-d3{
+    background-color: #fff;
+    margin-top: 10px;
+}
+.sugerencias{
+    width: 100%;
+    height: 75px;
+    border-bottom: solid 1px rgb(226, 224, 224);
+}
+
+#sugerencia3{
+    border:none;
+}
+
+.sug-user{
+    font-size: 14px;
+    color: #8E8787;
+}
+
+.btn-sugerencias{
+    background-color: #fff;
+    border: solid 1px #707070;
+    border-radius: 15px;
+    padding: 5px 25px;
+    color: #009999;
+    font-size: 12px;
+    font-weight: bold;
+    position: relative;
+    bottom: 15px;
+    left: 60px;
+}
+
+.btn-sugerencias:hover{
+    background-color: rgb(243, 243, 243);
+}
+
+.img-sug{
+    width: 48px;
+    margin-right: 10px;
+}
+
+
+
+
 /*------>>botones<<--------------*/
 .btn{
     text-align: center;
@@ -40,7 +155,7 @@ body{
     position: relative;
     float: right;
     margin-right: 5%;
-    margin-top: 170px;
+    margin-top: 20%;
     font-size: 0.9em;
 }
 
@@ -65,15 +180,6 @@ body{
 .navbar{
     background-color: #fff !important;
 }
-.navbar-img-logo{
-    position: relative;
-    left: 50%;
-}
-
-#navbar-img-perfil-1{
-    width: 40px;
-    margin: 0 15px;
-}
 
 #navbar-img-perfil-2{
     width: 65px;
@@ -85,10 +191,6 @@ body{
     margin: 0 15px;
 }
 
-nav form input[type=search]{
-    border-radius: 25px;
-    font-size: 15px;
-}
 
 /*FIN Nav Bar*/
 
@@ -97,7 +199,7 @@ nav form input[type=search]{
 
 .menus a{
     color: #657786 !important;
-    
+    font-weight: bold;
 }
 
 .menus >li{
@@ -113,7 +215,6 @@ nav form input[type=search]{
 .menus li a:hover{
 color: #47B2F4 !important;
 }
-
 
 .button-style{
     border: none;
@@ -178,7 +279,7 @@ color: #47B2F4;
     background-color: #1DA1F2; 
     display: block;
     align-items: center;
-    height: 170px;
+    height:40%;
     max-width:100%;  
 }
 /*====================segunda fase del perfil=============================*/
@@ -191,15 +292,15 @@ color: #47B2F4;
 }
 
 /*foto del perfil*/
-.container {
+.container1 {
     position: absolute;
-    margin-left: 100px;
-    margin-top: 45px;
+    margin-left: 7%;
+    margin-top: 10%;
     width: 50%;
   }
   
 
-  .container img {
+  .container1 img {
     width:32%;
     height: auto;
     border-radius: 50%;
@@ -207,17 +308,27 @@ color: #47B2F4;
   }
   
  
-  .container .btn2 {
+  .container1 .btn2 {
     position: absolute;
     top:50%;
     left: 17%;
     transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
+    visibility: hidden;
     border: none;
     cursor: pointer;
     border-radius: 5px;
     background-color: transparent;
     
+  }
+
+  
+  #items{
+    margin-left:325px; 
+    position: absolute; 
+    margin-top:19%; 
+    font-size: 14px; 
+    padding: 5px 0px;
   }
  /*====================tercera fase del perfil=============================*/
 .seccion3{
@@ -258,7 +369,6 @@ color: #47B2F4;
     width: 23%;
     margin-left:12px;
     position: relative;
-    float: left;
     top: 12px;
     font-size: 14px;
 }
@@ -268,7 +378,6 @@ color: #47B2F4;
     width: 23%;
     margin-left:70.5%;
     position: relative;
-    float: left;
     top: 12px;
     font-size: 14px;
     margin-top: 20px;
@@ -279,7 +388,7 @@ color: #47B2F4;
     width: 23%;
     margin-left:70.5%;
     position: relative;
-    float: left;
+    
     top: 12px;
     font-size: 14px;
     margin-top: 20px;
@@ -289,7 +398,7 @@ color: #47B2F4;
 .contenedor6{
     width: 17%;
     position: relative;
-    float: right;
+   
     margin-top: 20px;
     margin-right: 13.5%;
 }
@@ -297,7 +406,7 @@ color: #47B2F4;
 .pie-pagina{
     margin: 7px;
     font-size: 0.87em;
-    text-align: left;
+    
     justify-content: center;
 }
 

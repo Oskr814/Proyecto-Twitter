@@ -22,39 +22,42 @@ echo '
 </head>
 <body>
       <section class="seccion1 shadow-sm p-3 mb-5 ">  
-          <div class="container">
-            <img src="img/perfilPOO.jpg">
+          <div class="container1">
+            <img src="'.$urlFoto->buscarImagenPerfil().'">
             <button class="btn2"><img src="img/camara.png" id="imgCamara"></button>
           </div> 
         <div style="max-width: 350px;"> 
-           <ul class="menus" style="margin-left:325px; position: absolute; margin-top:160px; font-size: 14px; padding: 5px 0px; font-weight: bold" >
-                    <li><a href="#">Tweets</a></li>
+           <ul class="menus" id="items" >
+                    <li><a href="#">Tweets <span id="contador-tweets"></span></a></li>
                     <li><a href="#">Siguiendo</a></li>
                     <li><a href="#">Me gusta</a></li>
-                    <li><a href="#" >Listas</a></li>
-                    <li><a href="#" style="color: #47B2F4">Momentos</a></li>
+                    <li><a href="#" >Listas <span id="contador-listas"></a></li>
+                    <li><a href="#" style="color: #47B2F4 !important">Momentos</a></li>
             </ul>
         </div> 
 
-            <button class="btn btn-2" type="submit">Editar Perfil</button>
+        <button class="btn btn-2" type="button"><a href="configuracion.php" style=" color: #6E7D86 !important"> Editar Perfil</a></button>
       </section>
 
 
       <section class="seccion2 shadow-sm"></section>
 
 
-      <section class="seccion3">    
-    
-        <div>
-                <div class="contenedor1">
-                    <div><h5><b>POO</b></h5></div>   
-                    <div><p style="font-size:13px; color:#657786">@POO2periodo2018</p></div> 
-                    <div><p style="font-size:13px; color:#657786">Se unió en</p></div>
-                </div>  
+    <section class="seccion3">    
+<div class="container">
+    <div class="row">
+        <div class="col-sm-5 col-md-3 col-lg-3 col-xl-3 col-izq">
+                    <div style="padding: 50px;">                                           
+                        <div><h5 id="nombre"><b>'.$_SESSION["nombre"].'</b></h5></div>   
+                        <div><p style="font-size:13px; color:#657786" id="usuario-lista">@'.$_SESSION["usuario"].'</p></div>  
+                        <div><p style="font-size:13px; color:#657786">Se unió en '.$_SESSION["date"].'</p></div>
+                    </div>
         </div>
 
-        <div>
-            <div class="contenedor2">
+<div class="col-sm-7 col-md-7 col-lg-6  col-xl-6 col-central">
+        <div class="row">
+            <div>
+           
                 <div style="float:left; margin-bottom: 15px" id="textoSup"><b>Momentos</b></div>  <br>
                 <hr>
 
@@ -68,101 +71,51 @@ echo '
                     <div  style="color:#657786"><p>Descripción</p></div>                    
                 </div>
 
-                <ul class="menus2" style="float: right;">
-                    <li><a href="#" ><i class="fas fa-angle-down"></i> </a>
-                        <ul class="submenu">
-                            <li><a href="#">Ver estadísticas</a></li>
-                            <hr>
-                            <li><a href="#">Twittear Momento</a></li>
-                            <li><a href="#">Compartir por mensaje directo</a></li>
-                            <li><a href="#">Copiar enlace al Momento</a></li> 
-                            <li><a href="#">Insertar Momento</a></li> 
-                            <hr>
-                            <li><a href="#">Editar Momento  </a> </li> 
-                            <li><a href="#">Eliminar Momento</a> </li> 
-                        </ul>
-                    </li>  
-                </ul>
-
-
+                    <ul class="menus2" style="float: right;">
+                        <li><a href="#" ><i class="fas fa-angle-down"></i> </a>
+                            <ul class="submenu">
+                                <li><a href="#">Ver estadísticas</a></li>
+                                <hr>
+                                <li><a href="#">Twittear Momento</a></li>
+                                <li><a href="#">Compartir por mensaje directo</a></li>
+                                <li><a href="#">Copiar enlace al Momento</a></li> 
+                                <li><a href="#">Insertar Momento</a></li> 
+                                <hr>
+                                <li><a href="#">Editar Momento  </a> </li> 
+                                <li><a href="#">Eliminar Momento</a> </li> 
+                            </ul>
+                        </li>  
+                    </ul>
             </div>          
         </div>
+</div>
 
-        <div>
-            <div class="contenedor3" >
-                <div style="margin:15px">
+<div class="col-xl-3 col-der">
+            <div class="row row-d1">    
+                    <div style="margin:15px">
                     <h5><b>Crear momento</b></h5>
                     <p>Usa Tweets para contar historias y compartirlas con el mundo.<a href="#"> Más información</a></p>
                 
                     <button class="btn btnCrear" type="submit">Crear nuevo momento</button>
-                </div>
+                    </div>
             </div>
-        
 
-            <div class="contenedor4" >
+            <div class="row row-d2">       
+                <b>A quién seguir</b><a href="" class="sug-link">Actualizar</a><a href="" class="sug-link">Ver todos</a>
+                <div id="sugerencias"></div>           
+            </div>    
+
+            <div class="row row-d2">
                 <div style="margin:15px">
-                    <h5><b>A quién seguir.</b></h5>
-<!--primer usuario-->                   
-                    <div style="float:left;  margin-left: 0">
-                        <a href=""><img src="img/profile.jpg" class="rounded-circle" id="navbar-img-perfil-1"></a>
-                    </div>
-
-                    <div>
-                        <div id="texto3"><p><b>POO</b></p></div>
-                        <div id="texto3" style="color:#657786"><p>@POO2periodo2018</p></div>
-                        <button class="btn btnSeguir" type="submit">Seguir</button>
-                        <hr>
-                    </div>    
-<!--segundo usuario-->
-                    <div style="float:left;  margin-left: 0">
-                        <a href=""><img src="img/profile.jpg" class="rounded-circle" id="navbar-img-perfil-1"></a>
-                    </div>
-                    <div>
-                        <div id="texto3"><p><b>POO</b></p></div>
-                        <div id="texto3" style="color:#657786"><p>@POO2periodo2018</p></div>
-                        <button class="btn btnSeguir" type="submit">Seguir</button>
-                        <hr>
-                    </div> 
-<!--tercero usuario-->
-                    <div style="float:left;  margin-left: 0">
-                        <a href=""><img src="img/profile.jpg" class="rounded-circle" id="navbar-img-perfil-1"></a>
-                    </div>
-                    <div>
-                        <div id="texto3"><p><b>POO</b></p></div>
-                        <div id="texto3" style="color:#657786"><p>@POO2periodo2018</p></div>
-                        <button class="btn btnSeguir" type="submit">Seguir</button>
-                        <hr>
-                    </div> 
-
-                   <a href="#">Encuentra a personas que conoces</a> 
-
+                <h5><b>Tendencias para ti</b></h5>
+    
+                <div id="tendencias">
                 </div>
+                </div>          
             </div>
 
-            <div class="contenedor5" >
-                <div style="margin:15px">
-                    <h5><b>Tendencias para ti</b></h5>
-
-                    <a href="#"><b>#CasoPandora</b></a><br>
-                    <a href="#"><b>Elvin Santos</b></a><br>
-                    <a href="#"><b>#HackedByCalleYPoché3</b></a><br>
-                    <p>78,6 mil Tweets</p>
-                    <a href="#"><b>#8YearsOfOneDirection</b></a><br>
-                    <p>3,91 M Tweets</p>
-                    <a href="#"><b>Copa Presidente</b></a><br>
-                    <p>1.078 Tweets</p>
-                    <a href="#"><b>Motagua</b></a><br>
-                    <a href="#"><b>#ParoDeTransporte</b></a><br>
-                    <p>1.278 Tweets</p>
-                    <a href="#"><b>EN VIVO</b></a><br>
-                    <p>62,8 mil Tweets</p>
-                    <a href="#"><b>#fenafuth2018</b></a><br>
-                    <a href="#"><b>#Tegucigalpa</b></a>
-                </div>
-            </div>
-            <br>
-            <div class="contenedor6">
-                <div id="row-2" class="row">
+            
+                <div id="row-3" class="row">
                     <footer class="col-12">
                         <div class="pie-pagina">
                             <a href="#" class="pie-pagina">2018 Twitter</a>
@@ -175,13 +128,23 @@ echo '
                         </div>
                     </footer>
                 </div>    
-            </div>
+            
         </div>
-      </section>
+</div>
+
+</div>
+</div>
+</section>
      
   
       <script src="js/jquery-3.3.1.js"></script>
       <script src="js/bootstrap.js"></script>
+      <script src="js/controlador-profile.js"></script>
+      <script src="js/controlador-trends.js"></script>
+      <script src="js/controlador-configuraciones.js"></script>
+      <script src="js/controlador-listas.js"></script>
+      <script src="js/controlador-momentos.js"></script>
+      <script src="js/controlador-home.js"></script>
 </body>
 </html>';
 ?>
