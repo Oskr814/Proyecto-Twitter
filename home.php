@@ -22,7 +22,7 @@
                               <img id="portada" src="'.$urlFoto->buscarImagenPortada().'">
                               </div>
                               <div class="info-user">
-                                  <a href=""><img src="'.$urlFoto->buscarImagenPerfil().'" alt="" class="rounded-circle" id="img-perfil-2"></a>
+                                  <a href="perfil.php"><img src="'.$urlFoto->buscarImagenPerfil().'" alt="" class="rounded-circle" id="img-perfil-2"></a>
                                   <div class="nombre-usuario">
                                       <b id="nombre-home">'.$_SESSION["nombre"].'</b><br>
                                       <a href="#" id="usuario-home" style="font-size:14px;">@'.$_SESSION["usuario"].'</a>

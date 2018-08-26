@@ -71,6 +71,65 @@ li form{
     transform: translateX(-90%) translateY(-50%);
 }
 
+#destinatario , #mensaje{
+    width: 85%;
+    border-radius: 3px;
+    border: solid 1px #86898b;
+}
+
+#modal-msj-nuevos{
+    justify-content: center;
+    color: #746d6d;
+}
+
+#modal-img{
+    position: absolute;
+    color: #2d9c9c
+}
+
+.tipo-msj{
+    position: relative;
+    left: 185px;
+    font-size: 14;
+    font-weight: bold;
+    color: #3656e2;
+}
+
+#nuevo-msj{
+    position: absolute;
+    right: 55px;
+    font-size: 14px;
+    border-radius: 20px;
+    color: #fff;
+    background: #2d9c9c;
+    font-weight: bold;
+}
+
 .navbar-nav{
     width: 100%;
+}
+
+#modal-mensaje{
+    margin: 15px 20px;
+    color: #545858;
+    position: relative;
+    left: 40px;
+    bottom: 25px;
+    font-size: 15px;
+}
+
+.user-porfile-mensaje{
+    width: 48px;
+    margin-right: 10px;
+    position: relative;
+    top: 8px;
+}
+
+#div-msj{
+    border-bottom: solid 1px #e4d1d1;
+}
+
+#div-msj:hover{
+    background-color: #f0eeee96;
+    cursor: pointer;
 }

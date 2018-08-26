@@ -44,3 +44,5 @@ if(file_exists("../data/usuarios.json")){
         $respuesta["mensaje"] = "error en la sesíon";
         echo json_encode($respuesta);
     }
+
+    Tu cronologia se encuentra vacía. Sigue a las personas y a los temas que te interesan para ver sus tweets aqui

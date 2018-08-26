@@ -102,8 +102,30 @@
                           <div class="row row-d2">Slide bar</div>
                         </div>
                         <!---->
+                        
+                          <div class="modal-dialog" role="document">
+                              <div class="modal-content">
+                              <div class="modal-header">
+                                  <b class="modal-title" id="exampleModalLabel">Mensajes directos</b>
+                                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                  <span aria-hidden="true">&times;</span>
+                                  </button>
+                              </div>
+                              <div class="modal-body" id="mensajes">
+                                  <label for="destinatario">Para:</label><br><input type="text" id="destinatario"><br>
+                                  <label for="mensaje">Mensaje:</label><br><textarea id="mensaje" name="" id="" cols="30" rows="2"></textarea><br>
+                              </div>
+                              <div class="modal-footer">
+                                  <button type="button" class="btn btn-primary" data-dismiss="modal" id="btn-enviar-mensaje">Enviar</button>
+                              </div>
+                              </div>
+                          </div>
+                          
                   </div>
-                  
+                  <div id="div-msj">
+                    <img class="rounded-circle user-porfile-mensaje" src="${respuesta[i].imgEmisor}" alt=""><b>${respuesta[i].emisor}</b><span class="sug-user">${respuesta[i].usuarioEmisor}</span><i class="tipo-msj">${respuesta[i].tipo}</i><br>
+                    <p id="modal-mensaje">Tú: ${respuesta[i].mensaje}</p>
+                </div>
               </div>
               <script src="js/jquery-3.3.1.js"></script>
               <script src="js/bootstrap.min.js"></script>
