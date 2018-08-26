@@ -26,7 +26,7 @@ echo '
             <img src="'.$urlFoto->buscarImagenPerfil().'">
             <button class="btn2"><img src="img/camara.png" id="imgCamara"></button>
           </div> 
-        <div style="max-width: 350px;"> 
+        <div style="max-width: 200px;"> 
            <ul class="menus" id="items" >
                     <li><a href="#">Tweets <span id="contador-tweets"></span></a></li>
                     <li><a href="#">Siguiendo</a></li>

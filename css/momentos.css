@@ -334,10 +334,7 @@ color: #47B2F4;
  /*====================tercera fase del perfil=============================*/
 .seccion3{
     background-color: #E6ECF0; 
-    display: block;
-    align-items: center;
-    height: 200%;
-    max-width:100%;  
+
 }
 .contenedor1{
     margin-left: 90px;
