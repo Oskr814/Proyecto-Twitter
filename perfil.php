@@ -50,7 +50,7 @@ echo '
                         <div><p style="font-size:13px; color:#657786">Se unió en '.$_SESSION["date"].'</p></div>              
                     </div>  
                 </div>
-                
+
                 <div class="col-sm-7 col-md-7 col-lg-6  col-xl-6 col-central">
                     <div class="row">
                         <div style="width:100%; background-color: #fff;">
