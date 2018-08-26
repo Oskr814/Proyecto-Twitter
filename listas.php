@@ -28,11 +28,6 @@ echo '
       </div> 
       <img class="imgPerfil" src="'.$urlFoto->buscarImagenPerfil().'">
 
-
-    <!--  <div class="container" id="portada">
-              <img src="'.$urlFoto->buscarImagenPerfil().'">
-              <button class="btn2"><img src="img/camara.png" id="imgCamara"></button>
-      <div> -->
            <ul class="menus" id="items">
                     <li><a href="perfil.php">Tweets <span id="contador-tweets"></span></a></li>
                     <li><a href="#">Siguiendo</a></li>

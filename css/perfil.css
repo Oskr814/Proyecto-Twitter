@@ -28,112 +28,6 @@ padding: 3% 12%;
 text-align: justify;
 }
 
-/*INICIO col-izq*/
-
-.col-izq{
-    height: 212px;
-    min-width: 250px;
-    max-width: 250px;
-    padding: 0px;
-    margin-top: 10px;
-}
-
-
-/*INICIO col-central*/
-.col-central{
-    padding: 0 15px;
-    min-width: 580px;
-    max-width: 580px;
-    margin: 10px;
-    background-color: #fff;
-}
-
-.row-c1{
-    width: 100%;
-    padding: 15px 30px;
-    background-color: #E5F4F4;
-}
-
-.row-c2{
-    justify-content: center;
-    background-color: #F5F8FA;
-    padding: 5px 0;
-    border: solid 1px #e5eaec;
-}
-
-
-/*INICIO col-der*/
-.col-der{
-    min-width: 280px;
-    max-width: 280px;
-    padding: 0 15px;
-}
-
-.sug-link{
-    font-size: 13px;
-    color: #009999;
-    padding: 5px;
-}
-
-.row-d1{
-    padding: 15px;
-    height: 200px;
-}
-
-.row-d2{
-    padding: 15px;
-    height: 325px;
-    
-}
-
-.row-d3{
-  height: 60px;  
-}
-
-
-.row-d1, .row-d2, .row-d3{
-    background-color: #fff;
-    margin-top: 10px;
-}
-.sugerencias{
-    width: 100%;
-    height: 75px;
-    border-bottom: solid 1px rgb(226, 224, 224);
-}
-
-#sugerencia3{
-    border:none;
-}
-
-.sug-user{
-    font-size: 14px;
-    color: #8E8787;
-}
-
-.btn-sugerencias{
-    background-color: #fff;
-    border: solid 1px #707070;
-    border-radius: 15px;
-    padding: 5px 25px;
-    color: #009999;
-    font-size: 12px;
-    font-weight: bold;
-    position: relative;
-    bottom: 15px;
-    left: 60px;
-}
-
-.btn-sugerencias:hover{
-    background-color: rgb(243, 243, 243);
-}
-
-.img-sug{
-    width: 48px;
-    margin-right: 10px;
-}
-
-
-
 /*------>>botones<<--------------*/
 .btn{
     text-align: center;
@@ -300,11 +194,7 @@ color: #47B2F4 !important;
   }
  /*====================tercera fase del perfil=============================*/
 .seccion3{
-    background-color: #E6ECF0; 
-    display: block;
-    align-items: center;
-    height: 400%;
-    max-width:100%;  
+    background-color: #E6ECF0;  
 }
 .contenedor1{
     margin-left: 90px;
@@ -374,4 +264,151 @@ color: #47B2F4 !important;
    font-size: 0.8em;
 }
 
+/*INICIO col-izq*/
 
+.col-izq{
+    height: 212px;
+    min-width: 250px;
+    max-width: 250px;
+    padding: 0px;
+    margin-top: 10px;
+}
+/*INICIO col-central*/
+.col-central{
+    padding: 0 15px;
+    min-width: 550px;
+    max-width: 550px;
+    margin: 10px;
+    
+}
+
+.row-c1{
+    width: 100%;
+    padding: 15px 30px;
+    background-color: #E5F4F4;
+}
+
+.row-c2{
+    justify-content: center;
+    background-color: #F5F8FA;
+    padding: 5px 0;
+    border: solid 1px #e5eaec;
+}
+
+
+
+/*FIN col-central*/
+
+/*INICIO col-der*/
+.col-der{
+    min-width: 280px;
+    max-width: 280px;
+    padding: 0 15px
+}
+
+.sug-link{
+    font-size: 13px;
+    color: #009999;
+    padding: 5px;
+}
+
+.row-d1{
+    padding: 10px;
+    height: 210px;
+}
+
+.row-d2{
+    padding: 15px;
+    height: 325px;
+    
+}
+
+.row-d3{
+  height: 60px;  
+}
+
+
+.row-d1, .row-d2, .row-d3{
+    background-color: #fff;
+    margin-top: 10px;
+}
+.sugerencias{
+    width: 100%;
+    height: 75px;
+    border-bottom: solid 1px rgb(226, 224, 224);
+}
+
+#sugerencia3{
+    border:none;
+}
+
+.sug-user{
+    font-size: 14px;
+    color: #8E8787;
+}
+
+.btn-sugerencias{
+    background-color: #fff;
+    border: solid 1px #707070;
+    border-radius: 15px;
+    padding: 5px 25px;
+    color: #009999;
+    font-size: 12px;
+    font-weight: bold;
+    position: relative;
+    bottom: 15px;
+    left: 60px;
+}
+
+.btn-sugerencias:hover{
+    background-color: rgb(243, 243, 243);
+}
+
+.img-sug{
+    width: 48px;
+    margin-right: 10px;
+}
+
+/*Ocultar elementos*/
+@media (min-width: 576px) {
+    .container {
+      max-width: 540px;
+    }
+  }
+  
+  @media (min-width: 768px) {
+    .container {
+      max-width: 720px;
+    }
+    
+  }
+  
+  @media (min-width: 992px) {
+    .container {
+      max-width: 960px;
+    }
+    
+  }
+  
+  @media (min-width: 1200px) {
+    .container {
+      max-width: 1200px;
+    }
+    
+  }
+  
+  @media (max-width:992px){
+    .row{
+        justify-content: center;
+    }
+
+  }
+
+  @media (max-width:1200px){
+    .col-der{
+        position: absolute;
+        top: 583px;
+    }
+
+  }
+/**/
