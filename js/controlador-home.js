@@ -19,7 +19,8 @@ $(document).ready(function(){
             contentType: false,
             processData: false,
             success: function(datos)
-            { 
+            {   
+                $("#post-tweet-img").attr('style',"font-size:20px; color: #1da1f2;");
                 if (datos.codigo==1) {
                     urlImagen = datos.ruta;
                 }
@@ -108,6 +109,7 @@ $(document).ready(function(){
         $("#post-tweet").val("");
         $("#post-tweet-hashtag").val("");
         $("#post-photo").replaceWith($("#post-photo").val('').clone(true));
+        $("#post-tweet-img").attr('');
         
     });
     //Peticion ajax para cargar tweets usuario al momento de que el documento esta listo

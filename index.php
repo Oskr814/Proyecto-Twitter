@@ -58,14 +58,14 @@
         <div id="row-2" class="row">
             <footer class="col-12">
                 <div class="pie-pagina">
-                    <a href="landing.html" class="pie-pagina">Sobre nosotros</a>
+                    <a href="landing.php" class="pie-pagina">Sobre nosotros</a>
                     <a href="#" class="pie-pagina">Centro de Ayuda</a> 
                     <a href="#" class="pie-pagina">Blog</a>
-                    <a href="status.html" class="pie-pagina">Estado</a>
+                    <a href="status.php" class="pie-pagina">Estado</a>
                     <a href="#" class="pie-pagina">Empleos</a>
                     <a href="#" class="pie-pagina">Condiciones</a> 
                     <a href="#" class="pie-pagina">Política de Privacidad</a>
-                    <a href="cookies.html" class="pie-pagina">Cookies</a>
+                    <a href="cookies.php" class="pie-pagina">Cookies</a>
                     <a href="#" class="pie-pagina">Informacíon sobre anuncios</a>
                     <a href="#" class="pie-pagina">Marca</a> 
                     <a href="#" class="pie-pagina">Aplicacioens</a>
