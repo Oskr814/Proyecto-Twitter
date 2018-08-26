@@ -135,7 +135,26 @@ color: #47B2F4 !important;
     width: 50%;
   }
   
+.vacio{  
+    background-image: url(../img/profile.jpg);
+    width:15%;
+    height: 30%;
+    border-radius: 50%;
+    border: 5px solid #fff;
+    position: absolute;
+    margin-left: 8%;
+    margin-top: 10%;
+}
 
+.imgPerfil{
+    width:15%;
+    height: 30%;
+    border-radius: 50%;
+    border: 5px solid #fff;
+    position: absolute;
+    margin-left: 8%;
+    margin-top: 10%;
+}
   .container img {
     width:32%;
     height: auto;

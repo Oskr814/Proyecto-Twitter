@@ -22,10 +22,18 @@ echo '
 </head>
 <body>
     <section class="seccion1 shadow-sm p-3 mb-5 ">  
-          <div class="container1">
+    <div class="vacio">      
+                       
+    </div> 
+    <img class="imgPerfil" src="'.$urlFoto->buscarImagenPerfil().'">
+
+
+  <!--  <div class="container" id="portada">
             <img src="'.$urlFoto->buscarImagenPerfil().'">
             <button class="btn2"><img src="img/camara.png" id="imgCamara"></button>
-          </div> 
+    <div> -->
+
+
         <div style="max-width: 200px;"> 
            <ul class="menus" id="items" >
                     <li><a href="#">Tweets <span id="contador-tweets"></span></a></li>
