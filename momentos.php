@@ -75,8 +75,8 @@ echo '
 
                                 <div style="margin-left: 15px; font-size: 13px; float: left;">
                                     <div><a href="#"><b>POO</b></a></div>    
-                                    <div  style="color:#657786"><p>Publicado· Hace # horas</p></div>                    
-                                    <div  style="color:#657786"><p>Descripción</p></div>                    
+                                    <div  style="color:#657786"><p>Publicado· Hace 12 horas</p></div>                    
+                                    <div  style="color:#657786"><p>Proyecto POO Twitter 2018</p></div>                    
                                 </div>
 
                                     <ul class="menus2" style="float: right;">

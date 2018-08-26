@@ -24,7 +24,11 @@ echo '
             <div class="vacio">                      
             </div> 
             <img class="imgPerfil" src="'.$urlFoto->buscarImagenPerfil().'">
-
+           
+     <!--       <div class="imgPortada">
+            <img id="portada" src="'.$urlFoto->buscarImagenPortada().'">
+            </div>
+    -->
 
             <ul class="menus" id="items" >
                     <li><a href="#" style="color: #47B2F4 !important">Tweets <span id="contador-tweets"></span></a></li>
